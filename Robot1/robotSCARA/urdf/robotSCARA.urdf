@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="robotSCARA">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-8.24981831132208E-16 -2.06977155180624E-16 0.0986593576349687"
+        rpy="0 0 0" />
+      <mass
+        value="0.452327737140302" />
+      <inertia
+        ixx="0.000378452379819395"
+        ixy="3.96942236294751E-19"
+        ixz="1.17803864394129E-19"
+        iyy="0.000378452379819395"
+        iyz="-3.91045900025848E-20"
+        izz="0.000620483672178546" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotSCARA/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotSCARA/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Brazolargo_link">
+    <inertial>
+      <origin
+        xyz="0.0449746700876207 0.00572575947934414 0.179748213950828"
+        rpy="0 0 0" />
+      <mass
+        value="0.372293769888142" />
+      <inertia
+        ixx="0.000277229449143451"
+        ixy="-8.36213433414768E-06"
+        ixz="2.5116112085686E-08"
+        iyy="0.000341827122837935"
+        iyz="3.28054903736071E-09"
+        izz="0.000291255476814182" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotSCARA/meshes/Brazolargo_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.866666666666667 0.909803921568627 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotSCARA/meshes/Brazolargo_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Brazolargo_joint"
+    type="continuous">
+    <origin
+      xyz="0 0 0.028"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Brazolargo_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Brazocorto_link">
+    <inertial>
+      <origin
+        xyz="0.0694835563402382 0.00525566197858263 -0.0414746523055035"
+        rpy="0 0 0" />
+      <mass
+        value="0.21068967739346" />
+      <inertia
+        ixx="0.00010977234132843"
+        ixy="1.89928638799796E-06"
+        ixz="1.32570707273304E-08"
+        iyy="8.48110963487405E-05"
+        iyz="8.02669798465583E-10"
+        izz="0.000174309589826302" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotSCARA/meshes/Brazocorto_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotSCARA/meshes/Brazocorto_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Brazocorto_joint"
+    type="continuous">
+    <origin
+      xyz="0.15468 0.019691 0.2045"
+      rpy="0 0 0" />
+    <parent
+      link="Brazolargo_link" />
+    <child
+      link="Brazocorto_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Actuador_link">
+    <inertial>
+      <origin
+        xyz="-0.0099748501847331 0.000974890457157235 -0.0907688854070704"
+        rpy="0 0 0" />
+      <mass
+        value="0.155372116662273" />
+      <inertia
+        ixx="0.000342840252728658"
+        ixy="-1.44734159500994E-06"
+        ixz="-1.19858206538947E-08"
+        iyy="0.000323815082818613"
+        iyz="9.06605552275155E-10"
+        izz="3.76060317326654E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotSCARA/meshes/Actuador_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.866666666666667 0.909803921568627 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotSCARA/meshes/Actuador_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Actuador_joint"
+    type="prismatic">
+    <origin
+      xyz="0.14124 0.010683 -0.21754"
+      rpy="3.1416 0 0" />
+    <parent
+      link="Brazocorto_link" />
+    <child
+      link="Actuador_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.15"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
