@@ -1,0 +1,21 @@
+running develop
+running egg_info
+writing robot_description.egg-info/PKG-INFO
+writing dependency_links to robot_description.egg-info/dependency_links.txt
+writing requirements to robot_description.egg-info/requires.txt
+writing top-level names to robot_description.egg-info/top_level.txt
+reading manifest file 'robot_description.egg-info/SOURCES.txt'
+writing manifest file 'robot_description.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/david-romero/Proyectos/ros2_ws/install/robot_description/lib/python3.12/site-packages/robot-description.egg-link (link to .)
+
+Installed /home/david-romero/Proyectos/ros2_ws/build/robot_description
+running symlink_data
+symbolically linking /home/david-romero/Proyectos/ros2_ws/build/robot_description/resource/robot_description -> /home/david-romero/Proyectos/ros2_ws/install/robot_description/share/ament_index/resource_index/packages
+symbolically linking /home/david-romero/Proyectos/ros2_ws/build/robot_description/package.xml -> /home/david-romero/Proyectos/ros2_ws/install/robot_description/share/robot_description
+symbolically linking /home/david-romero/Proyectos/ros2_ws/build/robot_description/launch/display.launch.py -> /home/david-romero/Proyectos/ros2_ws/install/robot_description/share/robot_description/launch
+symbolically linking /home/david-romero/Proyectos/ros2_ws/build/robot_description/urdf/Ensamblaje1.urdf -> /home/david-romero/Proyectos/ros2_ws/install/robot_description/share/robot_description/urdf
+symbolically linking /home/david-romero/Proyectos/ros2_ws/build/robot_description/meshes/rot2.STL -> /home/david-romero/Proyectos/ros2_ws/install/robot_description/share/robot_description/meshes
+symbolically linking /home/david-romero/Proyectos/ros2_ws/build/robot_description/meshes/rot1.STL -> /home/david-romero/Proyectos/ros2_ws/install/robot_description/share/robot_description/meshes
+symbolically linking /home/david-romero/Proyectos/ros2_ws/build/robot_description/meshes/pris.STL -> /home/david-romero/Proyectos/ros2_ws/install/robot_description/share/robot_description/meshes
+symbolically linking /home/david-romero/Proyectos/ros2_ws/build/robot_description/meshes/baase.STL -> /home/david-romero/Proyectos/ros2_ws/install/robot_description/share/robot_description/meshes

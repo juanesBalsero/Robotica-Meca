@@ -1,0 +1,23 @@
+[1.327s] Invoking command in '/home/david-romero/Proyectos/ros2_ws/build/robot_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/david-romero/Proyectos/ros2_ws/build/robot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/david-romero/Proyectos/ros2_ws/install/robot_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/david-romero/Proyectos/ros2_ws/build/robot_description/build --no-deps symlink_data --force
+[1.701s] running develop
+[1.941s] running egg_info
+[1.964s] writing robot_description.egg-info/PKG-INFO
+[1.964s] writing dependency_links to robot_description.egg-info/dependency_links.txt
+[1.964s] writing requirements to robot_description.egg-info/requires.txt
+[1.964s] writing top-level names to robot_description.egg-info/top_level.txt
+[2.011s] reading manifest file 'robot_description.egg-info/SOURCES.txt'
+[2.012s] writing manifest file 'robot_description.egg-info/SOURCES.txt'
+[2.037s] running build_ext
+[2.037s] Creating /home/david-romero/Proyectos/ros2_ws/install/robot_description/lib/python3.12/site-packages/robot-description.egg-link (link to .)
+[2.037s] 
+[2.037s] Installed /home/david-romero/Proyectos/ros2_ws/build/robot_description
+[2.037s] running symlink_data
+[2.037s] symbolically linking /home/david-romero/Proyectos/ros2_ws/build/robot_description/resource/robot_description -> /home/david-romero/Proyectos/ros2_ws/install/robot_description/share/ament_index/resource_index/packages
+[2.037s] symbolically linking /home/david-romero/Proyectos/ros2_ws/build/robot_description/package.xml -> /home/david-romero/Proyectos/ros2_ws/install/robot_description/share/robot_description
+[2.037s] symbolically linking /home/david-romero/Proyectos/ros2_ws/build/robot_description/launch/display.launch.py -> /home/david-romero/Proyectos/ros2_ws/install/robot_description/share/robot_description/launch
+[2.038s] symbolically linking /home/david-romero/Proyectos/ros2_ws/build/robot_description/urdf/Ensamblaje1.urdf -> /home/david-romero/Proyectos/ros2_ws/install/robot_description/share/robot_description/urdf
+[2.038s] symbolically linking /home/david-romero/Proyectos/ros2_ws/build/robot_description/meshes/rot2.STL -> /home/david-romero/Proyectos/ros2_ws/install/robot_description/share/robot_description/meshes
+[2.038s] symbolically linking /home/david-romero/Proyectos/ros2_ws/build/robot_description/meshes/rot1.STL -> /home/david-romero/Proyectos/ros2_ws/install/robot_description/share/robot_description/meshes
+[2.038s] symbolically linking /home/david-romero/Proyectos/ros2_ws/build/robot_description/meshes/pris.STL -> /home/david-romero/Proyectos/ros2_ws/install/robot_description/share/robot_description/meshes
+[2.038s] symbolically linking /home/david-romero/Proyectos/ros2_ws/build/robot_description/meshes/baase.STL -> /home/david-romero/Proyectos/ros2_ws/install/robot_description/share/robot_description/meshes
+[2.073s] Invoked command in '/home/david-romero/Proyectos/ros2_ws/build/robot_description' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/david-romero/Proyectos/ros2_ws/build/robot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/david-romero/Proyectos/ros2_ws/install/robot_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/david-romero/Proyectos/ros2_ws/build/robot_description/build --no-deps symlink_data --force
