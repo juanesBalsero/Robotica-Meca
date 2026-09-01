@@ -1,4 +1,0 @@
-source;share/simo_scara_description/local_setup.bash
-source;share/simo_scara_description/local_setup.dsv
-source;share/simo_scara_description/local_setup.sh
-source;share/simo_scara_description/local_setup.zsh

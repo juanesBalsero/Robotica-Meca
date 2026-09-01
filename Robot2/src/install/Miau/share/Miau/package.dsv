@@ -1,6 +1,0 @@
-source;share/Miau/hook/cmake_prefix_path.dsv
-source;share/Miau/hook/cmake_prefix_path.sh
-source;share/Miau/local_setup.bash
-source;share/Miau/local_setup.dsv
-source;share/Miau/local_setup.sh
-source;share/Miau/local_setup.zsh
