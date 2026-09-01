@@ -1,0 +1,172 @@
+[0.162s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.162s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x791edf0f9550>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x791edf0f9340>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x791edf0f9340>>)
+[0.227s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.227s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.227s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.227s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.227s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.227s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.227s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/dae/ros2_ws'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/simo_scara_description) by extensions ['ignore', 'ignore_ament_install']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/simo_scara_description) by extension 'ignore'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/simo_scara_description) by extension 'ignore_ament_install'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/simo_scara_description) by extensions ['colcon_pkg']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/simo_scara_description) by extension 'colcon_pkg'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/simo_scara_description) by extensions ['colcon_meta']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/simo_scara_description) by extension 'colcon_meta'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/simo_scara_description) by extensions ['ros']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/simo_scara_description) by extension 'ros'
+[0.273s] DEBUG:colcon.colcon_core.package_identification:Package 'src/simo_scara_description' with type 'ros.ament_cmake' and name 'simo_scara_description'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/visualr) by extensions ['ignore', 'ignore_ament_install']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/visualr) by extension 'ignore'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/visualr) by extension 'ignore_ament_install'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/visualr) by extensions ['colcon_pkg']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/visualr) by extension 'colcon_pkg'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/visualr) by extensions ['colcon_meta']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/visualr) by extension 'colcon_meta'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/visualr) by extensions ['ros']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/visualr) by extension 'ros'
+[0.275s] DEBUG:colcon.colcon_core.package_identification:Package 'src/visualr' with type 'ros.ament_python' and name 'visualr'
+[0.275s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.275s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.275s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.275s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.275s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'simo_scara_description' build argument 'cmake_args' from command line to 'None'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'simo_scara_description' build argument 'cmake_target' from command line to 'None'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'simo_scara_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'simo_scara_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'simo_scara_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'simo_scara_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'simo_scara_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'simo_scara_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'simo_scara_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.307s] DEBUG:colcon.colcon_core.verb:Building package 'simo_scara_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dae/ros2_ws/build/simo_scara_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dae/ros2_ws/install/simo_scara_description', 'merge_install': False, 'path': '/home/dae/ros2_ws/src/simo_scara_description', 'symlink_install': False, 'test_result_base': None}
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'visualr' build argument 'cmake_args' from command line to 'None'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'visualr' build argument 'cmake_target' from command line to 'None'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'visualr' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'visualr' build argument 'cmake_clean_cache' from command line to 'False'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'visualr' build argument 'cmake_clean_first' from command line to 'False'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'visualr' build argument 'cmake_force_configure' from command line to 'False'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'visualr' build argument 'ament_cmake_args' from command line to 'None'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'visualr' build argument 'catkin_cmake_args' from command line to 'None'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'visualr' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.307s] DEBUG:colcon.colcon_core.verb:Building package 'visualr' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dae/ros2_ws/build/visualr', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dae/ros2_ws/install/visualr', 'merge_install': False, 'path': '/home/dae/ros2_ws/src/visualr', 'symlink_install': False, 'test_result_base': None}
+[0.308s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.309s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.310s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/dae/ros2_ws/src/simo_scara_description' with build type 'ament_cmake'
+[0.310s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/dae/ros2_ws/src/simo_scara_description'
+[0.313s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.313s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.321s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/dae/ros2_ws/src/visualr' with build type 'ament_python'
+[0.321s] Level 1:colcon.colcon_core.shell:create_environment_hook('visualr', 'ament_prefix_path')
+[0.321s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dae/ros2_ws/install/visualr/share/visualr/hook/ament_prefix_path.dsv'
+[0.322s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dae/ros2_ws/install/visualr/share/visualr/hook/ament_prefix_path.sh'
+[0.323s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.335s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dae/ros2_ws/build/simo_scara_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dae/ros2_ws/install/visualr:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/dae/ros2_ws/build/simo_scara_description -- -j16 -l16
+[0.669s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/dae/ros2_ws/src/visualr'
+[0.669s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.676s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dae/ros2_ws/build/simo_scara_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dae/ros2_ws/install/visualr:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/dae/ros2_ws/build/simo_scara_description -- -j16 -l16
+[0.694s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dae/ros2_ws/build/simo_scara_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dae/ros2_ws/install/visualr:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/dae/ros2_ws/build/simo_scara_description
+[0.714s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(simo_scara_description)
+[0.715s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dae/ros2_ws/build/simo_scara_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dae/ros2_ws/install/visualr:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/dae/ros2_ws/build/simo_scara_description
+[0.720s] Level 1:colcon.colcon_core.environment:checking '/home/dae/ros2_ws/install/simo_scara_description' for CMake module files
+[0.721s] Level 1:colcon.colcon_core.environment:checking '/home/dae/ros2_ws/install/simo_scara_description' for CMake config files
+[0.722s] Level 1:colcon.colcon_core.shell:create_environment_hook('simo_scara_description', 'cmake_prefix_path')
+[0.722s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dae/ros2_ws/install/simo_scara_description/share/simo_scara_description/hook/cmake_prefix_path.dsv'
+[0.723s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dae/ros2_ws/install/simo_scara_description/share/simo_scara_description/hook/cmake_prefix_path.sh'
+[0.725s] Level 1:colcon.colcon_core.environment:checking '/home/dae/ros2_ws/install/simo_scara_description/bin'
+[0.725s] Level 1:colcon.colcon_core.environment:checking '/home/dae/ros2_ws/install/simo_scara_description/lib/pkgconfig/simo_scara_description.pc'
+[0.726s] Level 1:colcon.colcon_core.environment:checking '/home/dae/ros2_ws/install/simo_scara_description/lib/python3.12/site-packages'
+[0.727s] Level 1:colcon.colcon_core.environment:checking '/home/dae/ros2_ws/install/simo_scara_description/bin'
+[0.727s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dae/ros2_ws/install/simo_scara_description/share/simo_scara_description/package.dsv'
+[0.728s] INFO:colcon.colcon_core.shell:Creating package script '/home/dae/ros2_ws/install/simo_scara_description/share/simo_scara_description/package.sh'
+[0.729s] INFO:colcon.colcon_core.shell:Creating package script '/home/dae/ros2_ws/install/simo_scara_description/share/simo_scara_description/package.bash'
+[0.730s] INFO:colcon.colcon_core.shell:Creating package script '/home/dae/ros2_ws/install/simo_scara_description/share/simo_scara_description/package.zsh'
+[0.731s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dae/ros2_ws/install/simo_scara_description/share/colcon-core/packages/simo_scara_description)
+[0.731s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(simo_scara_description)
+[0.732s] Level 1:colcon.colcon_core.environment:checking '/home/dae/ros2_ws/install/simo_scara_description' for CMake module files
+[0.733s] Level 1:colcon.colcon_core.environment:checking '/home/dae/ros2_ws/install/simo_scara_description' for CMake config files
+[0.733s] Level 1:colcon.colcon_core.shell:create_environment_hook('simo_scara_description', 'cmake_prefix_path')
+[0.733s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dae/ros2_ws/install/simo_scara_description/share/simo_scara_description/hook/cmake_prefix_path.dsv'
+[0.734s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dae/ros2_ws/install/simo_scara_description/share/simo_scara_description/hook/cmake_prefix_path.sh'
+[0.735s] Level 1:colcon.colcon_core.environment:checking '/home/dae/ros2_ws/install/simo_scara_description/bin'
+[0.735s] Level 1:colcon.colcon_core.environment:checking '/home/dae/ros2_ws/install/simo_scara_description/lib/pkgconfig/simo_scara_description.pc'
+[0.735s] Level 1:colcon.colcon_core.environment:checking '/home/dae/ros2_ws/install/simo_scara_description/lib/python3.12/site-packages'
+[0.736s] Level 1:colcon.colcon_core.environment:checking '/home/dae/ros2_ws/install/simo_scara_description/bin'
+[0.736s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dae/ros2_ws/install/simo_scara_description/share/simo_scara_description/package.dsv'
+[0.737s] INFO:colcon.colcon_core.shell:Creating package script '/home/dae/ros2_ws/install/simo_scara_description/share/simo_scara_description/package.sh'
+[0.737s] INFO:colcon.colcon_core.shell:Creating package script '/home/dae/ros2_ws/install/simo_scara_description/share/simo_scara_description/package.bash'
+[0.738s] INFO:colcon.colcon_core.shell:Creating package script '/home/dae/ros2_ws/install/simo_scara_description/share/simo_scara_description/package.zsh'
+[0.738s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dae/ros2_ws/install/simo_scara_description/share/colcon-core/packages/simo_scara_description)
+[1.386s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: upload, symlink_data, clean, easy_install, build_ext, upload_docs, build_py, build, check, install_data, bdist_dumb, build_scripts, dist_info, install_egg_info, install_scripts, register, editable_wheel, saveopts, install_lib, rotate, bdist_rpm, sdist, bdist_egg, test, build_clib, install, bdist, install_headers, alias, develop, setopt, egg_info
+[1.387s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dae/ros2_ws/src/visualr': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/dae/ros2_ws/build/visualr/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dae/ros2_ws/install/visualr/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/visualr build --build-base /home/dae/ros2_ws/build/visualr/build install --record /home/dae/ros2_ws/build/visualr/install.log --install-scripts $base/lib/visualr --single-version-externally-managed install_data
+[1.844s] Level 1:colcon.colcon_core.environment:checking '/home/dae/ros2_ws/install/visualr' for CMake module files
+[1.845s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dae/ros2_ws/src/visualr' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/dae/ros2_ws/build/visualr/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dae/ros2_ws/install/visualr/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/visualr build --build-base /home/dae/ros2_ws/build/visualr/build install --record /home/dae/ros2_ws/build/visualr/install.log --install-scripts $base/lib/visualr --single-version-externally-managed install_data
+[1.845s] Level 1:colcon.colcon_core.environment:checking '/home/dae/ros2_ws/install/visualr' for CMake config files
+[1.846s] Level 1:colcon.colcon_core.environment:checking '/home/dae/ros2_ws/install/visualr/lib'
+[1.846s] Level 1:colcon.colcon_core.environment:checking '/home/dae/ros2_ws/install/visualr/bin'
+[1.846s] Level 1:colcon.colcon_core.environment:checking '/home/dae/ros2_ws/install/visualr/lib/pkgconfig/visualr.pc'
+[1.846s] Level 1:colcon.colcon_core.environment:checking '/home/dae/ros2_ws/install/visualr/lib/python3.12/site-packages'
+[1.846s] Level 1:colcon.colcon_core.shell:create_environment_hook('visualr', 'pythonpath')
+[1.846s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dae/ros2_ws/install/visualr/share/visualr/hook/pythonpath.dsv'
+[1.847s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dae/ros2_ws/install/visualr/share/visualr/hook/pythonpath.sh'
+[1.847s] Level 1:colcon.colcon_core.environment:checking '/home/dae/ros2_ws/install/visualr/bin'
+[1.847s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(visualr)
+[1.847s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dae/ros2_ws/install/visualr/share/visualr/package.dsv'
+[1.848s] INFO:colcon.colcon_core.shell:Creating package script '/home/dae/ros2_ws/install/visualr/share/visualr/package.sh'
+[1.848s] INFO:colcon.colcon_core.shell:Creating package script '/home/dae/ros2_ws/install/visualr/share/visualr/package.bash'
+[1.848s] INFO:colcon.colcon_core.shell:Creating package script '/home/dae/ros2_ws/install/visualr/share/visualr/package.zsh'
+[1.848s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dae/ros2_ws/install/visualr/share/colcon-core/packages/visualr)
+[1.849s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.849s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.849s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.849s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.854s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.854s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.854s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.876s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.876s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dae/ros2_ws/install/local_setup.sh'
+[1.877s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/dae/ros2_ws/install/_local_setup_util_sh.py'
+[1.878s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dae/ros2_ws/install/setup.sh'
+[1.879s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dae/ros2_ws/install/local_setup.bash'
+[1.880s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dae/ros2_ws/install/setup.bash'
+[1.881s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dae/ros2_ws/install/local_setup.zsh'
+[1.881s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dae/ros2_ws/install/setup.zsh'

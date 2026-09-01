@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Completo">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.032121 0.00015398 0.080053"
+        rpy="0 0 0" />
+      <mass
+        value="0.39395" />
+      <inertia
+        ixx="0.0019624"
+        ixy="1.4883E-06"
+        ixz="9.3225E-06"
+        iyy="0.0024401"
+        iyz="-4.4917E-07"
+        izz="0.0035021" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Completo/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="base_link_color">
+        <color
+          rgba="0.85 0.33 0.10 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Completo/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="L1">
+    <inertial>
+      <origin
+        xyz="0.00011296 0.0036436 0.16947"
+        rpy="0 0 0" />
+      <mass
+        value="0.98975" />
+      <inertia
+        ixx="0.0031385"
+        ixy="1.9319E-06"
+        ixz="-2.496E-06"
+        iyy="0.0031469"
+        iyz="-1.6333E-05"
+        izz="0.0042043" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Completo/meshes/L1.STL" />
+      </geometry>
+      <material
+        name="L1_color">
+        <color
+          rgba="0.12 0.47 0.71 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Completo/meshes/L1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J1"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="L1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="10"
+      velocity="1" />
+  </joint>
+  <link
+    name="L2">
+    <inertial>
+      <origin
+        xyz="0.09901 -0.0065 -0.053392"
+        rpy="0 0 0" />
+      <mass
+        value="0.47272" />
+      <inertia
+        ixx="0.00057411"
+        ixy="1.1691E-09"
+        ixz="1.3207E-05"
+        iyy="0.0041612"
+        iyz="3.9123E-10"
+        izz="0.0041747" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Completo/meshes/L2.STL" />
+      </geometry>
+      <material
+        name="L2_color">
+        <color
+          rgba="0.17 0.63 0.17 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Completo/meshes/L2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J2"
+    type="revolute">
+    <origin
+      xyz="0 -0.14657 0.28918"
+      rpy="-1.5708 0 3.1416" />
+    <parent
+      link="L1" />
+    <child
+      link="L2" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="10"
+      velocity="1" />
+  </joint>
+  <link
+    name="L3">
+    <inertial>
+      <origin
+        xyz="0.088017 -0.001569 0.077554"
+        rpy="0 0 0" />
+      <mass
+        value="0.35924" />
+      <inertia
+        ixx="0.00037372"
+        ixy="2.9584E-05"
+        ixz="-6.2665E-08"
+        iyy="0.0012452"
+        iyz="-4.5112E-08"
+        izz="0.0012451" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Completo/meshes/L3.STL" />
+      </geometry>
+      <material
+        name="L3_color">
+        <color
+          rgba="0.84 0.15 0.16 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Completo/meshes/L3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J3"
+    type="revolute">
+    <origin
+      xyz="0.2019 0 0.092024"
+      rpy="3.1416 0 -1.5708" />
+    <parent
+      link="L2" />
+    <child
+      link="L3" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="10"
+      velocity="1" />
+  </joint>
+  <link
+    name="tcp_frame" />
+  <joint
+    name="J_tcp"
+    type="fixed">
+    <origin
+      xyz="0.24 0 0.078"
+      rpy="0 0 0" />
+    <parent
+      link="L3" />
+    <child
+      link="tcp_frame" />
+  </joint>
+</robot>

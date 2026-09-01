@@ -1,0 +1,4 @@
+source;share/visualr/hook/pythonpath.dsv
+source;share/visualr/hook/pythonpath.sh
+source;share/visualr/hook/ament_prefix_path.dsv
+source;share/visualr/hook/ament_prefix_path.sh

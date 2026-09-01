@@ -1,0 +1,21 @@
+digraph G {
+"map" -> "rs003/world"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"map" -> "scara/world"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"scara/base_link" -> "scara/link1"[label=" Broadcaster: default_authority\nAverage rate: 10.2\nBuffer length: 5.0\nMost recent transform: 1786983944.58091\nOldest transform: 1786983939.580906\n"];
+"scara/world" -> "scara/base_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"scara/link1" -> "scara/link2"[label=" Broadcaster: default_authority\nAverage rate: 10.2\nBuffer length: 5.0\nMost recent transform: 1786983944.58091\nOldest transform: 1786983939.580906\n"];
+"scara/link2" -> "scara/link3"[label=" Broadcaster: default_authority\nAverage rate: 10.2\nBuffer length: 5.0\nMost recent transform: 1786983944.58091\nOldest transform: 1786983939.580906\n"];
+"scara/link3" -> "scara/tool_flange"[label=" Broadcaster: default_authority\nAverage rate: 10.2\nBuffer length: 5.0\nMost recent transform: 1786983944.58091\nOldest transform: 1786983939.580906\n"];
+"rs003/base_link" -> "rs003/link1"[label=" Broadcaster: default_authority\nAverage rate: 10.199\nBuffer length: 5.0\nMost recent transform: 1786983944.58128\nOldest transform: 1786983939.58102\n"];
+"rs003/world" -> "rs003/base_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"rs003/link1" -> "rs003/link2"[label=" Broadcaster: default_authority\nAverage rate: 10.199\nBuffer length: 5.0\nMost recent transform: 1786983944.58128\nOldest transform: 1786983939.58102\n"];
+"rs003/link2" -> "rs003/link3"[label=" Broadcaster: default_authority\nAverage rate: 10.199\nBuffer length: 5.0\nMost recent transform: 1786983944.58128\nOldest transform: 1786983939.58102\n"];
+"rs003/link3" -> "rs003/link4"[label=" Broadcaster: default_authority\nAverage rate: 10.199\nBuffer length: 5.0\nMost recent transform: 1786983944.58128\nOldest transform: 1786983939.58102\n"];
+"rs003/link4" -> "rs003/link5"[label=" Broadcaster: default_authority\nAverage rate: 10.199\nBuffer length: 5.0\nMost recent transform: 1786983944.58128\nOldest transform: 1786983939.58102\n"];
+"rs003/link5" -> "rs003/flange"[label=" Broadcaster: default_authority\nAverage rate: 10.199\nBuffer length: 5.0\nMost recent transform: 1786983944.58128\nOldest transform: 1786983939.58102\n"];
+"rs003/flange" -> "rs003/tool0"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1786983944.5931926"[ shape=plaintext ] ;
+}->"map";
+}
