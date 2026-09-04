@@ -1,0 +1,1 @@
+Información respecto a la GUI, interfaz gráfica que permite visualizar datos releveantes sobre el proceso y control del mismo.

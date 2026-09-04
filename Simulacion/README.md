@@ -1,0 +1,1 @@
+Información respecto a la simulación realizada en gazebo harmonic, donde se ven a todos los robots interactuando y cumpliendo sus roles

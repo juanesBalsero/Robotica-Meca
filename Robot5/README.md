@@ -1,0 +1,1 @@
+Contiene información respecto al Robot5, encargado de agarrar la caja con medicamento y tapa y apilarla en una mesa exterior en la que se irán apilando múltiples cajas.

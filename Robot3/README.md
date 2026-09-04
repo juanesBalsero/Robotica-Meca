@@ -1,0 +1,1 @@
+Contiene información respecto al Robot3, encargado de transportar la caja con medicamentos de una mesa a otra dentro de la linea principal, donde se le pondrá la tapa.

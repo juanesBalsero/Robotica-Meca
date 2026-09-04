@@ -1,0 +1,1 @@
+Contiene información respecto al Robot2, encargado de transportar los medicamentos de una mesa dentro de la caja en la linea de producción principal.
