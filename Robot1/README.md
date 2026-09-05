@@ -1,1 +1,1 @@
-Carpeta con todos los recursos referentes al robot1, workspace de ROS, simulaciones planos y demás
+Contiene información respecto al Robot1, encargado de transportar las cajas de una pila a la linea de producción principal.

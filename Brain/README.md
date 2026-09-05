@@ -1,0 +1,1 @@
+Información referente al Brain de la planta, encargado en orquestrar y organizar a los Robots para sincronizar a los distintos Robots
