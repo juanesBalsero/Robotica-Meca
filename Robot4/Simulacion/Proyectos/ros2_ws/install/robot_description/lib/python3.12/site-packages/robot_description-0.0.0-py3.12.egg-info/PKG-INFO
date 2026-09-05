@@ -1,7 +1,0 @@
-Metadata-Version: 2.1
-Name: robot-description
-Version: 0.0.0
-Summary: Paquete de descripción del robot para ROS 2 Jazzy
-Maintainer: tu_nombre
-Maintainer-email: tu_email@example.com
-License: Apache-2.0
