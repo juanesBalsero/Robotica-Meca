@@ -1,0 +1,29 @@
+[1.290s] Invoking command in '/home/david-romero/Proyectos/robotica/build/scara_cajas': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/david-romero/Proyectos/robotica/build/scara_cajas/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/david-romero/Proyectos/robotica/install/scara_cajas/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/david-romero/Proyectos/robotica/build/scara_cajas/build --no-deps symlink_data --force
+[1.664s] running develop
+[1.898s] running egg_info
+[1.922s] writing scara_cajas.egg-info/PKG-INFO
+[1.922s] writing dependency_links to scara_cajas.egg-info/dependency_links.txt
+[1.922s] writing entry points to scara_cajas.egg-info/entry_points.txt
+[1.923s] writing requirements to scara_cajas.egg-info/requires.txt
+[1.923s] writing top-level names to scara_cajas.egg-info/top_level.txt
+[1.968s] reading manifest file 'scara_cajas.egg-info/SOURCES.txt'
+[1.969s] writing manifest file 'scara_cajas.egg-info/SOURCES.txt'
+[1.993s] running build_ext
+[1.993s] Creating /home/david-romero/Proyectos/robotica/install/scara_cajas/lib/python3.12/site-packages/scara-cajas.egg-link (link to .)
+[1.994s] Installing gui_presets script to /home/david-romero/Proyectos/robotica/install/scara_cajas/lib/scara_cajas
+[1.994s] 
+[1.994s] Installed /home/david-romero/Proyectos/robotica/build/scara_cajas
+[1.994s] running symlink_data
+[1.994s] symbolically linking /home/david-romero/Proyectos/robotica/build/scara_cajas/resource/scara_cajas -> /home/david-romero/Proyectos/robotica/install/scara_cajas/share/ament_index/resource_index/packages
+[1.995s] symbolically linking /home/david-romero/Proyectos/robotica/build/scara_cajas/package.xml -> /home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas
+[1.995s] symbolically linking /home/david-romero/Proyectos/robotica/build/scara_cajas/launch/display_gazebo.launch.py -> /home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/launch
+[1.995s] symbolically linking /home/david-romero/Proyectos/robotica/build/scara_cajas/launch/display.launch.py -> /home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/launch
+[1.995s] symbolically linking /home/david-romero/Proyectos/robotica/build/scara_cajas/urdf/Ensamblaje1.urdf -> /home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/urdf
+[1.995s] symbolically linking /home/david-romero/Proyectos/robotica/build/scara_cajas/meshes/est2.STL -> /home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/meshes
+[1.995s] symbolically linking /home/david-romero/Proyectos/robotica/build/scara_cajas/meshes/rot2.STL -> /home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/meshes
+[1.995s] symbolically linking /home/david-romero/Proyectos/robotica/build/scara_cajas/meshes/rot1.STL -> /home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/meshes
+[1.996s] symbolically linking /home/david-romero/Proyectos/robotica/build/scara_cajas/meshes/efector.STL -> /home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/meshes
+[1.996s] symbolically linking /home/david-romero/Proyectos/robotica/build/scara_cajas/meshes/pris.STL -> /home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/meshes
+[1.996s] symbolically linking /home/david-romero/Proyectos/robotica/build/scara_cajas/meshes/baase.STL -> /home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/meshes
+[1.996s] symbolically linking /home/david-romero/Proyectos/robotica/build/scara_cajas/meshes/band3.STL -> /home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/meshes
+[2.032s] Invoked command in '/home/david-romero/Proyectos/robotica/build/scara_cajas' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/david-romero/Proyectos/robotica/build/scara_cajas/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/david-romero/Proyectos/robotica/install/scara_cajas/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/david-romero/Proyectos/robotica/build/scara_cajas/build --no-deps symlink_data --force

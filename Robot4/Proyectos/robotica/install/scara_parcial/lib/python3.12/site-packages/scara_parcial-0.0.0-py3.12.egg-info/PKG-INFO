@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: scara-parcial
+Version: 0.0.0
+Summary: Paquete de descripción del robot para ROS 2 Jazzy
+Maintainer: Grupo 4 Empacador de cajas
+Maintainer-email: dssr261004.com
+License: Apache-2.0

@@ -1,0 +1,6 @@
+source;share/scara_cajas/hook/pythonpath.ps1
+source;share/scara_cajas/hook/pythonpath.dsv
+source;share/scara_cajas/hook/pythonpath.sh
+source;share/scara_cajas/hook/ament_prefix_path.ps1
+source;share/scara_cajas/hook/ament_prefix_path.dsv
+source;share/scara_cajas/hook/ament_prefix_path.sh

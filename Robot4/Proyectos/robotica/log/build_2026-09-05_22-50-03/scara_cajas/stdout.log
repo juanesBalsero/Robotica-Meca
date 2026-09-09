@@ -1,0 +1,47 @@
+running egg_info
+creating ../../build/scara_cajas/scara_cajas.egg-info
+writing ../../build/scara_cajas/scara_cajas.egg-info/PKG-INFO
+writing dependency_links to ../../build/scara_cajas/scara_cajas.egg-info/dependency_links.txt
+writing entry points to ../../build/scara_cajas/scara_cajas.egg-info/entry_points.txt
+writing requirements to ../../build/scara_cajas/scara_cajas.egg-info/requires.txt
+writing top-level names to ../../build/scara_cajas/scara_cajas.egg-info/top_level.txt
+writing manifest file '../../build/scara_cajas/scara_cajas.egg-info/SOURCES.txt'
+reading manifest file '../../build/scara_cajas/scara_cajas.egg-info/SOURCES.txt'
+writing manifest file '../../build/scara_cajas/scara_cajas.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/david-romero/Proyectos/robotica/build/scara_cajas/build
+creating /home/david-romero/Proyectos/robotica/build/scara_cajas/build/lib
+creating /home/david-romero/Proyectos/robotica/build/scara_cajas/build/lib/scara_cajas
+copying scara_cajas/__init__.py -> /home/david-romero/Proyectos/robotica/build/scara_cajas/build/lib/scara_cajas
+running install
+running install_lib
+creating /home/david-romero/Proyectos/robotica/install/scara_cajas/lib/python3.12/site-packages/scara_cajas
+copying /home/david-romero/Proyectos/robotica/build/scara_cajas/build/lib/scara_cajas/__init__.py -> /home/david-romero/Proyectos/robotica/install/scara_cajas/lib/python3.12/site-packages/scara_cajas
+byte-compiling /home/david-romero/Proyectos/robotica/install/scara_cajas/lib/python3.12/site-packages/scara_cajas/__init__.py to __init__.cpython-312.pyc
+running install_data
+creating /home/david-romero/Proyectos/robotica/install/scara_cajas/share/ament_index
+creating /home/david-romero/Proyectos/robotica/install/scara_cajas/share/ament_index/resource_index
+creating /home/david-romero/Proyectos/robotica/install/scara_cajas/share/ament_index/resource_index/packages
+copying resource/scara_cajas -> /home/david-romero/Proyectos/robotica/install/scara_cajas/share/ament_index/resource_index/packages
+copying package.xml -> /home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas
+creating /home/david-romero/Proyectos/robotica/install/scara_cajas/lib/scara_cajas
+copying scripts/gui_presets.py -> /home/david-romero/Proyectos/robotica/install/scara_cajas/lib/scara_cajas
+creating /home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/launch
+copying launch/display_gazebo.launch.py -> /home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/launch
+copying launch/display.launch.py -> /home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/launch
+creating /home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/urdf
+copying urdf/Ensamblaje1.urdf -> /home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/urdf
+creating /home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/meshes
+copying meshes/est2.STL -> /home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/meshes
+copying meshes/rot2.STL -> /home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/meshes
+copying meshes/rot1.STL -> /home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/meshes
+copying meshes/efector.STL -> /home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/meshes
+copying meshes/pris.STL -> /home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/meshes
+copying meshes/baase.STL -> /home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/meshes
+copying meshes/band3.STL -> /home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/meshes
+running install_egg_info
+Copying ../../build/scara_cajas/scara_cajas.egg-info to /home/david-romero/Proyectos/robotica/install/scara_cajas/lib/python3.12/site-packages/scara_cajas-0.0.0-py3.12.egg-info
+running install_scripts
+Installing gui_presets script to /home/david-romero/Proyectos/robotica/install/scara_cajas/lib/robot_description
+writing list of installed files to '/home/david-romero/Proyectos/robotica/build/scara_cajas/install.log'

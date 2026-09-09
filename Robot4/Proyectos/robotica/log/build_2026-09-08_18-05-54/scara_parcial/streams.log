@@ -1,0 +1,43 @@
+[4.344s] Invoking command in '/home/david-romero/Proyectos/robotica/src/scara_parcial': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/david-romero/Proyectos/robotica/build/scara_parcial/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/david-romero/Proyectos/robotica/install/scara_parcial/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/scara_parcial build --build-base /home/david-romero/Proyectos/robotica/build/scara_parcial/build install --record /home/david-romero/Proyectos/robotica/build/scara_parcial/install.log --install-scripts $base/lib/robot_description --single-version-externally-managed install_data
+[4.865s] running egg_info
+[4.866s] creating ../../build/scara_parcial/scara_parcial.egg-info
+[4.904s] writing ../../build/scara_parcial/scara_parcial.egg-info/PKG-INFO
+[4.905s] writing dependency_links to ../../build/scara_parcial/scara_parcial.egg-info/dependency_links.txt
+[4.905s] writing requirements to ../../build/scara_parcial/scara_parcial.egg-info/requires.txt
+[4.905s] writing top-level names to ../../build/scara_parcial/scara_parcial.egg-info/top_level.txt
+[4.906s] writing manifest file '../../build/scara_parcial/scara_parcial.egg-info/SOURCES.txt'
+[4.987s] reading manifest file '../../build/scara_parcial/scara_parcial.egg-info/SOURCES.txt'
+[4.988s] writing manifest file '../../build/scara_parcial/scara_parcial.egg-info/SOURCES.txt'
+[4.989s] running build
+[4.989s] running build_py
+[4.989s] creating /home/david-romero/Proyectos/robotica/build/scara_parcial/build
+[4.989s] creating /home/david-romero/Proyectos/robotica/build/scara_parcial/build/lib
+[4.990s] creating /home/david-romero/Proyectos/robotica/build/scara_parcial/build/lib/scara_parcial
+[4.990s] copying scara_parcial/__init__.py -> /home/david-romero/Proyectos/robotica/build/scara_parcial/build/lib/scara_parcial
+[4.990s] running install
+[5.001s] running install_lib
+[5.040s] creating /home/david-romero/Proyectos/robotica/install/scara_parcial/lib/python3.12/site-packages/scara_parcial
+[5.041s] copying /home/david-romero/Proyectos/robotica/build/scara_parcial/build/lib/scara_parcial/__init__.py -> /home/david-romero/Proyectos/robotica/install/scara_parcial/lib/python3.12/site-packages/scara_parcial
+[5.052s] byte-compiling /home/david-romero/Proyectos/robotica/install/scara_parcial/lib/python3.12/site-packages/scara_parcial/__init__.py to __init__.cpython-312.pyc
+[5.052s] running install_data
+[5.053s] creating /home/david-romero/Proyectos/robotica/install/scara_parcial/share/ament_index
+[5.053s] creating /home/david-romero/Proyectos/robotica/install/scara_parcial/share/ament_index/resource_index
+[5.053s] creating /home/david-romero/Proyectos/robotica/install/scara_parcial/share/ament_index/resource_index/packages
+[5.054s] copying resource/scara_parcial -> /home/david-romero/Proyectos/robotica/install/scara_parcial/share/ament_index/resource_index/packages
+[5.054s] copying package.xml -> /home/david-romero/Proyectos/robotica/install/scara_parcial/share/scara_parcial
+[5.054s] creating /home/david-romero/Proyectos/robotica/install/scara_parcial/share/scara_parcial/launch
+[5.054s] copying launch/gazebo.launch.py -> /home/david-romero/Proyectos/robotica/install/scara_parcial/share/scara_parcial/launch
+[5.055s] copying launch/display.launch.py -> /home/david-romero/Proyectos/robotica/install/scara_parcial/share/scara_parcial/launch
+[5.055s] creating /home/david-romero/Proyectos/robotica/install/scara_parcial/share/scara_parcial/urdf
+[5.056s] copying urdf/Ensamblaje1.urdf -> /home/david-romero/Proyectos/robotica/install/scara_parcial/share/scara_parcial/urdf
+[5.057s] creating /home/david-romero/Proyectos/robotica/install/scara_parcial/share/scara_parcial/meshes
+[5.057s] copying meshes/rot2.STL -> /home/david-romero/Proyectos/robotica/install/scara_parcial/share/scara_parcial/meshes
+[5.074s] copying meshes/rot1.STL -> /home/david-romero/Proyectos/robotica/install/scara_parcial/share/scara_parcial/meshes
+[5.098s] copying meshes/rot3.STL -> /home/david-romero/Proyectos/robotica/install/scara_parcial/share/scara_parcial/meshes
+[5.177s] copying meshes/base_link.STL -> /home/david-romero/Proyectos/robotica/install/scara_parcial/share/scara_parcial/meshes
+[5.178s] copying meshes/prisma1.STL -> /home/david-romero/Proyectos/robotica/install/scara_parcial/share/scara_parcial/meshes
+[5.180s] running install_egg_info
+[5.246s] Copying ../../build/scara_parcial/scara_parcial.egg-info to /home/david-romero/Proyectos/robotica/install/scara_parcial/lib/python3.12/site-packages/scara_parcial-0.0.0-py3.12.egg-info
+[5.248s] running install_scripts
+[5.809s] writing list of installed files to '/home/david-romero/Proyectos/robotica/build/scara_parcial/install.log'
+[5.951s] Invoked command in '/home/david-romero/Proyectos/robotica/src/scara_parcial' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/david-romero/Proyectos/robotica/build/scara_parcial/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/david-romero/Proyectos/robotica/install/scara_parcial/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/scara_parcial build --build-base /home/david-romero/Proyectos/robotica/build/scara_parcial/build install --record /home/david-romero/Proyectos/robotica/build/scara_parcial/install.log --install-scripts $base/lib/robot_description --single-version-externally-managed install_data

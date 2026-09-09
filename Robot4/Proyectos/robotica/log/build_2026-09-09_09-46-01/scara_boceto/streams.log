@@ -1,0 +1,21 @@
+[2.678s] Invoking command in '/home/david-romero/Proyectos/robotica/src/scara_boceto': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/david-romero/Proyectos/robotica/build/scara_boceto/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/david-romero/Proyectos/robotica/install/scara_boceto/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/scara_boceto build --build-base /home/david-romero/Proyectos/robotica/build/scara_boceto/build install --record /home/david-romero/Proyectos/robotica/build/scara_boceto/install.log --install-scripts $base/lib/scara_boceto --single-version-externally-managed install_data
+[3.437s] running egg_info
+[3.499s] writing ../../build/scara_boceto/scara_boceto.egg-info/PKG-INFO
+[3.500s] writing dependency_links to ../../build/scara_boceto/scara_boceto.egg-info/dependency_links.txt
+[3.501s] writing entry points to ../../build/scara_boceto/scara_boceto.egg-info/entry_points.txt
+[3.501s] writing top-level names to ../../build/scara_boceto/scara_boceto.egg-info/top_level.txt
+[3.594s] reading manifest file '../../build/scara_boceto/scara_boceto.egg-info/SOURCES.txt'
+[3.595s] writing manifest file '../../build/scara_boceto/scara_boceto.egg-info/SOURCES.txt'
+[3.596s] running build
+[3.596s] running build_py
+[3.596s] running install
+[3.607s] running install_lib
+[3.634s] running install_data
+[3.636s] running install_egg_info
+[3.662s] removing '/home/david-romero/Proyectos/robotica/install/scara_boceto/lib/python3.12/site-packages/scara_boceto-0.0.0-py3.12.egg-info' (and everything under it)
+[3.662s] Copying ../../build/scara_boceto/scara_boceto.egg-info to /home/david-romero/Proyectos/robotica/install/scara_boceto/lib/python3.12/site-packages/scara_boceto-0.0.0-py3.12.egg-info
+[3.663s] running install_scripts
+[3.829s] Installing fk_publisher script to /home/david-romero/Proyectos/robotica/install/scara_boceto/lib/scara_boceto
+[3.829s] Installing gui_sliders script to /home/david-romero/Proyectos/robotica/install/scara_boceto/lib/scara_boceto
+[3.829s] writing list of installed files to '/home/david-romero/Proyectos/robotica/build/scara_boceto/install.log'
+[3.856s] Invoked command in '/home/david-romero/Proyectos/robotica/src/scara_boceto' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/david-romero/Proyectos/robotica/build/scara_boceto/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/david-romero/Proyectos/robotica/install/scara_boceto/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/scara_boceto build --build-base /home/david-romero/Proyectos/robotica/build/scara_boceto/build install --record /home/david-romero/Proyectos/robotica/build/scara_boceto/install.log --install-scripts $base/lib/scara_boceto --single-version-externally-managed install_data

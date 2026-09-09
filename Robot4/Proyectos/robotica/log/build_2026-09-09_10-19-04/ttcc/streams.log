@@ -1,0 +1,21 @@
+[2.972s] Invoking command in '/home/david-romero/Proyectos/robotica/src/ttcc': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/david-romero/Proyectos/robotica/build/ttcc/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/david-romero/Proyectos/robotica/install/ttcc/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ttcc build --build-base /home/david-romero/Proyectos/robotica/build/ttcc/build install --record /home/david-romero/Proyectos/robotica/build/ttcc/install.log --install-scripts $base/lib/ttcc --single-version-externally-managed install_data
+[3.662s] running egg_info
+[3.692s] writing ../../build/ttcc/ttcc.egg-info/PKG-INFO
+[3.692s] writing dependency_links to ../../build/ttcc/ttcc.egg-info/dependency_links.txt
+[3.692s] writing entry points to ../../build/ttcc/ttcc.egg-info/entry_points.txt
+[3.693s] writing requirements to ../../build/ttcc/ttcc.egg-info/requires.txt
+[3.693s] writing top-level names to ../../build/ttcc/ttcc.egg-info/top_level.txt
+[3.752s] reading manifest file '../../build/ttcc/ttcc.egg-info/SOURCES.txt'
+[3.753s] writing manifest file '../../build/ttcc/ttcc.egg-info/SOURCES.txt'
+[3.753s] running build
+[3.754s] running build_py
+[3.754s] running install
+[3.763s] running install_lib
+[3.792s] running install_data
+[3.793s] running install_egg_info
+[3.822s] removing '/home/david-romero/Proyectos/robotica/install/ttcc/lib/python3.12/site-packages/ttcc-0.0.0-py3.12.egg-info' (and everything under it)
+[3.822s] Copying ../../build/ttcc/ttcc.egg-info to /home/david-romero/Proyectos/robotica/install/ttcc/lib/python3.12/site-packages/ttcc-0.0.0-py3.12.egg-info
+[3.824s] running install_scripts
+[4.009s] Installing simulador_cinematico_node script to /home/david-romero/Proyectos/robotica/install/ttcc/lib/ttcc
+[4.009s] writing list of installed files to '/home/david-romero/Proyectos/robotica/build/ttcc/install.log'
+[4.058s] Invoked command in '/home/david-romero/Proyectos/robotica/src/ttcc' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/david-romero/Proyectos/robotica/build/ttcc/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/david-romero/Proyectos/robotica/install/ttcc/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ttcc build --build-base /home/david-romero/Proyectos/robotica/build/ttcc/build install --record /home/david-romero/Proyectos/robotica/build/ttcc/install.log --install-scripts $base/lib/ttcc --single-version-externally-managed install_data

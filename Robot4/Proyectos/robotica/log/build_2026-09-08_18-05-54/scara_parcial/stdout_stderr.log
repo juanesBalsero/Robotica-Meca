@@ -1,0 +1,41 @@
+running egg_info
+creating ../../build/scara_parcial/scara_parcial.egg-info
+writing ../../build/scara_parcial/scara_parcial.egg-info/PKG-INFO
+writing dependency_links to ../../build/scara_parcial/scara_parcial.egg-info/dependency_links.txt
+writing requirements to ../../build/scara_parcial/scara_parcial.egg-info/requires.txt
+writing top-level names to ../../build/scara_parcial/scara_parcial.egg-info/top_level.txt
+writing manifest file '../../build/scara_parcial/scara_parcial.egg-info/SOURCES.txt'
+reading manifest file '../../build/scara_parcial/scara_parcial.egg-info/SOURCES.txt'
+writing manifest file '../../build/scara_parcial/scara_parcial.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/david-romero/Proyectos/robotica/build/scara_parcial/build
+creating /home/david-romero/Proyectos/robotica/build/scara_parcial/build/lib
+creating /home/david-romero/Proyectos/robotica/build/scara_parcial/build/lib/scara_parcial
+copying scara_parcial/__init__.py -> /home/david-romero/Proyectos/robotica/build/scara_parcial/build/lib/scara_parcial
+running install
+running install_lib
+creating /home/david-romero/Proyectos/robotica/install/scara_parcial/lib/python3.12/site-packages/scara_parcial
+copying /home/david-romero/Proyectos/robotica/build/scara_parcial/build/lib/scara_parcial/__init__.py -> /home/david-romero/Proyectos/robotica/install/scara_parcial/lib/python3.12/site-packages/scara_parcial
+byte-compiling /home/david-romero/Proyectos/robotica/install/scara_parcial/lib/python3.12/site-packages/scara_parcial/__init__.py to __init__.cpython-312.pyc
+running install_data
+creating /home/david-romero/Proyectos/robotica/install/scara_parcial/share/ament_index
+creating /home/david-romero/Proyectos/robotica/install/scara_parcial/share/ament_index/resource_index
+creating /home/david-romero/Proyectos/robotica/install/scara_parcial/share/ament_index/resource_index/packages
+copying resource/scara_parcial -> /home/david-romero/Proyectos/robotica/install/scara_parcial/share/ament_index/resource_index/packages
+copying package.xml -> /home/david-romero/Proyectos/robotica/install/scara_parcial/share/scara_parcial
+creating /home/david-romero/Proyectos/robotica/install/scara_parcial/share/scara_parcial/launch
+copying launch/gazebo.launch.py -> /home/david-romero/Proyectos/robotica/install/scara_parcial/share/scara_parcial/launch
+copying launch/display.launch.py -> /home/david-romero/Proyectos/robotica/install/scara_parcial/share/scara_parcial/launch
+creating /home/david-romero/Proyectos/robotica/install/scara_parcial/share/scara_parcial/urdf
+copying urdf/Ensamblaje1.urdf -> /home/david-romero/Proyectos/robotica/install/scara_parcial/share/scara_parcial/urdf
+creating /home/david-romero/Proyectos/robotica/install/scara_parcial/share/scara_parcial/meshes
+copying meshes/rot2.STL -> /home/david-romero/Proyectos/robotica/install/scara_parcial/share/scara_parcial/meshes
+copying meshes/rot1.STL -> /home/david-romero/Proyectos/robotica/install/scara_parcial/share/scara_parcial/meshes
+copying meshes/rot3.STL -> /home/david-romero/Proyectos/robotica/install/scara_parcial/share/scara_parcial/meshes
+copying meshes/base_link.STL -> /home/david-romero/Proyectos/robotica/install/scara_parcial/share/scara_parcial/meshes
+copying meshes/prisma1.STL -> /home/david-romero/Proyectos/robotica/install/scara_parcial/share/scara_parcial/meshes
+running install_egg_info
+Copying ../../build/scara_parcial/scara_parcial.egg-info to /home/david-romero/Proyectos/robotica/install/scara_parcial/lib/python3.12/site-packages/scara_parcial-0.0.0-py3.12.egg-info
+running install_scripts
+writing list of installed files to '/home/david-romero/Proyectos/robotica/build/scara_parcial/install.log'

@@ -1,0 +1,23 @@
+[6.625s] Invoking command in '/home/david-romero/Proyectos/robotica/src/scara_cajas': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/david-romero/Proyectos/robotica/build/scara_cajas/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/david-romero/Proyectos/robotica/install/scara_cajas/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/scara_cajas build --build-base /home/david-romero/Proyectos/robotica/build/scara_cajas/build install --record /home/david-romero/Proyectos/robotica/build/scara_cajas/install.log --install-scripts $base/lib/scara_cajas --single-version-externally-managed install_data
+[7.896s] running egg_info
+[8.001s] writing ../../build/scara_cajas/scara_cajas.egg-info/PKG-INFO
+[8.003s] writing dependency_links to ../../build/scara_cajas/scara_cajas.egg-info/dependency_links.txt
+[8.004s] writing entry points to ../../build/scara_cajas/scara_cajas.egg-info/entry_points.txt
+[8.004s] writing requirements to ../../build/scara_cajas/scara_cajas.egg-info/requires.txt
+[8.006s] writing top-level names to ../../build/scara_cajas/scara_cajas.egg-info/top_level.txt
+[8.237s] reading manifest file '../../build/scara_cajas/scara_cajas.egg-info/SOURCES.txt'
+[8.240s] writing manifest file '../../build/scara_cajas/scara_cajas.egg-info/SOURCES.txt'
+[8.244s] running build
+[8.245s] running build_py
+[8.246s] running install
+[8.275s] running install_lib
+[8.384s] running install_data
+[8.387s] copying launch/display_gazebo.launch.py -> /home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/launch
+[8.389s] copying urdf/Ensamblaje1.urdf -> /home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/urdf
+[8.392s] running install_egg_info
+[8.502s] removing '/home/david-romero/Proyectos/robotica/install/scara_cajas/lib/python3.12/site-packages/scara_cajas-0.0.0-py3.12.egg-info' (and everything under it)
+[8.503s] Copying ../../build/scara_cajas/scara_cajas.egg-info to /home/david-romero/Proyectos/robotica/install/scara_cajas/lib/python3.12/site-packages/scara_cajas-0.0.0-py3.12.egg-info
+[8.505s] running install_scripts
+[9.108s] Installing gui_presets script to /home/david-romero/Proyectos/robotica/install/scara_cajas/lib/scara_cajas
+[9.109s] writing list of installed files to '/home/david-romero/Proyectos/robotica/build/scara_cajas/install.log'
+[9.292s] Invoked command in '/home/david-romero/Proyectos/robotica/src/scara_cajas' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/david-romero/Proyectos/robotica/build/scara_cajas/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/david-romero/Proyectos/robotica/install/scara_cajas/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/scara_cajas build --build-base /home/david-romero/Proyectos/robotica/build/scara_cajas/build install --record /home/david-romero/Proyectos/robotica/build/scara_cajas/install.log --install-scripts $base/lib/scara_cajas --single-version-externally-managed install_data

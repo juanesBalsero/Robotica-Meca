@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/scara_cajas/scara_cajas.egg-info/PKG-INFO
+writing dependency_links to ../../build/scara_cajas/scara_cajas.egg-info/dependency_links.txt
+writing entry points to ../../build/scara_cajas/scara_cajas.egg-info/entry_points.txt
+writing requirements to ../../build/scara_cajas/scara_cajas.egg-info/requires.txt
+writing top-level names to ../../build/scara_cajas/scara_cajas.egg-info/top_level.txt
+reading manifest file '../../build/scara_cajas/scara_cajas.egg-info/SOURCES.txt'
+writing manifest file '../../build/scara_cajas/scara_cajas.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+creating /home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/config
+copying config/controllers.yaml -> /home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/config
+running install_egg_info
+removing '/home/david-romero/Proyectos/robotica/install/scara_cajas/lib/python3.12/site-packages/scara_cajas-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/scara_cajas/scara_cajas.egg-info to /home/david-romero/Proyectos/robotica/install/scara_cajas/lib/python3.12/site-packages/scara_cajas-0.0.0-py3.12.egg-info
+running install_scripts
+Installing gazebo_mod script to /home/david-romero/Proyectos/robotica/install/scara_cajas/lib/scara_cajas
+Installing gui_presets script to /home/david-romero/Proyectos/robotica/install/scara_cajas/lib/scara_cajas
+writing list of installed files to '/home/david-romero/Proyectos/robotica/build/scara_cajas/install.log'

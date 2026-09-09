@@ -1,0 +1,27 @@
+running develop
+running egg_info
+writing scara_cajas.egg-info/PKG-INFO
+writing dependency_links to scara_cajas.egg-info/dependency_links.txt
+writing entry points to scara_cajas.egg-info/entry_points.txt
+writing requirements to scara_cajas.egg-info/requires.txt
+writing top-level names to scara_cajas.egg-info/top_level.txt
+reading manifest file 'scara_cajas.egg-info/SOURCES.txt'
+writing manifest file 'scara_cajas.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/david-romero/Proyectos/robotica/install/scara_cajas/lib/python3.12/site-packages/scara-cajas.egg-link (link to .)
+Installing gui_presets script to /home/david-romero/Proyectos/robotica/install/scara_cajas/lib/scara_cajas
+
+Installed /home/david-romero/Proyectos/robotica/build/scara_cajas
+running symlink_data
+symbolically linking /home/david-romero/Proyectos/robotica/build/scara_cajas/resource/scara_cajas -> /home/david-romero/Proyectos/robotica/install/scara_cajas/share/ament_index/resource_index/packages
+symbolically linking /home/david-romero/Proyectos/robotica/build/scara_cajas/package.xml -> /home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas
+symbolically linking /home/david-romero/Proyectos/robotica/build/scara_cajas/launch/display_gazebo.launch.py -> /home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/launch
+symbolically linking /home/david-romero/Proyectos/robotica/build/scara_cajas/launch/display.launch.py -> /home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/launch
+symbolically linking /home/david-romero/Proyectos/robotica/build/scara_cajas/urdf/Ensamblaje1.urdf -> /home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/urdf
+symbolically linking /home/david-romero/Proyectos/robotica/build/scara_cajas/meshes/est2.STL -> /home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/meshes
+symbolically linking /home/david-romero/Proyectos/robotica/build/scara_cajas/meshes/rot2.STL -> /home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/meshes
+symbolically linking /home/david-romero/Proyectos/robotica/build/scara_cajas/meshes/rot1.STL -> /home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/meshes
+symbolically linking /home/david-romero/Proyectos/robotica/build/scara_cajas/meshes/efector.STL -> /home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/meshes
+symbolically linking /home/david-romero/Proyectos/robotica/build/scara_cajas/meshes/pris.STL -> /home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/meshes
+symbolically linking /home/david-romero/Proyectos/robotica/build/scara_cajas/meshes/baase.STL -> /home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/meshes
+symbolically linking /home/david-romero/Proyectos/robotica/build/scara_cajas/meshes/band3.STL -> /home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/meshes

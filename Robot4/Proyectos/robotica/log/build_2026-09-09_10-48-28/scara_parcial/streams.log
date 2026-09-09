@@ -1,0 +1,19 @@
+[6.659s] Invoking command in '/home/david-romero/Proyectos/robotica/src/scara_parcial': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/david-romero/Proyectos/robotica/build/scara_parcial/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/david-romero/Proyectos/robotica/install/scara_parcial/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/scara_parcial build --build-base /home/david-romero/Proyectos/robotica/build/scara_parcial/build install --record /home/david-romero/Proyectos/robotica/build/scara_parcial/install.log --install-scripts $base/lib/robot_description --single-version-externally-managed install_data
+[8.012s] running egg_info
+[8.124s] writing ../../build/scara_parcial/scara_parcial.egg-info/PKG-INFO
+[8.126s] writing dependency_links to ../../build/scara_parcial/scara_parcial.egg-info/dependency_links.txt
+[8.128s] writing requirements to ../../build/scara_parcial/scara_parcial.egg-info/requires.txt
+[8.129s] writing top-level names to ../../build/scara_parcial/scara_parcial.egg-info/top_level.txt
+[8.331s] reading manifest file '../../build/scara_parcial/scara_parcial.egg-info/SOURCES.txt'
+[8.337s] writing manifest file '../../build/scara_parcial/scara_parcial.egg-info/SOURCES.txt'
+[8.339s] running build
+[8.341s] running build_py
+[8.342s] running install
+[8.369s] running install_lib
+[8.473s] running install_data
+[8.475s] running install_egg_info
+[8.581s] removing '/home/david-romero/Proyectos/robotica/install/scara_parcial/lib/python3.12/site-packages/scara_parcial-0.0.0-py3.12.egg-info' (and everything under it)
+[8.582s] Copying ../../build/scara_parcial/scara_parcial.egg-info to /home/david-romero/Proyectos/robotica/install/scara_parcial/lib/python3.12/site-packages/scara_parcial-0.0.0-py3.12.egg-info
+[8.597s] running install_scripts
+[9.362s] writing list of installed files to '/home/david-romero/Proyectos/robotica/build/scara_parcial/install.log'
+[9.483s] Invoked command in '/home/david-romero/Proyectos/robotica/src/scara_parcial' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/david-romero/Proyectos/robotica/build/scara_parcial/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/david-romero/Proyectos/robotica/install/scara_parcial/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/scara_parcial build --build-base /home/david-romero/Proyectos/robotica/build/scara_parcial/build install --record /home/david-romero/Proyectos/robotica/build/scara_parcial/install.log --install-scripts $base/lib/robot_description --single-version-externally-managed install_data

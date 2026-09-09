@@ -1,0 +1,49 @@
+[3.292s] Invoking command in '/home/david-romero/Proyectos/robotica/build/scara_boceto': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/david-romero/Proyectos/robotica/build/scara_boceto/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/david-romero/Proyectos/robotica/install/scara_boceto/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/david-romero/Proyectos/robotica/build/scara_boceto/build
+[4.166s] running develop
+[4.680s] Removing /home/david-romero/Proyectos/robotica/install/scara_boceto/lib/python3.12/site-packages/scara-boceto.egg-link (link to .)
+[4.788s] Invoked command in '/home/david-romero/Proyectos/robotica/build/scara_boceto' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/david-romero/Proyectos/robotica/build/scara_boceto/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/david-romero/Proyectos/robotica/install/scara_boceto/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/david-romero/Proyectos/robotica/build/scara_boceto/build
+[4.790s] Invoking command in '/home/david-romero/Proyectos/robotica/src/scara_boceto': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/david-romero/Proyectos/robotica/build/scara_boceto/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/david-romero/Proyectos/robotica/install/scara_boceto/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/scara_boceto build --build-base /home/david-romero/Proyectos/robotica/build/scara_boceto/build install --record /home/david-romero/Proyectos/robotica/build/scara_boceto/install.log --install-scripts $base/lib/scara_boceto --single-version-externally-managed install_data --force
+[5.589s] running egg_info
+[5.651s] writing ../../build/scara_boceto/scara_boceto.egg-info/PKG-INFO
+[5.651s] writing dependency_links to ../../build/scara_boceto/scara_boceto.egg-info/dependency_links.txt
+[5.652s] writing entry points to ../../build/scara_boceto/scara_boceto.egg-info/entry_points.txt
+[5.652s] writing top-level names to ../../build/scara_boceto/scara_boceto.egg-info/top_level.txt
+[5.786s] reading manifest file '../../build/scara_boceto/scara_boceto.egg-info/SOURCES.txt'
+[5.786s] writing manifest file '../../build/scara_boceto/scara_boceto.egg-info/SOURCES.txt'
+[5.787s] running build
+[5.787s] running build_py
+[5.788s] creating /home/david-romero/Proyectos/robotica/build/scara_boceto/build
+[5.788s] creating /home/david-romero/Proyectos/robotica/build/scara_boceto/build/lib
+[5.788s] creating /home/david-romero/Proyectos/robotica/build/scara_boceto/build/lib/scara_boceto
+[5.789s] copying scara_boceto/__init__.py -> /home/david-romero/Proyectos/robotica/build/scara_boceto/build/lib/scara_boceto
+[5.789s] copying scara_boceto/gui_sliders.py -> /home/david-romero/Proyectos/robotica/build/scara_boceto/build/lib/scara_boceto
+[5.789s] copying scara_boceto/fk_publisher.py -> /home/david-romero/Proyectos/robotica/build/scara_boceto/build/lib/scara_boceto
+[5.790s] running install
+[5.810s] running install_lib
+[5.865s] creating /home/david-romero/Proyectos/robotica/install/scara_boceto/lib/python3.12/site-packages/scara_boceto
+[5.865s] copying /home/david-romero/Proyectos/robotica/build/scara_boceto/build/lib/scara_boceto/__init__.py -> /home/david-romero/Proyectos/robotica/install/scara_boceto/lib/python3.12/site-packages/scara_boceto
+[5.865s] copying /home/david-romero/Proyectos/robotica/build/scara_boceto/build/lib/scara_boceto/gui_sliders.py -> /home/david-romero/Proyectos/robotica/install/scara_boceto/lib/python3.12/site-packages/scara_boceto
+[5.865s] copying /home/david-romero/Proyectos/robotica/build/scara_boceto/build/lib/scara_boceto/fk_publisher.py -> /home/david-romero/Proyectos/robotica/install/scara_boceto/lib/python3.12/site-packages/scara_boceto
+[5.866s] byte-compiling /home/david-romero/Proyectos/robotica/install/scara_boceto/lib/python3.12/site-packages/scara_boceto/__init__.py to __init__.cpython-312.pyc
+[5.867s] byte-compiling /home/david-romero/Proyectos/robotica/install/scara_boceto/lib/python3.12/site-packages/scara_boceto/gui_sliders.py to gui_sliders.cpython-312.pyc
+[5.869s] byte-compiling /home/david-romero/Proyectos/robotica/install/scara_boceto/lib/python3.12/site-packages/scara_boceto/fk_publisher.py to fk_publisher.cpython-312.pyc
+[5.870s] running install_data
+[5.870s] copying resource/scara_boceto -> /home/david-romero/Proyectos/robotica/install/scara_boceto/share/ament_index/resource_index/packages
+[5.870s] copying package.xml -> /home/david-romero/Proyectos/robotica/install/scara_boceto/share/scara_boceto
+[5.871s] copying launch/gazebo.launch.py -> /home/david-romero/Proyectos/robotica/install/scara_boceto/share/scara_boceto/launch
+[5.871s] copying launch/display.launch.py -> /home/david-romero/Proyectos/robotica/install/scara_boceto/share/scara_boceto/launch
+[5.872s] copying urdf/scara_boceto.urdf.xacro -> /home/david-romero/Proyectos/robotica/install/scara_boceto/share/scara_boceto/urdf
+[5.872s] copying meshes/est2.STL -> /home/david-romero/Proyectos/robotica/install/scara_boceto/share/scara_boceto/meshes
+[5.873s] copying meshes/rot2.STL -> /home/david-romero/Proyectos/robotica/install/scara_boceto/share/scara_boceto/meshes
+[5.876s] copying meshes/ban3.STL -> /home/david-romero/Proyectos/robotica/install/scara_boceto/share/scara_boceto/meshes
+[5.877s] copying meshes/rot1.STL -> /home/david-romero/Proyectos/robotica/install/scara_boceto/share/scara_boceto/meshes
+[5.880s] copying meshes/base_link.STL -> /home/david-romero/Proyectos/robotica/install/scara_boceto/share/scara_boceto/meshes
+[5.881s] copying meshes/pris.STL -> /home/david-romero/Proyectos/robotica/install/scara_boceto/share/scara_boceto/meshes
+[5.884s] copying config/controller_manager:.yaml -> /home/david-romero/Proyectos/robotica/install/scara_boceto/share/scara_boceto/config
+[5.885s] running install_egg_info
+[5.940s] Copying ../../build/scara_boceto/scara_boceto.egg-info to /home/david-romero/Proyectos/robotica/install/scara_boceto/lib/python3.12/site-packages/scara_boceto-0.0.0-py3.12.egg-info
+[5.941s] running install_scripts
+[6.203s] Installing fk_publisher script to /home/david-romero/Proyectos/robotica/install/scara_boceto/lib/scara_boceto
+[6.204s] Installing gui_sliders script to /home/david-romero/Proyectos/robotica/install/scara_boceto/lib/scara_boceto
+[6.205s] writing list of installed files to '/home/david-romero/Proyectos/robotica/build/scara_boceto/install.log'
+[6.269s] Invoked command in '/home/david-romero/Proyectos/robotica/src/scara_boceto' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/david-romero/Proyectos/robotica/build/scara_boceto/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/david-romero/Proyectos/robotica/install/scara_boceto/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/scara_boceto build --build-base /home/david-romero/Proyectos/robotica/build/scara_boceto/build install --record /home/david-romero/Proyectos/robotica/build/scara_boceto/install.log --install-scripts $base/lib/scara_boceto --single-version-externally-managed install_data --force

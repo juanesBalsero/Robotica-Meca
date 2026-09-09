@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="ttcc">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-1.73472347597681E-18 0 0.0998780760555324"
+        rpy="0 0 0" />
+      <mass
+        value="0.98887911957046" />
+      <inertia
+        ixx="0.00386390013512193"
+        ixy="-6.15155978133186E-38"
+        ixz="1.46264242236905E-19"
+        iyy="0.00386390013512193"
+        iyz="-8.4410901568214E-36"
+        izz="0.000743243095074335" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ttcc/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ttcc/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="rot1">
+    <inertial>
+      <origin
+        xyz="0.118676345594585 6.93889390390723E-18 0.0296690863986462"
+        rpy="0 0 0" />
+      <mass
+        value="1.05132741228718" />
+      <inertia
+        ixx="0.000968741777605735"
+        ixy="1.53367779055571E-19"
+        ixz="-0.000399196555067386"
+        iyy="0.00620864004558683"
+        iyz="7.95238803452061E-20"
+        izz="0.00629429353114417" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ttcc/meshes/rot1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ttcc/meshes/rot1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="1"
+    type="continuous">
+    <origin
+      xyz="0 0 0.1772"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rot1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="rot2">
+    <inertial>
+      <origin
+        xyz="0.1 0 0.0750000000000004"
+        rpy="0 0 0" />
+      <mass
+        value="0.854977871437822" />
+      <inertia
+        ixx="0.000674638405706707"
+        ixy="6.4804554053383E-20"
+        ixz="1.13555967627051E-19"
+        iyy="0.00431775045341826"
+        iyz="6.60322314929737E-21"
+        izz="0.00463614807935921" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ttcc/meshes/rot2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ttcc/meshes/rot2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="2"
+    type="revolute">
+    <origin
+      xyz="0.2 0 0"
+      rpy="0 0 -1.57079632679489" />
+    <parent
+      link="rot1" />
+    <child
+      link="rot2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.1"
+      upper="4.3"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="prisma1">
+    <inertial>
+      <origin
+        xyz="0 -2.77555756156289E-17 -0.1895"
+        rpy="0 0 0" />
+      <mass
+        value="0.744164759819082" />
+      <inertia
+        ixx="0.00902398993248613"
+        ixy="-2.53580488584256E-20"
+        ixz="-3.11783790133065E-19"
+        iyy="0.00902398993248613"
+        iyz="4.28033982679163E-20"
+        izz="0.000232551487443463" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ttcc/meshes/prisma1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ttcc/meshes/prisma1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="3"
+    type="prismatic">
+    <origin
+      xyz="0.2 0 0.043153"
+      rpy="-3.1416 0 0" />
+    <parent
+      link="rot2" />
+    <child
+      link="prisma1" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="-0.15"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="rot3">
+    <inertial>
+      <origin
+        xyz="5.34014416020412E-10 -5.35736927043118E-10 -0.0349809453938201"
+        rpy="0 0 0" />
+      <mass
+        value="0.182222784010828" />
+      <inertia
+        ixx="0.000161921495281095"
+        ixy="1.35115873626282E-06"
+        ixz="2.85630487972558E-12"
+        iyy="0.000161912661018423"
+        iyz="-2.8655180163919E-12"
+        izz="8.98947732639393E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ttcc/meshes/rot3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ttcc/meshes/rot3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="4"
+    type="continuous">
+    <origin
+      xyz="0 0 0.073684"
+      rpy="0 0 0" />
+    <parent
+      link="prisma1" />
+    <child
+      link="rot3" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="org">
+    <inertial>
+      <origin
+        xyz="0 0 0.127637362637363"
+        rpy="0 0 0" />
+      <mass
+        value="0.500298630084175" />
+      <inertia
+        ixx="0.00281552189368122"
+        ixy="-1.05789932569103E-38"
+        ixz="5.85218717398302E-21"
+        iyy="0.00281552189368122"
+        iyz="-3.30465389934682E-36"
+        izz="0.000153869317686603" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ttcc/meshes/org.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ttcc/meshes/org.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="0"
+    type="fixed">
+    <origin
+      xyz="0.1 0.7 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="org" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="rott1">
+    <inertial>
+      <origin
+        xyz="0.0445308383018185 -1.11022302462516E-16 0.0248827682680421"
+        rpy="0 0 0" />
+      <mass
+        value="0.306747611120431" />
+      <inertia
+        ixx="0.000132408996930483"
+        ixy="-5.18015685704998E-20"
+        ixz="-4.04275985320019E-06"
+        iyy="0.000569066893650669"
+        iyz="3.11652553734024E-21"
+        izz="0.000581231456583245" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ttcc/meshes/rott1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ttcc/meshes/rott1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="11"
+    type="continuous">
+    <origin
+      xyz="0 0 0.25"
+      rpy="0 0 0" />
+    <parent
+      link="org" />
+    <child
+      link="rott1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="rott2">
+    <inertial>
+      <origin
+        xyz="-3.05311331771918E-16 0.107347016959895 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.480607490017801" />
+      <inertia
+        ixx="0.00256750193941879"
+        ixy="8.54761105586451E-18"
+        ixz="3.75769507148681E-21"
+        iyy="0.000168777360172501"
+        iyz="5.85063261599351E-21"
+        izz="0.00259962401732567" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ttcc/meshes/rott2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ttcc/meshes/rott2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="22"
+    type="continuous">
+    <origin
+      xyz="0.12 0 0.0250000000000004"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="rott1" />
+    <child
+      link="rott2" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="rott3">
+    <inertial>
+      <origin
+        xyz="-4.44089209850063E-16 0.0108238138063189 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.270791217116412" />
+      <inertia
+        ixx="0.000747444616266822"
+        ixy="2.87878209695788E-18"
+        ixz="-4.36547414995888E-11"
+        iyy="9.04657850828716E-05"
+        iyz="-1.98353820419388E-19"
+        izz="0.000796236624517121" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ttcc/meshes/rott3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ttcc/meshes/rott3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="33"
+    type="continuous">
+    <origin
+      xyz="0 0.25 0"
+      rpy="0 0 1.5707963267949" />
+    <parent
+      link="rott2" />
+    <child
+      link="rott3" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="rott4">
+    <inertial>
+      <origin
+        xyz="-4.44089209850063E-16 -1.59872115546023E-14 0.143664004147768"
+        rpy="0 0 0" />
+      <mass
+        value="0.152485837989553" />
+      <inertia
+        ixx="0.000579002022462241"
+        ixy="-6.46858191672832E-21"
+        ixz="-3.034402317125E-19"
+        iyy="0.000578463326383573"
+        iyz="-2.48874438123013E-17"
+        izz="2.04516024487961E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ttcc/meshes/rott4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ttcc/meshes/rott4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="44"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="1.57079632679494 0 0" />
+    <parent
+      link="rott3" />
+    <child
+      link="rott4" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="rott5">
+    <inertial>
+      <origin
+        xyz="2.22044604925031E-16 2.23154827949656E-14 0.0111165796349907"
+        rpy="0 0 0" />
+      <mass
+        value="0.0280526545231308" />
+      <inertia
+        ixx="7.98304420565284E-06"
+        ixy="-5.57703536507552E-21"
+        ixz="-8.74367066857438E-22"
+        iyy="8.72615355637493E-06"
+        iyz="-5.12801288448645E-22"
+        izz="3.65832664317194E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ttcc/meshes/rott5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ttcc/meshes/rott5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="55"
+    type="continuous">
+    <origin
+      xyz="0 0 0.25"
+      rpy="0 0 0" />
+    <parent
+      link="rott4" />
+    <child
+      link="rott5" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="rott6">
+    <inertial>
+      <origin
+        xyz="-8.2239071108603E-09 9.32743948744985E-09 0.051594322436814"
+        rpy="0 0 0" />
+      <mass
+        value="0.0293018734953369" />
+      <inertia
+        ixx="1.38937890416148E-05"
+        ixy="-2.48681364468295E-08"
+        ixz="3.1908007174667E-12"
+        iyy="1.36059363892186E-05"
+        iyz="-2.19886443310631E-12"
+        izz="2.90053964064902E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ttcc/meshes/rott6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ttcc/meshes/rott6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="66"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="rott5" />
+    <child
+      link="rott6" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="efector">
+    <inertial>
+      <origin
+        xyz="-8.22390666677109E-09 9.32741706094475E-09 -0.0284056775631862"
+        rpy="0 0 0" />
+      <mass
+        value="0.0293018734953369" />
+      <inertia
+        ixx="1.38937890416148E-05"
+        ixy="-2.48681364468295E-08"
+        ixz="3.19080069873711E-12"
+        iyy="1.36059363892186E-05"
+        iyz="-2.19886443306062E-12"
+        izz="2.90053964064902E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ttcc/meshes/efector.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ttcc/meshes/efector.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="77"
+    type="fixed">
+    <origin
+      xyz="0 0 0.0800000000000002"
+      rpy="0 0 0" />
+    <parent
+      link="rott6" />
+    <child
+      link="efector" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

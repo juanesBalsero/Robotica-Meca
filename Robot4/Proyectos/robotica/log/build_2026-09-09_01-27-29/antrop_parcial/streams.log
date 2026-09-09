@@ -1,0 +1,19 @@
+[2.382s] Invoking command in '/home/david-romero/Proyectos/robotica/src/antrop_parcial': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/david-romero/Proyectos/robotica/build/antrop_parcial/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/david-romero/Proyectos/robotica/install/antrop_parcial/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/antrop_parcial build --build-base /home/david-romero/Proyectos/robotica/build/antrop_parcial/build install --record /home/david-romero/Proyectos/robotica/build/antrop_parcial/install.log --install-scripts $base/lib/robot_description --single-version-externally-managed install_data
+[2.875s] running egg_info
+[2.913s] writing ../../build/antrop_parcial/antrop_parcial.egg-info/PKG-INFO
+[2.914s] writing dependency_links to ../../build/antrop_parcial/antrop_parcial.egg-info/dependency_links.txt
+[2.914s] writing requirements to ../../build/antrop_parcial/antrop_parcial.egg-info/requires.txt
+[2.915s] writing top-level names to ../../build/antrop_parcial/antrop_parcial.egg-info/top_level.txt
+[2.997s] reading manifest file '../../build/antrop_parcial/antrop_parcial.egg-info/SOURCES.txt'
+[2.999s] writing manifest file '../../build/antrop_parcial/antrop_parcial.egg-info/SOURCES.txt'
+[3.001s] running build
+[3.002s] running build_py
+[3.003s] running install
+[3.018s] running install_lib
+[3.085s] running install_data
+[3.086s] running install_egg_info
+[3.156s] removing '/home/david-romero/Proyectos/robotica/install/antrop_parcial/lib/python3.12/site-packages/antrop_parcial-0.0.0-py3.12.egg-info' (and everything under it)
+[3.156s] Copying ../../build/antrop_parcial/antrop_parcial.egg-info to /home/david-romero/Proyectos/robotica/install/antrop_parcial/lib/python3.12/site-packages/antrop_parcial-0.0.0-py3.12.egg-info
+[3.158s] running install_scripts
+[3.514s] writing list of installed files to '/home/david-romero/Proyectos/robotica/build/antrop_parcial/install.log'
+[3.570s] Invoked command in '/home/david-romero/Proyectos/robotica/src/antrop_parcial' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/david-romero/Proyectos/robotica/build/antrop_parcial/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/david-romero/Proyectos/robotica/install/antrop_parcial/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/antrop_parcial build --build-base /home/david-romero/Proyectos/robotica/build/antrop_parcial/build install --record /home/david-romero/Proyectos/robotica/build/antrop_parcial/install.log --install-scripts $base/lib/robot_description --single-version-externally-managed install_data

@@ -1,0 +1,6 @@
+source;share/antrop_parcial/hook/pythonpath.ps1
+source;share/antrop_parcial/hook/pythonpath.dsv
+source;share/antrop_parcial/hook/pythonpath.sh
+source;share/antrop_parcial/hook/ament_prefix_path.ps1
+source;share/antrop_parcial/hook/ament_prefix_path.dsv
+source;share/antrop_parcial/hook/ament_prefix_path.sh

@@ -1,0 +1,3 @@
+[console_scripts]
+fk_publisher = scara_boceto.fk_publisher:main
+gui_sliders = scara_boceto.gui_sliders:main

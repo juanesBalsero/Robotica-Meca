@@ -1,0 +1,167 @@
+[0.104s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'scara_cajas', '--symlink-install']
+[0.104s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['scara_cajas'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7ecf4a38fc80>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7ecf4a38fb30>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7ecf4a38fb30>>, mixin_verb=('build',))
+[0.140s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.140s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.140s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.140s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.140s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.141s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.141s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/david-romero/Proyectos/robotica'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/antrop_parcial) by extensions ['ignore', 'ignore_ament_install']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/antrop_parcial) by extension 'ignore'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/antrop_parcial) by extension 'ignore_ament_install'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/antrop_parcial) by extensions ['colcon_pkg']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/antrop_parcial) by extension 'colcon_pkg'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/antrop_parcial) by extensions ['colcon_meta']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/antrop_parcial) by extension 'colcon_meta'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/antrop_parcial) by extensions ['ros']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/antrop_parcial) by extension 'ros'
+[0.169s] DEBUG:colcon.colcon_core.package_identification:Package 'src/antrop_parcial' with type 'ros.ament_python' and name 'antrop_parcial'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_cajas) by extensions ['ignore', 'ignore_ament_install']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_cajas) by extension 'ignore'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_cajas) by extension 'ignore_ament_install'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_cajas) by extensions ['colcon_pkg']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_cajas) by extension 'colcon_pkg'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_cajas) by extensions ['colcon_meta']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_cajas) by extension 'colcon_meta'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_cajas) by extensions ['ros']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_cajas) by extension 'ros'
+[0.170s] DEBUG:colcon.colcon_core.package_identification:Package 'src/scara_cajas' with type 'ros.ament_python' and name 'scara_cajas'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_parcial) by extensions ['ignore', 'ignore_ament_install']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_parcial) by extension 'ignore'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_parcial) by extension 'ignore_ament_install'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_parcial) by extensions ['colcon_pkg']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_parcial) by extension 'colcon_pkg'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_parcial) by extensions ['colcon_meta']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_parcial) by extension 'colcon_meta'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_parcial) by extensions ['ros']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_parcial) by extension 'ros'
+[0.171s] DEBUG:colcon.colcon_core.package_identification:Package 'src/scara_parcial' with type 'ros.ament_python' and name 'scara_parcial'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/ttcc) by extensions ['ignore', 'ignore_ament_install']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/ttcc) by extension 'ignore'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/ttcc) by extension 'ignore_ament_install'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/ttcc) by extensions ['colcon_pkg']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/ttcc) by extension 'colcon_pkg'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/ttcc) by extensions ['colcon_meta']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/ttcc) by extension 'colcon_meta'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/ttcc) by extensions ['ros']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/ttcc) by extension 'ros'
+[0.172s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ttcc' with type 'ros.ament_python' and name 'ttcc'
+[0.172s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.172s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.172s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.172s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.172s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.189s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'antrop_parcial' in 'src/antrop_parcial'
+[0.189s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'scara_parcial' in 'src/scara_parcial'
+[0.189s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'ttcc' in 'src/ttcc'
+[0.190s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.190s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.191s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/david-romero/Proyectos/robotica/install/scara_cajas' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.192s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/david-romero/Proyectos/robotica/install
+[0.195s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 373 installed packages in /opt/ros/jazzy
+[0.197s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'scara_cajas' build argument 'cmake_args' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'scara_cajas' build argument 'cmake_target' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'scara_cajas' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'scara_cajas' build argument 'cmake_clean_cache' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'scara_cajas' build argument 'cmake_clean_first' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'scara_cajas' build argument 'cmake_force_configure' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'scara_cajas' build argument 'ament_cmake_args' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'scara_cajas' build argument 'catkin_cmake_args' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'scara_cajas' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.244s] DEBUG:colcon.colcon_core.verb:Building package 'scara_cajas' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/david-romero/Proyectos/robotica/build/scara_cajas', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/david-romero/Proyectos/robotica/install/scara_cajas', 'merge_install': False, 'path': '/home/david-romero/Proyectos/robotica/src/scara_cajas', 'symlink_install': True, 'test_result_base': None}
+[0.244s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.245s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.246s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/david-romero/Proyectos/robotica/src/scara_cajas' with build type 'ament_python'
+[0.246s] Level 1:colcon.colcon_core.shell:create_environment_hook('scara_cajas', 'ament_prefix_path')
+[0.249s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.249s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/hook/ament_prefix_path.ps1'
+[0.250s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/hook/ament_prefix_path.dsv'
+[0.250s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/hook/ament_prefix_path.sh'
+[0.251s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.251s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.588s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/david-romero/Proyectos/robotica/src/scara_cajas'
+[0.588s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.588s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.529s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: clean, sdist, build_clib, upload, check, editable_wheel, compile_catalog, install_data, install, bdist_egg, init_catalog, test, upload_docs, symlink_data, register, egg_info, bdist, bdist_wheel, update_catalog, bdist_rpm, bdist_dumb, build_ext, build_py, install_scripts, easy_install, build, install_egg_info, alias, dist_info, install_headers, develop, extract_messages, install_lib, rotate, build_scripts, saveopts, setopt
+[2.014s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --find-links, --no-deps, --install-layout, --record, --force-installation-into-system-dir, --egg-path, --site-dirs, --prefix, --verbose, --local-snapshots-ok, --install-dir, --exclude-scripts, --quiet, --no-user-cfg, --help, --allow-hosts, --version, --uninstall, --zip-ok, --no-find-links, --upgrade, --dry-run, --build-directory, --editable, --index-url, --always-copy, --optimize, --multi-version, --always-unzip, --script-dir, --user
+[2.020s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/david-romero/Proyectos/robotica/build/scara_cajas': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/david-romero/Proyectos/robotica/build/scara_cajas/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/david-romero/Proyectos/robotica/install/scara_cajas/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/david-romero/Proyectos/robotica/build/scara_cajas/build --no-deps symlink_data
+[3.032s] Level 1:colcon.colcon_core.shell:create_environment_hook('scara_cajas', 'pythonpath_develop')
+[3.032s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/david-romero/Proyectos/robotica/build/scara_cajas/share/scara_cajas/hook/pythonpath_develop.ps1'
+[3.033s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/david-romero/Proyectos/robotica/build/scara_cajas' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/david-romero/Proyectos/robotica/build/scara_cajas/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/david-romero/Proyectos/robotica/install/scara_cajas/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/david-romero/Proyectos/robotica/build/scara_cajas/build --no-deps symlink_data
+[3.033s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/david-romero/Proyectos/robotica/build/scara_cajas/share/scara_cajas/hook/pythonpath_develop.dsv'
+[3.034s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/david-romero/Proyectos/robotica/build/scara_cajas/share/scara_cajas/hook/pythonpath_develop.sh'
+[3.036s] Level 1:colcon.colcon_core.environment:checking '/home/david-romero/Proyectos/robotica/install/scara_cajas' for CMake module files
+[3.036s] Level 1:colcon.colcon_core.environment:checking '/home/david-romero/Proyectos/robotica/install/scara_cajas' for CMake config files
+[3.037s] Level 1:colcon.colcon_core.environment:checking '/home/david-romero/Proyectos/robotica/install/scara_cajas/lib'
+[3.037s] Level 1:colcon.colcon_core.environment:checking '/home/david-romero/Proyectos/robotica/install/scara_cajas/bin'
+[3.037s] Level 1:colcon.colcon_core.environment:checking '/home/david-romero/Proyectos/robotica/install/scara_cajas/lib/pkgconfig/scara_cajas.pc'
+[3.038s] Level 1:colcon.colcon_core.environment:checking '/home/david-romero/Proyectos/robotica/install/scara_cajas/lib/python3.12/site-packages'
+[3.038s] Level 1:colcon.colcon_core.shell:create_environment_hook('scara_cajas', 'pythonpath')
+[3.038s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/hook/pythonpath.ps1'
+[3.038s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/hook/pythonpath.dsv'
+[3.038s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/hook/pythonpath.sh'
+[3.039s] Level 1:colcon.colcon_core.environment:checking '/home/david-romero/Proyectos/robotica/install/scara_cajas/bin'
+[3.039s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(scara_cajas)
+[3.039s] INFO:colcon.colcon_core.shell:Creating package script '/home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/package.ps1'
+[3.041s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/package.dsv'
+[3.041s] INFO:colcon.colcon_core.shell:Creating package script '/home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/package.sh'
+[3.042s] INFO:colcon.colcon_core.shell:Creating package script '/home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/package.bash'
+[3.043s] INFO:colcon.colcon_core.shell:Creating package script '/home/david-romero/Proyectos/robotica/install/scara_cajas/share/scara_cajas/package.zsh'
+[3.043s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/david-romero/Proyectos/robotica/install/scara_cajas/share/colcon-core/packages/scara_cajas)
+[3.043s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.044s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.044s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[3.044s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.051s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.051s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.051s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.057s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.058s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/david-romero/Proyectos/robotica/install/local_setup.ps1'
+[3.060s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/david-romero/Proyectos/robotica/install/_local_setup_util_ps1.py'
+[3.062s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/david-romero/Proyectos/robotica/install/setup.ps1'
+[3.064s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/david-romero/Proyectos/robotica/install/local_setup.sh'
+[3.065s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/david-romero/Proyectos/robotica/install/_local_setup_util_sh.py'
+[3.066s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/david-romero/Proyectos/robotica/install/setup.sh'
+[3.068s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/david-romero/Proyectos/robotica/install/local_setup.bash'
+[3.069s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/david-romero/Proyectos/robotica/install/setup.bash'
+[3.070s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/david-romero/Proyectos/robotica/install/local_setup.zsh'
+[3.071s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/david-romero/Proyectos/robotica/install/setup.zsh'

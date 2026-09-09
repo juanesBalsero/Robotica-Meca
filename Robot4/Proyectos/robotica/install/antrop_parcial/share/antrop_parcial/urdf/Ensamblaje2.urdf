@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="antrop_parcial">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0 0 0.127637362637363"
+        rpy="0 0 0" />
+      <mass
+        value="0.500298630084175" />
+      <inertia
+        ixx="0.00281552189368122"
+        ixy="-9.51023246229451E-37"
+        ixz="7.82859738424305E-21"
+        iyy="0.00281552189368122"
+        iyz="2.93873587705572E-36"
+        izz="0.000153869317686603" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://antrop_parcial/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://antrop_parcial/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="rot1">
+    <inertial>
+      <origin
+        xyz="0.0445308383018185 -1.09504419421036E-17 0.0248827682680419"
+        rpy="0 0 0" />
+      <mass
+        value="0.306747611120431" />
+      <inertia
+        ixx="0.000132408996930483"
+        ixy="2.31092171116748E-20"
+        ixz="-4.04275985320016E-06"
+        iyy="0.000569066893650669"
+        iyz="3.88382545686645E-21"
+        izz="0.000581231456583244" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://antrop_parcial/meshes/rot1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://antrop_parcial/meshes/rot1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="1"
+    type="continuous">
+    <origin
+      xyz="0 0 0.25"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rot1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="rot2">
+    <inertial>
+      <origin
+        xyz="-2.91433543964104E-16 0.107347016959895 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.480607490017801" />
+      <inertia
+        ixx="0.00256750193941879"
+        ixy="8.74233219612743E-18"
+        ixz="-6.60980169035022E-21"
+        iyy="0.000168777360172501"
+        iyz="-1.66491200354361E-20"
+        izz="0.00259962401732566" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://antrop_parcial/meshes/rot2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://antrop_parcial/meshes/rot2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="2"
+    type="continuous">
+    <origin
+      xyz="0.12 0 0.0250000000000001"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="rot1" />
+    <child
+      link="rot2" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="rot3">
+    <inertial>
+      <origin
+        xyz="-2.22044604925031E-16 0.0108238138063189 -1.21430643318376E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.270791217116411" />
+      <inertia
+        ixx="0.000747444616266821"
+        ixy="5.16811263645853E-18"
+        ixz="-4.36547414906191E-11"
+        iyy="9.04657850828715E-05"
+        iyz="6.18304015829005E-20"
+        izz="0.00079623662451712" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://antrop_parcial/meshes/rot3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://antrop_parcial/meshes/rot3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="3"
+    type="continuous">
+    <origin
+      xyz="0 0.25 0"
+      rpy="0 0 1.5708" />
+    <parent
+      link="rot2" />
+    <child
+      link="rot3" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="rot4">
+    <inertial>
+      <origin
+        xyz="-6.66133814775094E-16 -1.0855736882337E-14 0.143664004147768"
+        rpy="0 0 0" />
+      <mass
+        value="0.152485837989553" />
+      <inertia
+        ixx="0.00057900202246224"
+        ixy="-7.94289012365149E-21"
+        ixz="3.71375585964878E-19"
+        iyy="0.000578463326383573"
+        iyz="-3.61294381182575E-21"
+        izz="2.0451602448796E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://antrop_parcial/meshes/rot4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://antrop_parcial/meshes/rot4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="4"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="rot3" />
+    <child
+      link="rot4" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="rot5">
+    <inertial>
+      <origin
+        xyz="0 -0.0111165796349907 1.18175326295489E-14"
+        rpy="0 0 0" />
+      <mass
+        value="0.0280526545231308" />
+      <inertia
+        ixx="7.98304420565283E-06"
+        ixy="3.94701541515614E-20"
+        ixz="-5.64883174553266E-21"
+        iyy="3.65832664317194E-06"
+        iyz="-9.01386826073888E-22"
+        izz="8.72615355637492E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://antrop_parcial/meshes/rot5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://antrop_parcial/meshes/rot5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="5"
+    type="continuous">
+    <origin
+      xyz="0 0 0.25"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="rot4" />
+    <child
+      link="rot5" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="rot6">
+    <inertial>
+      <origin
+        xyz="-8.22390688881569E-09 9.32742855267463E-09 0.051594322436814"
+        rpy="0 0 0" />
+      <mass
+        value="0.0293018734953369" />
+      <inertia
+        ixx="1.38937890416148E-05"
+        ixy="-2.48681364468289E-08"
+        ixz="3.19080070928307E-12"
+        iyy="1.36059363892186E-05"
+        iyz="-2.19886443207452E-12"
+        izz="2.90053964064901E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://antrop_parcial/meshes/rot6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://antrop_parcial/meshes/rot6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="6"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="rot5" />
+    <child
+      link="rot6" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="efector">
+    <inertial>
+      <origin
+        xyz="-8.22390644472648E-09 9.32741710908333E-09 -0.0284056775631861"
+        rpy="0 0 0" />
+      <mass
+        value="0.0293018734953369" />
+      <inertia
+        ixx="1.38937890416148E-05"
+        ixy="-2.4868136446831E-08"
+        ixz="3.19080070674035E-12"
+        iyy="1.36059363892186E-05"
+        iyz="-2.19886443206879E-12"
+        izz="2.90053964064901E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://antrop_parcial/meshes/efector.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://antrop_parcial/meshes/efector.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="7"
+    type="fixed">
+    <origin
+      xyz="0 0 0.08"
+      rpy="0 0 0" />
+    <parent
+      link="rot6" />
+    <child
+      link="efector" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
