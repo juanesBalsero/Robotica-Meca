@@ -1,6 +1,0 @@
-source;share/scara_parcial/hook/pythonpath.ps1
-source;share/scara_parcial/hook/pythonpath.dsv
-source;share/scara_parcial/hook/pythonpath.sh
-source;share/scara_parcial/hook/ament_prefix_path.ps1
-source;share/scara_parcial/hook/ament_prefix_path.dsv
-source;share/scara_parcial/hook/ament_prefix_path.sh

@@ -1,2 +1,0 @@
-[console_scripts]
-simulador_cinematico_node = ttcc.simulador_cinematico_node:main

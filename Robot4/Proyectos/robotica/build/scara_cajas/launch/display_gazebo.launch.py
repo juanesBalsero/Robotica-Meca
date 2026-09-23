@@ -1,1 +1,0 @@
-/home/david-romero/Proyectos/robotica/src/scara_cajas/launch/display_gazebo.launch.py
