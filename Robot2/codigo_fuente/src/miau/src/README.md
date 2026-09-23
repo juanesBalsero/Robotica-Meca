@@ -14,22 +14,26 @@ Desde la raíz de tu espacio de trabajo (`codigo_fuente`):
 ```bash
 colcon build --packages-select miau
 source install/setup.bash
+```
 
+## 🚀 Ejecución
 
-# Executar trayectoria por waypoints
+```bash
+# Ejecutar trayectoria por waypoints
 ros2 run miau nodo
 
 # Ejecutar trayectoria con perfil trapezoidal
 ros2 run miau vti2
+```
 
-Tópicos
-Publica: /position_controller/commands (std_msgs/msg/Float64MultiArray) — Comandos de posición angular.
+## 📡 Tópicos
 
-Suscrito: /joint_states (sensor_msgs/msg/JointState) — Lectura de estado real de las articulaciones.
+* **Publica:** `/position_controller/commands` (`std_msgs/msg/Float64MultiArray`) — Comandos de posición angular.
+* **Suscrito:** `/joint_states` (`sensor_msgs/msg/JointState`) — Lectura de estado real de las articulaciones.
 
-Archivos de Salida (Logs CSV)
-Ambos nodos exportan datos en archivos .csv marcados con tiempo relativo transcurrido (t_sec) para su posterior graficación:
+## 📊 Archivos de Salida (Logs CSV)
 
-trajectory_log.csv / trajectory_real.csv: Posición, velocidad y esfuerzo real de /joint_states.
+Ambos nodos exportan datos en archivos `.csv` marcados con tiempo relativo transcurrido (`t_sec`) para su posterior graficación:
 
-trajectory_planned.csv: Trayectoria teórica calculada por el perfil trapezoidal.
+* `trajectory_log.csv` / `trajectory_real.csv`: Posición, velocidad y esfuerzo real de `/joint_states`.
+* `trajectory_planned.csv`: Trayectoria teórica calculada por el perfil trapezoidal.
