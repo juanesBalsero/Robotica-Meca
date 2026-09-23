@@ -1,4 +1,5 @@
 import os
+from launch.actions import SetEnvironmentVariable
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch.actions import IncludeLaunchDescription, ExecuteProcess
@@ -9,6 +10,11 @@ import xacro
 def generate_launch_description():
     pkg_name = 'scara_boceto'
     pkg_share = get_package_share_directory(pkg_name)
+
+    set_gz_resource_path = SetEnvironmentVariable(
+        'GZ_SIM_RESOURCE_PATH',
+        os.path.dirname(pkg_share) + os.pathsep + os.environ.get('GZ_SIM_RESOURCE_PATH', '')
+    )
 
     xacro_file = os.path.join(pkg_share, 'urdf', 'scara_boceto.urdf.xacro')
     controllers_yaml = os.path.join(pkg_share, 'config', 'controllers.yaml')
@@ -62,6 +68,7 @@ def generate_launch_description():
     )
 
     return LaunchDescription([
+        set_gz_resource_path,
         gz_sim,
         node_robot_state_publisher,
         bridge,

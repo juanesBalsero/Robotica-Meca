@@ -1,0 +1,19 @@
+running egg_info
+writing ../../build/ttcc/ttcc.egg-info/PKG-INFO
+writing dependency_links to ../../build/ttcc/ttcc.egg-info/dependency_links.txt
+writing entry points to ../../build/ttcc/ttcc.egg-info/entry_points.txt
+writing requirements to ../../build/ttcc/ttcc.egg-info/requires.txt
+writing top-level names to ../../build/ttcc/ttcc.egg-info/top_level.txt
+reading manifest file '../../build/ttcc/ttcc.egg-info/SOURCES.txt'
+writing manifest file '../../build/ttcc/ttcc.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/david-romero/Proyectos/robotica/install/ttcc/lib/python3.12/site-packages/ttcc-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/ttcc/ttcc.egg-info to /home/david-romero/Proyectos/robotica/install/ttcc/lib/python3.12/site-packages/ttcc-0.0.0-py3.12.egg-info
+running install_scripts
+Installing simulador_cinematico_node script to /home/david-romero/Proyectos/robotica/install/ttcc/lib/ttcc
+writing list of installed files to '/home/david-romero/Proyectos/robotica/build/ttcc/install.log'

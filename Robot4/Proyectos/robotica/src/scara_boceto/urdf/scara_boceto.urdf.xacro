@@ -200,7 +200,7 @@
   <!-- ===================== Plugin de gz_ros2_control ===================== -->
   <gazebo>
     <plugin filename="gz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
-      <parameters>$(arg controllers_yaml)</parameters>
+      <parameters>$(find scara_boceto)/config/controllers.yaml</parameters>
     </plugin>
   </gazebo>
 

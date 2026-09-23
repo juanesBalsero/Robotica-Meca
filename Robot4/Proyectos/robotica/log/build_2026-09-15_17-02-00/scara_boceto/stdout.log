@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/scara_boceto/scara_boceto.egg-info/PKG-INFO
+writing dependency_links to ../../build/scara_boceto/scara_boceto.egg-info/dependency_links.txt
+writing entry points to ../../build/scara_boceto/scara_boceto.egg-info/entry_points.txt
+writing top-level names to ../../build/scara_boceto/scara_boceto.egg-info/top_level.txt
+reading manifest file '../../build/scara_boceto/scara_boceto.egg-info/SOURCES.txt'
+writing manifest file '../../build/scara_boceto/scara_boceto.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+copying launch/gazebo.launch.py -> /home/david-romero/Proyectos/robotica/install/scara_boceto/share/scara_boceto/launch
+copying urdf/scara_boceto.urdf.xacro -> /home/david-romero/Proyectos/robotica/install/scara_boceto/share/scara_boceto/urdf
+copying config/controllers.yaml -> /home/david-romero/Proyectos/robotica/install/scara_boceto/share/scara_boceto/config
+running install_egg_info
+removing '/home/david-romero/Proyectos/robotica/install/scara_boceto/lib/python3.12/site-packages/scara_boceto-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/scara_boceto/scara_boceto.egg-info to /home/david-romero/Proyectos/robotica/install/scara_boceto/lib/python3.12/site-packages/scara_boceto-0.0.0-py3.12.egg-info
+running install_scripts
+Installing fk_publisher script to /home/david-romero/Proyectos/robotica/install/scara_boceto/lib/scara_boceto
+Installing gui_sliders script to /home/david-romero/Proyectos/robotica/install/scara_boceto/lib/scara_boceto
+writing list of installed files to '/home/david-romero/Proyectos/robotica/build/scara_boceto/install.log'
