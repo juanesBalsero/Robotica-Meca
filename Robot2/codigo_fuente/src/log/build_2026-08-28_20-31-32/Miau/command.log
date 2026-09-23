@@ -1,0 +1,4 @@
+Invoking command in '/home/dae/ros2_ws/src/build/Miau': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/dae/ros2_ws/src/build/Miau -- -j16 -l16
+Invoked command in '/home/dae/ros2_ws/src/build/Miau' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/dae/ros2_ws/src/build/Miau -- -j16 -l16
+Invoking command in '/home/dae/ros2_ws/src/build/Miau': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/dae/ros2_ws/src/build/Miau
+Invoked command in '/home/dae/ros2_ws/src/build/Miau' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/dae/ros2_ws/src/build/Miau
