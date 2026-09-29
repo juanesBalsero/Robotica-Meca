@@ -1,0 +1,9 @@
+# Ignorar carpetas de compilación de ROS 2 en cualquier subnivel
+**/build/
+**/install/
+**/log/
+
+# Archivos temporales de Linux / VS Code / Python
+*~
+*.pyc
+.vscode/
