@@ -1,0 +1,24 @@
+[0.629s] Invoking command in '/home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/src/antropomorfico_sim': DEBUGINFOD_URLS=https://debuginfod.archlinux.org https://debuginfod.cachyos.org PS1=\[\033[01;32m\]juanes@ubuntu\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]$ PYTHONPATH=/home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/build/antropomorfico_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/install/antropomorfico_sim/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/antropomorfico_sim build --build-base /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/build/antropomorfico_sim/build install --record /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/build/antropomorfico_sim/install.log --install-scripts $base/lib/antropomorfico_sim --single-version-externally-managed install_data
+[0.848s] running egg_info
+[0.862s] writing ../../build/antropomorfico_sim/antropomorfico_sim.egg-info/PKG-INFO
+[0.863s] writing dependency_links to ../../build/antropomorfico_sim/antropomorfico_sim.egg-info/dependency_links.txt
+[0.863s] writing entry points to ../../build/antropomorfico_sim/antropomorfico_sim.egg-info/entry_points.txt
+[0.863s] writing requirements to ../../build/antropomorfico_sim/antropomorfico_sim.egg-info/requires.txt
+[0.863s] writing top-level names to ../../build/antropomorfico_sim/antropomorfico_sim.egg-info/top_level.txt
+[0.894s] reading manifest file '../../build/antropomorfico_sim/antropomorfico_sim.egg-info/SOURCES.txt'
+[0.894s] writing manifest file '../../build/antropomorfico_sim/antropomorfico_sim.egg-info/SOURCES.txt'
+[0.894s] running build
+[0.894s] running build_py
+[0.895s] running install
+[0.899s] running install_lib
+[0.915s] running install_data
+[0.915s] copying urdf/antropomorfico.urdf -> /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/install/antropomorfico_sim/share/antropomorfico_sim/urdf
+[0.916s] running install_egg_info
+[0.932s] removing '/home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/install/antropomorfico_sim/lib/python3.12/site-packages/antropomorfico_sim-0.0.0-py3.12.egg-info' (and everything under it)
+[0.932s] Copying ../../build/antropomorfico_sim/antropomorfico_sim.egg-info to /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/install/antropomorfico_sim/lib/python3.12/site-packages/antropomorfico_sim-0.0.0-py3.12.egg-info
+[0.933s] running install_scripts
+[1.040s] Installing ik_solver script to /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/install/antropomorfico_sim/lib/antropomorfico_sim
+[1.040s] Installing trapezoidal_node script to /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/install/antropomorfico_sim/lib/antropomorfico_sim
+[1.040s] Installing trayectoria script to /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/install/antropomorfico_sim/lib/antropomorfico_sim
+[1.040s] writing list of installed files to '/home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/build/antropomorfico_sim/install.log'
+[1.063s] Invoked command in '/home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/src/antropomorfico_sim' returned '0': DEBUGINFOD_URLS=https://debuginfod.archlinux.org https://debuginfod.cachyos.org PS1=\[\033[01;32m\]juanes@ubuntu\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]$ PYTHONPATH=/home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/build/antropomorfico_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/install/antropomorfico_sim/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/antropomorfico_sim build --build-base /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/build/antropomorfico_sim/build install --record /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/build/antropomorfico_sim/install.log --install-scripts $base/lib/antropomorfico_sim --single-version-externally-managed install_data

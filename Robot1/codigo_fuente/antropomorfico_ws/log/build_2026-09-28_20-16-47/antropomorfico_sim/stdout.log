@@ -1,0 +1,58 @@
+running egg_info
+creating ../../build/antropomorfico_sim/antropomorfico_sim.egg-info
+writing ../../build/antropomorfico_sim/antropomorfico_sim.egg-info/PKG-INFO
+writing dependency_links to ../../build/antropomorfico_sim/antropomorfico_sim.egg-info/dependency_links.txt
+writing entry points to ../../build/antropomorfico_sim/antropomorfico_sim.egg-info/entry_points.txt
+writing requirements to ../../build/antropomorfico_sim/antropomorfico_sim.egg-info/requires.txt
+writing top-level names to ../../build/antropomorfico_sim/antropomorfico_sim.egg-info/top_level.txt
+writing manifest file '../../build/antropomorfico_sim/antropomorfico_sim.egg-info/SOURCES.txt'
+reading manifest file '../../build/antropomorfico_sim/antropomorfico_sim.egg-info/SOURCES.txt'
+writing manifest file '../../build/antropomorfico_sim/antropomorfico_sim.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/build/antropomorfico_sim/build
+creating /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/build/antropomorfico_sim/build/lib
+creating /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/build/antropomorfico_sim/build/lib/antropomorfico_sim
+copying antropomorfico_sim/__init__.py -> /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/build/antropomorfico_sim/build/lib/antropomorfico_sim
+copying antropomorfico_sim/ik_solver.py -> /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/build/antropomorfico_sim/build/lib/antropomorfico_sim
+copying antropomorfico_sim/trapezoidal_trajectory_node.py -> /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/build/antropomorfico_sim/build/lib/antropomorfico_sim
+copying antropomorfico_sim/trayectoria.py -> /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/build/antropomorfico_sim/build/lib/antropomorfico_sim
+running install
+running install_lib
+creating /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/install/antropomorfico_sim/lib/python3.12/site-packages/antropomorfico_sim
+copying /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/build/antropomorfico_sim/build/lib/antropomorfico_sim/__init__.py -> /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/install/antropomorfico_sim/lib/python3.12/site-packages/antropomorfico_sim
+copying /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/build/antropomorfico_sim/build/lib/antropomorfico_sim/ik_solver.py -> /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/install/antropomorfico_sim/lib/python3.12/site-packages/antropomorfico_sim
+copying /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/build/antropomorfico_sim/build/lib/antropomorfico_sim/trapezoidal_trajectory_node.py -> /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/install/antropomorfico_sim/lib/python3.12/site-packages/antropomorfico_sim
+copying /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/build/antropomorfico_sim/build/lib/antropomorfico_sim/trayectoria.py -> /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/install/antropomorfico_sim/lib/python3.12/site-packages/antropomorfico_sim
+byte-compiling /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/install/antropomorfico_sim/lib/python3.12/site-packages/antropomorfico_sim/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/install/antropomorfico_sim/lib/python3.12/site-packages/antropomorfico_sim/ik_solver.py to ik_solver.cpython-312.pyc
+byte-compiling /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/install/antropomorfico_sim/lib/python3.12/site-packages/antropomorfico_sim/trapezoidal_trajectory_node.py to trapezoidal_trajectory_node.cpython-312.pyc
+byte-compiling /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/install/antropomorfico_sim/lib/python3.12/site-packages/antropomorfico_sim/trayectoria.py to trayectoria.cpython-312.pyc
+running install_data
+creating /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/install/antropomorfico_sim/share/ament_index
+creating /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/install/antropomorfico_sim/share/ament_index/resource_index
+creating /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/install/antropomorfico_sim/share/ament_index/resource_index/packages
+copying resource/antropomorfico_sim -> /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/install/antropomorfico_sim/share/ament_index/resource_index/packages
+copying package.xml -> /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/install/antropomorfico_sim/share/antropomorfico_sim
+creating /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/install/antropomorfico_sim/share/antropomorfico_sim/launch
+copying launch/sim.launch.py -> /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/install/antropomorfico_sim/share/antropomorfico_sim/launch
+creating /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/install/antropomorfico_sim/share/antropomorfico_sim/urdf
+copying urdf/antropomorfico.urdf -> /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/install/antropomorfico_sim/share/antropomorfico_sim/urdf
+creating /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/install/antropomorfico_sim/share/antropomorfico_sim/config
+copying config/ros2_controllers.yaml -> /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/install/antropomorfico_sim/share/antropomorfico_sim/config
+creating /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/install/antropomorfico_sim/share/antropomorfico_sim/worlds
+creating /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/install/antropomorfico_sim/share/antropomorfico_sim/meshes
+copying meshes/base_link.STL -> /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/install/antropomorfico_sim/share/antropomorfico_sim/meshes
+copying meshes/dedoder.STL -> /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/install/antropomorfico_sim/share/antropomorfico_sim/meshes
+copying meshes/dedoizq.STL -> /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/install/antropomorfico_sim/share/antropomorfico_sim/meshes
+copying meshes/link_1.STL -> /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/install/antropomorfico_sim/share/antropomorfico_sim/meshes
+copying meshes/link_2.STL -> /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/install/antropomorfico_sim/share/antropomorfico_sim/meshes
+copying meshes/link_3.STL -> /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/install/antropomorfico_sim/share/antropomorfico_sim/meshes
+copying meshes/link_ee.STL -> /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/install/antropomorfico_sim/share/antropomorfico_sim/meshes
+running install_egg_info
+Copying ../../build/antropomorfico_sim/antropomorfico_sim.egg-info to /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/install/antropomorfico_sim/lib/python3.12/site-packages/antropomorfico_sim-0.0.0-py3.12.egg-info
+running install_scripts
+Installing ik_solver script to /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/install/antropomorfico_sim/lib/antropomorfico_sim
+Installing trapezoidal_node script to /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/install/antropomorfico_sim/lib/antropomorfico_sim
+Installing trayectoria script to /home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/install/antropomorfico_sim/lib/antropomorfico_sim
+writing list of installed files to '/home/juanes/Robotica-Meca/Robot1/codigo_fuente/antropomorfico_ws/build/antropomorfico_sim/install.log'
