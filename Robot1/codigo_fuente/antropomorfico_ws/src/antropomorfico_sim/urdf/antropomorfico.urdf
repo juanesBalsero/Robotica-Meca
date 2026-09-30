@@ -216,7 +216,7 @@
     <parent link="link_ee" />
     <child link="link_dedoizq" />
     <axis xyz="0 -1 0" />
-    <limit lower="0.0" upper="0.015" effort="10.0" velocity="0.05" />
+    <limit lower="0.0" upper="0.015" effort="500.0" velocity="0.5" />
   </joint>
   
   <!-- Dedo Derecho (Imitador / Mimic) -->
@@ -249,7 +249,7 @@
     <parent link="link_ee" />
     <child link="link_dedoder" />
     <axis xyz="0 0 -1" />
-    <limit lower="0.0" upper="0.015" effort="10.0" velocity="0.05" />
+    <limit lower="0.0" upper="0.015" effort="500.0" velocity="0.5" />
     <mimic joint="joint_dedoizq" multiplier="1.0" offset="0.0" />
   </joint>
 
