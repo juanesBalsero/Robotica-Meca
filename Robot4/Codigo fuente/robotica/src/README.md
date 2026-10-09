@@ -60,7 +60,7 @@ Luego, se ejecuta el sigueinte comando
 
 Finalemte dependiendo del docuemnto a revisar se realizan los siguientes comandos:
 
-# Para visualizar RVIZ
+### Para visualizar RVIZ
 
 Para *scara_cajas*:
 ```bash
