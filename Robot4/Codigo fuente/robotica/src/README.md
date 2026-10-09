@@ -71,3 +71,13 @@ Para *scara_bocetos*:
 ```bash
 ros2 launch scara_boceto display.launch.py
 ```
+### Para visualizar Gazebo
+
+Para *scara_cajas*:
+```bash
+ros2 launch scara_cajas display_gazebo.launch.py 
+```
+
+Para *scara_bocetos*:
+```bash
+ros2 launch scara_boceto gazebo.launch.py
