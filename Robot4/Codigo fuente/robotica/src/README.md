@@ -24,7 +24,7 @@ El proyecto está dividido en dos carpetas/paquetes principales:
 
 Asegúrate de contar con las siguientes herramientas instaladas en tu entorno de desarrollo:
 
-* ROS 2 (Humble / Iron / Rolling)
+* ROS 2 (Jazzy)
 * Gazebo / Ignition Gazebo
 * RViz2
 * `joint_state_publisher_gui` y `robot_state_publisher`
@@ -32,11 +32,42 @@ Asegúrate de contar con las siguientes herramientas instaladas en tu entorno de
 
 ---
 
-## 🚀 Guía de Uso e Instalación
+## 🚀 Guía de Uso
 
-### 1. Clonar el repositorio y compilar el workspace
+### 1. Abrir el repositorio
 
-Navega a tu espacio de trabajo de ROS 2 (`colcon_ws/src`) y clona este repositorio:
+Navega a tu espacio de trabajo de ROS 2 para el robot 4 y dirigirse a la siguiente direccion de carpetas en el gestor de archivos:
 
 ```bash
-# Espacio para comando de clonado e instalación de dependencias
+# /Robotica-Meca/Robot4/Codigo fuente/robotica
+```
+### 2. Compilar el proyecto
+
+En el gestor de arhviso dar click derecho y seleccinar la opción abrir un terminal aqui:
+
+
+Luego, en la terminal se compilan los proyectos con el siguiente comando:
+```bash
+# colcon build
+```
+### 3. Instalar dependencias
+
+Luego, se ejecuta el sigueinte comando
+```bash
+# source install/setup.bash
+```
+## 4. Seleccionar proyecto 
+
+Finalemte dependiendo del docuemnto a revisar se realizan los siguientes comandos:
+
+# Para visualizar RVIZ
+
+Para *scara_cajas*:
+```bash
+# ros2 launch scara_cajas display.launch.py
+```
+
+Para *scara_bocetos*:
+```bash
+# ros2 launch scara_boceto display.launch.py
+```
