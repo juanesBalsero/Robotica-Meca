@@ -43,31 +43,31 @@ Navega a tu espacio de trabajo de ROS 2 para el robot 4 y dirigirse a la siguien
 ```
 ### 2. Compilar el proyecto
 
-En el gestor de arhviso dar click derecho y seleccinar la opción abrir un terminal aqui:
+En el gestor de archivos, dar click derecho y seleccionar la opción abrir un terminal aqui:
 
 
 Luego, en la terminal se compilan los proyectos con el siguiente comando:
 ```bash
-# colcon build
+colcon build
 ```
 ### 3. Instalar dependencias
 
-Luego, se ejecuta el sigueinte comando
+Luego, se ejecuta el siguiente comando:
 ```bash
-# source install/setup.bash
+source install/setup.bash
 ```
 ## 4. Seleccionar proyecto 
 
-Finalemte dependiendo del docuemnto a revisar se realizan los siguientes comandos:
+Finalmente dependiendo del documento a revisar, se realizan los siguientes comandos:
 
 ### Para visualizar RVIZ
 
 Para *scara_cajas*:
 ```bash
-# ros2 launch scara_cajas display.launch.py
+ros2 launch scara_cajas display.launch.py
 ```
 
 Para *scara_bocetos*:
 ```bash
-# ros2 launch scara_boceto display.launch.py
+ros2 launch scara_boceto display.launch.py
 ```
