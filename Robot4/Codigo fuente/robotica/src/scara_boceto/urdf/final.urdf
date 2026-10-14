@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="scara_boceto">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="7.3699E-06 0.0050563 0.051519"
+        rpy="0 0 0" />
+      <mass
+        value="0.36928" />
+      <inertia
+        ixx="0.0014324"
+        ixy="-9.7061E-08"
+        ixz="-1.4267E-07"
+        iyy="0.0014362"
+        iyz="5.4792E-06"
+        izz="0.00084459" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scara_boceto/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.95 0.96 0.15 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scara_boceto/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="rot1">
+    <inertial>
+      <origin
+        xyz="0.0652 2.1518E-06 0.030281"
+        rpy="0 0 0" />
+      <mass
+        value="0.96022" />
+      <inertia
+        ixx="0.00077158"
+        ixy="-1.1237E-08"
+        ixz="8.8811E-05"
+        iyy="0.003511"
+        iyz="1.0326E-08"
+        izz="0.0036646" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scara_boceto/meshes/rot1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.95 0.96 0.15 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scara_boceto/meshes/rot1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rot1_joint"
+    type="continuous">
+    <origin
+      xyz="0 0 0.149999999999999"
+      rpy="0 0 0.0260255178869885" />
+    <parent
+      link="base_link" />
+    <child
+      link="rot1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="1"
+      velocity="0.2" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+  <link
+    name="rot2">
+    <inertial>
+      <origin
+        xyz="0.054556 0.0042094 0.044238"
+        rpy="0 0 0" />
+      <mass
+        value="0.8275" />
+      <inertia
+        ixx="0.0007239"
+        ixy="-2.062E-06"
+        ixz="2.0041E-05"
+        iyy="0.0024418"
+        iyz="-6.4714E-08"
+        izz="0.0024947" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scara_boceto/meshes/rot2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.58 0.58 0.57 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scara_boceto/meshes/rot2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rot2_joint"
+    type="continuous">
+    <origin
+      xyz="0.130000000000002 0 0.0600000000000009"
+      rpy="0 0 -1.5707963267949" />
+    <parent
+      link="rot1" />
+    <child
+      link="rot2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="1"
+      velocity="0.2" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+  <link
+    name="prisma">
+    <inertial>
+      <origin
+        xyz="-0.00968954429107419 -8.70297020292565E-05 0.00763925129938392"
+        rpy="0 0 0" />
+      <mass
+        value="0.0482530059600755" />
+      <inertia
+        ixx="3.78986465008096E-05"
+        ixy="1.55038979176565E-10"
+        ixz="-4.10087887988324E-11"
+        iyy="3.08945956859896E-05"
+        iyz="3.66950358265477E-20"
+        izz="9.67997761427531E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scara_boceto/meshes/prisma.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scara_boceto/meshes/prisma.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="prisma_joint"
+    type="prismatic">
+    <origin
+      xyz="0.135712735905213 0 0.23443621042635"
+      rpy="-3.14159265358979 0 0" />
+    <parent
+      link="rot2" />
+    <child
+      link="prisma" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-0.1545"
+      upper="0"
+      effort="1"
+      velocity="0.15" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+  <link
+    name="efector">
+    <inertial>
+      <origin
+        xyz="-1.61420876665375E-12 -1.02695629777827E-15 0.29793644535222"
+        rpy="0 0 0" />
+      <mass
+        value="0.00140887146453861" />
+      <inertia
+        ixx="1.39235410513575E-07"
+        ixy="-5.2699914412795E-24"
+        ixz="1.07324589709619E-23"
+        iyy="1.39235410513575E-07"
+        iyz="-1.51106664990037E-22"
+        izz="2.28692890034035E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scara_boceto/meshes/efector.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scara_boceto/meshes/efector.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="efector_joint"
+    type="fixed">
+    <origin
+      xyz="0.00600000000004791 0 -0.0155637895736498"
+      rpy="0 0 0" />
+    <parent
+      link="prisma" />
+    <child
+      link="efector" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="caja">
+    <inertial>
+      <origin
+        xyz="0.00023544 0.054552 0.073019"
+        rpy="0 0 0" />
+      <mass
+        value="0.40399" />
+      <inertia
+        ixx="0.00054672"
+        ixy="6.0112E-07"
+        ixz="-2.1583E-06"
+        iyy="0.00084136"
+        iyz="-2.8307E-05"
+        izz="0.0004147" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scara_boceto/meshes/caja.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.58 0.58 0.57 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scara_boceto/meshes/caja.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="caja_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="caja" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
