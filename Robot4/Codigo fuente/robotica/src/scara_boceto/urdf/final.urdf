@@ -8,17 +8,17 @@
     name="base_link">
     <inertial>
       <origin
-        xyz="0.900410418166696 0.759999999999999 0.0554005698173109"
+        xyz="7.3699E-06 0.0050563 0.051519"
         rpy="0 0 0" />
       <mass
-        value="0.311284852028824" />
+        value="0.36928" />
       <inertia
-        ixx="0.00129363756507107"
-        ixy="1.04507041751299E-19"
-        ixz="-4.42031795870759E-06"
-        iyy="0.00128953592508778"
-        iyz="8.23762890581531E-18"
-        izz="0.000695552500536542" />
+        ixx="0.0014324"
+        ixy="-9.7061E-08"
+        ixz="-1.4267E-07"
+        iyy="0.0014362"
+        iyz="5.4792E-06"
+        izz="0.00084459" />
     </inertial>
     <visual>
       <origin
@@ -31,7 +31,7 @@
       <material
         name="">
         <color
-          rgba="1 0.937254901960784 0.137254901960784 1" />
+          rgba="0.95 0.96 0.15 1" />
       </material>
     </visual>
     <collision>
@@ -44,131 +44,21 @@
       </geometry>
     </collision>
   </link>
-  <link
-    name="est2">
-    <inertial>
-      <origin
-        xyz="-9.4369E-16 6.9389E-16 0.067601"
-        rpy="0 0 0" />
-      <mass
-        value="1.3154" />
-      <inertia
-        ixx="0.0034905"
-        ixy="5.7965E-19"
-        ixz="-2.8512E-17"
-        iyy="0.0034425"
-        iyz="2.2477E-17"
-        izz="0.0055556" />
-    </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://scara_boceto/meshes/est2.STL" />
-      </geometry>
-      <material
-        name="">
-        <color
-          rgba="1 1 1 1" />
-        <texture
-          filename="package://scara_boceto/textures/360_F_119569639_nqyoTMEKhLJ1suZwFJWKUvzj3EtgzHUd.jpg" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://scara_boceto/meshes/est2.STL" />
-      </geometry>
-    </collision>
-  </link>
-  <joint
-    name="est2"
-    type="fixed">
-    <origin
-      xyz="0.75 0.67 0"
-      rpy="0 0 0" />
-    <parent
-      link="base_link" />
-    <child
-      link="est2" />
-    <axis
-      xyz="0 0 0" />
-  </joint>
-  <link
-    name="ban3">
-    <inertial>
-      <origin
-        xyz="0 2.7756E-16 0.030476"
-        rpy="0 0 0" />
-      <mass
-        value="0.34471" />
-      <inertia
-        ixx="0.0003887"
-        ixy="3.5164E-21"
-        ixz="-1.515E-20"
-        iyy="0.00038009"
-        iyz="2.6084E-18"
-        izz="0.00064584" />
-    </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://scara_boceto/meshes/ban3.STL" />
-      </geometry>
-      <material
-        name="">
-        <color
-          rgba="1 1 1 1" />
-        <texture
-          filename="package://scara_boceto/textures/images.jpg" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://scara_boceto/meshes/ban3.STL" />
-      </geometry>
-    </collision>
-  </link>
-  <joint
-    name="ban3"
-    type="fixed">
-    <origin
-      xyz="1.08 0.88 0"
-      rpy="0 0 0" />
-    <parent
-      link="base_link" />
-    <child
-      link="ban3" />
-    <axis
-      xyz="0 0 0" />
-  </joint>
   <link
     name="rot1">
     <inertial>
       <origin
-        xyz="0.065308 -2.2088E-05 0.02979"
+        xyz="0.0652 2.1518E-06 0.030281"
         rpy="0 0 0" />
       <mass
-        value="0.94931" />
+        value="0.96022" />
       <inertia
-        ixx="0.0007704"
-        ixy="1.575E-07"
-        ixz="8.7916E-05"
-        iyy="0.0035092"
-        iyz="5.2629E-07"
-        izz="0.0036621" />
+        ixx="0.00077158"
+        ixy="-1.1237E-08"
+        ixz="8.8811E-05"
+        iyy="0.003511"
+        iyz="1.0326E-08"
+        izz="0.0036646" />
     </inertial>
     <visual>
       <origin
@@ -181,9 +71,7 @@
       <material
         name="">
         <color
-          rgba="1 0.93725 0.13725 1" />
-        <texture
-          filename="package://scara_boceto/textures/seamless-texture-of-yellow-cement-wall-a-rough-surface-with-space-for-text-for-a-background-free-photo.jpg" />
+          rgba="0.95 0.96 0.15 1" />
       </material>
     </visual>
     <collision>
@@ -197,33 +85,39 @@
     </collision>
   </link>
   <joint
-    name="rot1"
+    name="rot1_joint"
     type="continuous">
     <origin
-      xyz="0.900000000000001 0.759999999999996 0.150000000000012"
-      rpy="0 0 0" />
+      xyz="0 0 0.149999999999999"
+      rpy="0 0 0.0260255178869885" />
     <parent
       link="base_link" />
     <child
       link="rot1" />
     <axis
       xyz="0 0 1" />
+    <limit
+      effort="1"
+      velocity="0.2" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
   </joint>
   <link
     name="rot2">
     <inertial>
       <origin
-        xyz="0.039342 0.0011436 0.030461"
+        xyz="0.054556 0.0042094 0.044238"
         rpy="0 0 0" />
       <mass
-        value="0.67755" />
+        value="0.8275" />
       <inertia
-        ixx="0.00055824"
-        ixy="3.3211E-06"
-        ixz="1.7908E-05"
-        iyy="0.0016901"
-        iyz="1.2979E-07"
-        izz="0.0018303" />
+        ixx="0.0007239"
+        ixy="-2.062E-06"
+        ixz="2.0041E-05"
+        iyy="0.0024418"
+        iyz="-6.4714E-08"
+        izz="0.0024947" />
     </inertial>
     <visual>
       <origin
@@ -236,9 +130,7 @@
       <material
         name="">
         <color
-          rgba="1 0.93725 0.13725 1" />
-        <texture
-          filename="package://scara_boceto/textures/seamless-texture-of-yellow-cement-wall-a-rough-surface-with-space-for-text-for-a-background-free-photo.jpg" />
+          rgba="0.58 0.58 0.57 1" />
       </material>
     </visual>
     <collision>
@@ -252,11 +144,11 @@
     </collision>
   </link>
   <joint
-    name="rot2"
-    type="revolute">
+    name="rot2_joint"
+    type="continuous">
     <origin
-      xyz="0.13 0 0.06"
-      rpy="0 0 -1.5708" />
+      xyz="0.130000000000002 0 0.0600000000000009"
+      rpy="0 0 -1.5707963267949" />
     <parent
       link="rot1" />
     <child
@@ -264,26 +156,27 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="-0.5"
-      upper="3.3"
-      effort="0"
-      velocity="0" />
+      effort="1"
+      velocity="0.2" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
   </joint>
   <link
-    name="pris">
+    name="prisma">
     <inertial>
       <origin
-        xyz="-0.01724 0.0059766 -0.2348"
+        xyz="-0.00968954429107419 -8.70297020292565E-05 0.00763925129938392"
         rpy="0 0 0" />
       <mass
-        value="0.10612" />
+        value="0.0482530059600755" />
       <inertia
-        ixx="0.00027675"
-        ixy="9.7923E-07"
-        ixz="2.9909E-12"
-        iyy="0.00028036"
-        iyz="-4.1377E-12"
-        izz="1.7505E-05" />
+        ixx="3.78986465008096E-05"
+        ixy="1.55038979176565E-10"
+        ixz="-4.10087887988324E-11"
+        iyy="3.08945956859896E-05"
+        iyz="3.66950358265477E-20"
+        izz="9.67997761427531E-06" />
     </inertial>
     <visual>
       <origin
@@ -291,14 +184,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://scara_boceto/meshes/pris.STL" />
+          filename="package://scara_boceto/meshes/prisma.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="0.89804 0.91765 0.92941 1" />
-        <texture
-          filename="package://scara_boceto/textures/seamless-texture-of-yellow-cement-wall-a-rough-surface-with-space-for-text-for-a-background-free-photo.jpg" />
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
       </material>
     </visual>
     <collision>
@@ -307,26 +198,135 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://scara_boceto/meshes/pris.STL" />
+          filename="package://scara_boceto/meshes/prisma.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="pris"
+    name="prisma_joint"
     type="prismatic">
     <origin
-      xyz="0.13793 0.0015431 -0.048061"
-      rpy="-3.1416 0 0" />
+      xyz="0.135712735905213 0 0.23443621042635"
+      rpy="-3.14159265358979 0 0" />
     <parent
       link="rot2" />
     <child
-      link="pris" />
+      link="prisma" />
     <axis
       xyz="0 0 -1" />
     <limit
-      lower="-0.131"
+      lower="-0.1545"
       upper="0"
-      effort="0"
-      velocity="0" />
+      effort="1"
+      velocity="0.15" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+  <link
+    name="efector">
+    <inertial>
+      <origin
+        xyz="-1.61420876665375E-12 -1.02695629777827E-15 0.29793644535222"
+        rpy="0 0 0" />
+      <mass
+        value="0.00140887146453861" />
+      <inertia
+        ixx="1.39235410513575E-07"
+        ixy="-5.2699914412795E-24"
+        ixz="1.07324589709619E-23"
+        iyy="1.39235410513575E-07"
+        iyz="-1.51106664990037E-22"
+        izz="2.28692890034035E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scara_boceto/meshes/efector.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scara_boceto/meshes/efector.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="efector_joint"
+    type="fixed">
+    <origin
+      xyz="0.00600000000004791 0 -0.0155637895736498"
+      rpy="0 0 0" />
+    <parent
+      link="prisma" />
+    <child
+      link="efector" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="caja">
+    <inertial>
+      <origin
+        xyz="0.00023544 0.054552 0.073019"
+        rpy="0 0 0" />
+      <mass
+        value="0.40399" />
+      <inertia
+        ixx="0.00054672"
+        ixy="6.0112E-07"
+        ixz="-2.1583E-06"
+        iyy="0.00084136"
+        iyz="-2.8307E-05"
+        izz="0.0004147" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scara_boceto/meshes/caja.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.58 0.58 0.57 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scara_boceto/meshes/caja.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="caja_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="caja" />
+    <axis
+      xyz="0 0 0" />
   </joint>
 </robot>
