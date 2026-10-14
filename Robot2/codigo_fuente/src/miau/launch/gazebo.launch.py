@@ -83,16 +83,17 @@ def generate_launch_description():
         output='screen',
     )
 
-    position_controller_spawner = Node(
+    # Ahora se controla por VELOCIDAD (el robot real recibirá velocidad de los motores)
+    velocity_controller_spawner = Node(
         package='controller_manager',
         executable='spawner',
-        arguments=['position_controller'],
+        arguments=['velocity_controller'],
         output='screen',
     )
 
     delayed_controllers = TimerAction(
         period=5.0,
-        actions=[joint_state_broadcaster_spawner, position_controller_spawner],
+        actions=[joint_state_broadcaster_spawner, velocity_controller_spawner],
     )
 
     return LaunchDescription([

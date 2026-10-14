@@ -1,0 +1,19 @@
+nodo_cinematico:
+  ros__parameters:
+    fuente_realimentacion: "gazebo"
+    commands_topic: "/velocity_controller/commands"
+    topic_comando: "/comando_trayectoria"
+    topic_estado: "/estado_trayectoria"
+
+    directorio_trayectorias: "~/miau_trayectorias"
+    punto_inicial: "PH"
+
+    joint_names: ["J1", "J2", "J3"]
+    ts: 0.1
+    kp_joint: 2.0
+    max_joint_vel: 1.0
+    max_joint_acc: 2.0
+    home_joint_vel: 0.5
+    dwell_time: 0.5
+    tol_inicio: 0.1
+    error_maximo: 0.3
