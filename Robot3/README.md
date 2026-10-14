@@ -77,6 +77,6 @@ Se espera obtener un manipulador capaz de ejecutar el ciclo de transporte de una
 
 ## 10. Autor
 
-**Breiner Alcala Castro**
+**Equipo 3 de trabajo**
 
-Proyecto de robótica y automatización industrial.
+Proyecto de robótica.
