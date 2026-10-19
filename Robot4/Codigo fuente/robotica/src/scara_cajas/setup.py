@@ -29,6 +29,8 @@ setup(
         'gui_presets = scara_cajas.gui_presets:main',
         'gazebo_mod = scara_cajas.gazebo_mod:main',
         'trajectory_exec = scara_cajas.trajectory_controller:main',
+        'trajectory_rviz = scara_cajas.trajectory_rviz:main',
+        'trajectory_gazebo = scara_cajas.trajectory_gazebo:main',
     ],
 },
 )

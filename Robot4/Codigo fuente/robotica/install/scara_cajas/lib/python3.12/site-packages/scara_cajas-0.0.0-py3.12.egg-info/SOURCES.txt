@@ -23,6 +23,8 @@ resource/scara_cajas
 scara_cajas/__init__.py
 scara_cajas/gazebo_mod.py
 scara_cajas/trajectory_controller.py
+scara_cajas/trajectory_gazebo.py
+scara_cajas/trajectory_rviz.py
 test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py

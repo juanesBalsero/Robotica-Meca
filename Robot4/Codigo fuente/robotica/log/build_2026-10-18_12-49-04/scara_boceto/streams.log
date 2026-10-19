@@ -1,0 +1,21 @@
+[3.498s] Invoking command in '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/src/scara_boceto': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/build/scara_boceto/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/scara_boceto build --build-base /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/build/scara_boceto/build install --record /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/build/scara_boceto/install.log --install-scripts $base/lib/scara_boceto --single-version-externally-managed install_data
+[4.481s] running egg_info
+[4.581s] writing ../../build/scara_boceto/scara_boceto.egg-info/PKG-INFO
+[4.582s] writing dependency_links to ../../build/scara_boceto/scara_boceto.egg-info/dependency_links.txt
+[4.582s] writing entry points to ../../build/scara_boceto/scara_boceto.egg-info/entry_points.txt
+[4.583s] writing top-level names to ../../build/scara_boceto/scara_boceto.egg-info/top_level.txt
+[4.796s] reading manifest file '../../build/scara_boceto/scara_boceto.egg-info/SOURCES.txt'
+[4.799s] writing manifest file '../../build/scara_boceto/scara_boceto.egg-info/SOURCES.txt'
+[4.800s] running build
+[4.800s] running build_py
+[4.801s] running install
+[4.819s] running install_lib
+[4.890s] running install_data
+[4.891s] running install_egg_info
+[4.961s] removing '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/lib/python3.12/site-packages/scara_boceto-0.0.0-py3.12.egg-info' (and everything under it)
+[4.961s] Copying ../../build/scara_boceto/scara_boceto.egg-info to /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/lib/python3.12/site-packages/scara_boceto-0.0.0-py3.12.egg-info
+[4.962s] running install_scripts
+[5.432s] Installing fk_publisher script to /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/lib/scara_boceto
+[5.432s] Installing gui_sliders script to /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/lib/scara_boceto
+[5.433s] writing list of installed files to '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/build/scara_boceto/install.log'
+[5.491s] Invoked command in '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/src/scara_boceto' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/build/scara_boceto/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/scara_boceto build --build-base /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/build/scara_boceto/build install --record /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/build/scara_boceto/install.log --install-scripts $base/lib/scara_boceto --single-version-externally-managed install_data
