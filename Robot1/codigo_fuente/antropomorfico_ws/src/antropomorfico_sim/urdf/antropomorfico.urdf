@@ -56,12 +56,12 @@
     </collision>
   </link>
 
-  <joint name="joint1" type="revolute">
+  <joint name="joint1" type="continuous">
     <origin xyz="0 0 0.15973" rpy="0 0 0" />
     <parent link="base_link" />
     <child link="link_1" />
     <axis xyz="0 0 1" />
-    <limit lower="-3.1416" upper="3.1416" effort="10.0" velocity="3.0" />
+    <limit effort="10.0" velocity="3.0" />
   </joint>
 
   <!-- Link 2 & Joint 2 -->
