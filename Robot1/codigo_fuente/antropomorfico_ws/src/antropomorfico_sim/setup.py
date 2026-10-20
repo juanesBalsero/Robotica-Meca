@@ -32,9 +32,8 @@ setup(
     },
     entry_points={
         'console_scripts': [
-        'ik_solver = antropomorfico_sim.ik_solver:main',
-        'trayectoria = antropomorfico_sim.trayectoria:main',
         'trapezoidal_node = antropomorfico_sim.trapezoidal_trajectory_node:main',
+        'ejecutar_trayectoria = antropomorfico_sim.trayectoria_publisher_node:main',
         ],
     },
 )

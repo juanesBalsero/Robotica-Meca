@@ -56,12 +56,12 @@
     </collision>
   </link>
 
-  <joint name="joint1" type="revolute">
+  <joint name="joint1" type="continuous">
     <origin xyz="0 0 0.15973" rpy="0 0 0" />
     <parent link="base_link" />
     <child link="link_1" />
     <axis xyz="0 0 1" />
-    <limit lower="-3.1416" upper="3.1416" effort="10.0" velocity="3.0" />
+    <limit effort="10.0" velocity="3.0" />
   </joint>
 
   <!-- Link 2 & Joint 2 -->
@@ -92,7 +92,7 @@
     <origin xyz="0 0 0.04027" rpy="1.5708 0 0" />
     <parent link="link_1" />
     <child link="link_2" />
-    <axis xyz="0 0 -1" />
+    <axis xyz="0 0 1" />
     <limit lower="-3.1416" upper="3.1416" effort="10.0" velocity="3.0" />
   </joint>
 
@@ -124,7 +124,7 @@
     <origin xyz="0.15386 0 -0.0019756" rpy="0 0 0" />
     <parent link="link_2" />
     <child link="link_3" />
-    <axis xyz="0 0 -1" />
+    <axis xyz="0 0 1" />
     <limit lower="-3.1416" upper="3.1416" effort="10.0" velocity="3.0" />
   </joint>
 
@@ -135,7 +135,7 @@
     <origin xyz="0.126 0 0.045" rpy="0 0 0" />
     <parent link="link_3" />
     <child link="dummy_ee_link" />
-    <axis xyz="0 0 -1" />
+    <axis xyz="0 0 1" />
     <limit lower="-3.1416" upper="3.1416" effort="10.0" velocity="3.0" />
     <dynamics damping="0.5" friction="0.1"/>
     <mimic joint="joint2" multiplier="-1.0" offset="0.0" />
@@ -155,7 +155,7 @@
     <origin xyz="0 0 0" rpy="0 0 0" />
     <parent link="dummy_ee_link" />
     <child link="link_ee" />
-    <axis xyz="0 0 -1" />
+    <axis xyz="0 0 1" />
     <limit lower="-3.1416" upper="3.1416" effort="10.0" velocity="3.0" />
     <dynamics damping="0.5" friction="0.1"/>
     <mimic joint="joint3" multiplier="-1.0" offset="0.0" />
@@ -216,7 +216,7 @@
     <parent link="link_ee" />
     <child link="link_dedoizq" />
     <axis xyz="0 -1 0" />
-    <limit lower="0.0" upper="0.015" effort="10.0" velocity="0.05" />
+    <limit lower="0.0" upper="0.015" effort="500.0" velocity="0.5" />
   </joint>
   
   <!-- Dedo Derecho (Imitador / Mimic) -->
@@ -249,7 +249,7 @@
     <parent link="link_ee" />
     <child link="link_dedoder" />
     <axis xyz="0 0 -1" />
-    <limit lower="0.0" upper="0.015" effort="10.0" velocity="0.05" />
+    <limit lower="0.0" upper="0.015" effort="500.0" velocity="0.5" />
     <mimic joint="joint_dedoizq" multiplier="1.0" offset="0.0" />
   </joint>
 
