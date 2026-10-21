@@ -23,6 +23,7 @@ entry_points={
     'console_scripts': [
         'gui_sliders = scara_boceto.gui_sliders:main',
         'fk_publisher = scara_boceto.fk_publisher:main',
+        'trajectory_rviz = scara_boceto.trajectory_rviz:main',
     ],
     },
 )

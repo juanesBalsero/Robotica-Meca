@@ -145,7 +145,7 @@
   </link>
   <joint
     name="rot2_joint"
-    type="continuous">
+    type="revolute">
     <origin
       xyz="0.130000000000002 0 0.0600000000000009"
       rpy="0 0 -1.5707963267949" />
@@ -156,6 +156,8 @@
     <axis
       xyz="0 0 1" />
     <limit
+      lower="-0.62"
+      upper="3.3"
       effort="1"
       velocity="0.2" />
     <dynamics

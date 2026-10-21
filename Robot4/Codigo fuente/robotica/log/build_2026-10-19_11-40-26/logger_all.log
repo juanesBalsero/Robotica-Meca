@@ -1,0 +1,179 @@
+[0.524s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.524s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x708598bda4b0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x708598bda300>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x708598bda300>>, mixin_verb=('build',))
+[0.602s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.602s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.602s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.602s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.602s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.603s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.603s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica'
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.637s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.637s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.637s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.637s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.637s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.637s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.637s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.637s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.637s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.637s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.637s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_boceto) by extensions ['ignore', 'ignore_ament_install']
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_boceto) by extension 'ignore'
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_boceto) by extension 'ignore_ament_install'
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_boceto) by extensions ['colcon_pkg']
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_boceto) by extension 'colcon_pkg'
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_boceto) by extensions ['colcon_meta']
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_boceto) by extension 'colcon_meta'
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_boceto) by extensions ['ros']
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_boceto) by extension 'ros'
+[0.644s] DEBUG:colcon.colcon_core.package_identification:Package 'src/scara_boceto' with type 'ros.ament_python' and name 'scara_boceto'
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_cajas) by extensions ['ignore', 'ignore_ament_install']
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_cajas) by extension 'ignore'
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_cajas) by extension 'ignore_ament_install'
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_cajas) by extensions ['colcon_pkg']
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_cajas) by extension 'colcon_pkg'
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_cajas) by extensions ['colcon_meta']
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_cajas) by extension 'colcon_meta'
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_cajas) by extensions ['ros']
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_cajas) by extension 'ros'
+[0.645s] DEBUG:colcon.colcon_core.package_identification:Package 'src/scara_cajas' with type 'ros.ament_python' and name 'scara_cajas'
+[0.645s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.645s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.645s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.645s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.645s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.681s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.682s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.686s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install
+[0.687s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 373 installed packages in /opt/ros/jazzy
+[0.689s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.740s] Level 5:colcon.colcon_core.verb:set package 'scara_boceto' build argument 'cmake_args' from command line to 'None'
+[0.740s] Level 5:colcon.colcon_core.verb:set package 'scara_boceto' build argument 'cmake_target' from command line to 'None'
+[0.740s] Level 5:colcon.colcon_core.verb:set package 'scara_boceto' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.740s] Level 5:colcon.colcon_core.verb:set package 'scara_boceto' build argument 'cmake_clean_cache' from command line to 'False'
+[0.740s] Level 5:colcon.colcon_core.verb:set package 'scara_boceto' build argument 'cmake_clean_first' from command line to 'False'
+[0.740s] Level 5:colcon.colcon_core.verb:set package 'scara_boceto' build argument 'cmake_force_configure' from command line to 'False'
+[0.740s] Level 5:colcon.colcon_core.verb:set package 'scara_boceto' build argument 'ament_cmake_args' from command line to 'None'
+[0.740s] Level 5:colcon.colcon_core.verb:set package 'scara_boceto' build argument 'catkin_cmake_args' from command line to 'None'
+[0.740s] Level 5:colcon.colcon_core.verb:set package 'scara_boceto' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.740s] DEBUG:colcon.colcon_core.verb:Building package 'scara_boceto' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/build/scara_boceto', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto', 'merge_install': False, 'path': '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/src/scara_boceto', 'symlink_install': False, 'test_result_base': None}
+[0.740s] Level 5:colcon.colcon_core.verb:set package 'scara_cajas' build argument 'cmake_args' from command line to 'None'
+[0.740s] Level 5:colcon.colcon_core.verb:set package 'scara_cajas' build argument 'cmake_target' from command line to 'None'
+[0.740s] Level 5:colcon.colcon_core.verb:set package 'scara_cajas' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.740s] Level 5:colcon.colcon_core.verb:set package 'scara_cajas' build argument 'cmake_clean_cache' from command line to 'False'
+[0.740s] Level 5:colcon.colcon_core.verb:set package 'scara_cajas' build argument 'cmake_clean_first' from command line to 'False'
+[0.740s] Level 5:colcon.colcon_core.verb:set package 'scara_cajas' build argument 'cmake_force_configure' from command line to 'False'
+[0.740s] Level 5:colcon.colcon_core.verb:set package 'scara_cajas' build argument 'ament_cmake_args' from command line to 'None'
+[0.740s] Level 5:colcon.colcon_core.verb:set package 'scara_cajas' build argument 'catkin_cmake_args' from command line to 'None'
+[0.740s] Level 5:colcon.colcon_core.verb:set package 'scara_cajas' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.740s] DEBUG:colcon.colcon_core.verb:Building package 'scara_cajas' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/build/scara_cajas', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_cajas', 'merge_install': False, 'path': '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/src/scara_cajas', 'symlink_install': False, 'test_result_base': None}
+[0.740s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.742s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.742s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/src/scara_boceto' with build type 'ament_python'
+[0.742s] Level 1:colcon.colcon_core.shell:create_environment_hook('scara_boceto', 'ament_prefix_path')
+[0.748s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.748s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/share/scara_boceto/hook/ament_prefix_path.ps1'
+[0.749s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/share/scara_boceto/hook/ament_prefix_path.dsv'
+[0.750s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/share/scara_boceto/hook/ament_prefix_path.sh'
+[0.751s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.751s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.755s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/src/scara_cajas' with build type 'ament_python'
+[0.755s] Level 1:colcon.colcon_core.shell:create_environment_hook('scara_cajas', 'ament_prefix_path')
+[0.756s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_cajas/share/scara_cajas/hook/ament_prefix_path.ps1'
+[0.756s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_cajas/share/scara_cajas/hook/ament_prefix_path.dsv'
+[0.757s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_cajas/share/scara_cajas/hook/ament_prefix_path.sh'
+[0.757s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.757s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.025s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/src/scara_boceto'
+[1.025s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.025s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.285s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/src/scara_cajas'
+[1.286s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.286s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.380s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: build_clib, install_data, sdist, develop, install, register, install_lib, build, install_scripts, install_egg_info, update_catalog, bdist_wheel, init_catalog, bdist, symlink_data, bdist_dumb, extract_messages, compile_catalog, build_ext, check, easy_install, clean, alias, setopt, build_py, editable_wheel, build_scripts, test, dist_info, saveopts, upload_docs, egg_info, bdist_rpm, bdist_egg, upload, install_headers, rotate
+[2.381s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/src/scara_boceto': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/build/scara_boceto/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/scara_boceto build --build-base /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/build/scara_boceto/build install --record /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/build/scara_boceto/install.log --install-scripts $base/lib/scara_boceto --single-version-externally-managed install_data
+[2.386s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: build_clib, install_data, sdist, develop, install, register, install_lib, build, install_scripts, install_egg_info, update_catalog, bdist_wheel, init_catalog, bdist, symlink_data, bdist_dumb, extract_messages, compile_catalog, build_ext, check, easy_install, clean, alias, setopt, build_py, editable_wheel, build_scripts, test, dist_info, saveopts, upload_docs, egg_info, bdist_rpm, bdist_egg, upload, install_headers, rotate
+[2.388s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/src/scara_cajas': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/build/scara_cajas/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_cajas/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/scara_cajas build --build-base /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/build/scara_cajas/build install --record /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/build/scara_cajas/install.log --install-scripts $base/lib/scara_cajas --single-version-externally-managed install_data
+[3.267s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/src/scara_boceto' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/build/scara_boceto/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/scara_boceto build --build-base /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/build/scara_boceto/build install --record /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/build/scara_boceto/install.log --install-scripts $base/lib/scara_boceto --single-version-externally-managed install_data
+[3.273s] Level 1:colcon.colcon_core.environment:checking '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto' for CMake module files
+[3.273s] Level 1:colcon.colcon_core.environment:checking '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto' for CMake config files
+[3.274s] Level 1:colcon.colcon_core.environment:checking '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/lib'
+[3.274s] Level 1:colcon.colcon_core.environment:checking '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/bin'
+[3.274s] Level 1:colcon.colcon_core.environment:checking '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/lib/pkgconfig/scara_boceto.pc'
+[3.275s] Level 1:colcon.colcon_core.environment:checking '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/lib/python3.12/site-packages'
+[3.275s] Level 1:colcon.colcon_core.shell:create_environment_hook('scara_boceto', 'pythonpath')
+[3.275s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/share/scara_boceto/hook/pythonpath.ps1'
+[3.275s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/share/scara_boceto/hook/pythonpath.dsv'
+[3.276s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/share/scara_boceto/hook/pythonpath.sh'
+[3.276s] Level 1:colcon.colcon_core.environment:checking '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/bin'
+[3.276s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(scara_boceto)
+[3.277s] INFO:colcon.colcon_core.shell:Creating package script '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/share/scara_boceto/package.ps1'
+[3.278s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/share/scara_boceto/package.dsv'
+[3.278s] INFO:colcon.colcon_core.shell:Creating package script '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/share/scara_boceto/package.sh'
+[3.279s] INFO:colcon.colcon_core.shell:Creating package script '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/share/scara_boceto/package.bash'
+[3.280s] INFO:colcon.colcon_core.shell:Creating package script '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/share/scara_boceto/package.zsh'
+[3.281s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/share/colcon-core/packages/scara_boceto)
+[3.281s] Level 1:colcon.colcon_core.environment:checking '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_cajas' for CMake module files
+[3.282s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/src/scara_cajas' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/build/scara_cajas/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_cajas/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/scara_cajas build --build-base /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/build/scara_cajas/build install --record /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/build/scara_cajas/install.log --install-scripts $base/lib/scara_cajas --single-version-externally-managed install_data
+[3.282s] Level 1:colcon.colcon_core.environment:checking '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_cajas' for CMake config files
+[3.284s] Level 1:colcon.colcon_core.environment:checking '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_cajas/lib'
+[3.284s] Level 1:colcon.colcon_core.environment:checking '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_cajas/bin'
+[3.284s] Level 1:colcon.colcon_core.environment:checking '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_cajas/lib/pkgconfig/scara_cajas.pc'
+[3.285s] Level 1:colcon.colcon_core.environment:checking '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_cajas/lib/python3.12/site-packages'
+[3.285s] Level 1:colcon.colcon_core.shell:create_environment_hook('scara_cajas', 'pythonpath')
+[3.285s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_cajas/share/scara_cajas/hook/pythonpath.ps1'
+[3.286s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_cajas/share/scara_cajas/hook/pythonpath.dsv'
+[3.286s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_cajas/share/scara_cajas/hook/pythonpath.sh'
+[3.287s] Level 1:colcon.colcon_core.environment:checking '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_cajas/bin'
+[3.287s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(scara_cajas)
+[3.287s] INFO:colcon.colcon_core.shell:Creating package script '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_cajas/share/scara_cajas/package.ps1'
+[3.288s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_cajas/share/scara_cajas/package.dsv'
+[3.288s] INFO:colcon.colcon_core.shell:Creating package script '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_cajas/share/scara_cajas/package.sh'
+[3.289s] INFO:colcon.colcon_core.shell:Creating package script '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_cajas/share/scara_cajas/package.bash'
+[3.289s] INFO:colcon.colcon_core.shell:Creating package script '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_cajas/share/scara_cajas/package.zsh'
+[3.289s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_cajas/share/colcon-core/packages/scara_cajas)
+[3.289s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.290s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.290s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[3.290s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.299s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.299s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.299s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.311s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.312s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/local_setup.ps1'
+[3.313s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/_local_setup_util_ps1.py'
+[3.315s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/setup.ps1'
+[3.317s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/local_setup.sh'
+[3.317s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/_local_setup_util_sh.py'
+[3.318s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/setup.sh'
+[3.320s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/local_setup.bash'
+[3.321s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/setup.bash'
+[3.323s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/local_setup.zsh'
+[3.324s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/setup.zsh'
