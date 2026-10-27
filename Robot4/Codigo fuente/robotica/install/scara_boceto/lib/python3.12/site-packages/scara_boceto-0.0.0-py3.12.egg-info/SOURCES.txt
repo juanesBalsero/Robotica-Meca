@@ -18,6 +18,7 @@ meshes/rot1.STL
 meshes/rot2.STL
 resource/scara_boceto
 scara_boceto/__init__.py
+scara_boceto/control_cinematico.py
 scara_boceto/fk_publisher.py
 scara_boceto/gui_sliders.py
 scara_boceto/trajectory_rviz.py

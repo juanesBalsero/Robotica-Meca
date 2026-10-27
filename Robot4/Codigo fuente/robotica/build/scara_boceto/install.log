@@ -2,10 +2,12 @@
 /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/lib/python3.12/site-packages/scara_boceto/__init__.py
 /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/lib/python3.12/site-packages/scara_boceto/gui_sliders.py
 /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/lib/python3.12/site-packages/scara_boceto/fk_publisher.py
+/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/lib/python3.12/site-packages/scara_boceto/control_cinematico.py
 /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/lib/python3.12/site-packages/scara_boceto/__pycache__/trajectory_rviz.cpython-312.pyc
 /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/lib/python3.12/site-packages/scara_boceto/__pycache__/__init__.cpython-312.pyc
 /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/lib/python3.12/site-packages/scara_boceto/__pycache__/gui_sliders.cpython-312.pyc
 /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/lib/python3.12/site-packages/scara_boceto/__pycache__/fk_publisher.cpython-312.pyc
+/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/lib/python3.12/site-packages/scara_boceto/__pycache__/control_cinematico.cpython-312.pyc
 /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/share/ament_index/resource_index/packages/scara_boceto
 /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/share/scara_boceto/package.xml
 /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/share/scara_boceto/launch/gazebo.launch.py

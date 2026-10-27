@@ -6,11 +6,11 @@ from std_msgs.msg import Float64MultiArray
 from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QLabel, QSlider
 from PyQt5.QtCore import Qt, QTimer
 
-JOINTS = ['rot1', 'rot2', 'pris']
+JOINTS = ['rot1_joint', 'rot2_joint', 'prisma_joint']
 LIMITS = {
-    'rot1': (-3.1416, 3.1416),
-    'rot2': (-0.5, 3.3),
-    'pris': (-0.131, 0.0),
+    'rot1_joint': (-3.1416, 3.1416),
+    'rot2_joint': (-0.62, 3.3),
+    'prisma_joint': (-0.1545, 0.0),
 }
 
 class GuiSlidersNode(Node):
@@ -33,7 +33,7 @@ class SlidersWindow(QWidget):
         self.init_ui()
 
     def init_ui(self):
-        self.setWindowTitle('Control SCARA Boceto - Gazebo')
+        self.setWindowTitle('Control SCARA RRP - Gazebo')
         self.resize(350, 220)
         layout = QVBoxLayout()
 

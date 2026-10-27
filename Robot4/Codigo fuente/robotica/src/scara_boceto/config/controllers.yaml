@@ -13,5 +13,46 @@ forward_position_controller:
     joints:
       - rot1_joint
       - rot2_joint
-      - pris_joint
+      - prisma_joint
     interface_name: position
+
+    <!-- Transmisiones requeridas para ros2_control -->
+  <transmission name="trans_rot1_joint">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rot1_joint">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rot1_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="trans_rot2_joint">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rot2_joint">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rot2_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="trans_prisma_joint">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="prisma_joint">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="prisma_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <!-- Plugin de Gazebo para ros2_control -->
+  <gazebo>
+    <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
+      <parameters>$(find scara_boceto)/config/controllers.yaml</parameters>
+    </plugin>
+  </gazebo>
