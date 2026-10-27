@@ -1,0 +1,50 @@
+trajectory_jacobian_node:
+  ros__parameters:
+
+    # ---- Puntos [x, y, z] en metros, marco base_link --------------------------
+    # Para AÑADIR un punto: agrega una línea aquí y escribe su nombre en 'sequence'.
+    points:
+      PA: [0.299654,   -0.049307,  0.079847]
+      PB: [0.0451603,   0.300307,  0.0729847]
+      PH: [0.107504,   -0.0918404, 0.241646]
+      P1: [0.0019,     -0.194968,  0.169977]
+      P2: [0.04276699, -0.189318,  0.168795]
+      P3: [0.317499, 0.1229, 0.236298]
+      P4: [0.0451603,   0.300307,  0.1029847]
+
+
+    sequence: ["PH", "PA", "PH", "P1", "PH", "P3", "P4","PB", "P4", "P3", "PH", "P2", "PH"]
+
+    max_joint_vel: 1.0      # [rad/s]  límite de velocidad de CADA junta (nunca se excede)
+    cart_speed: 0.10        # [m/s]    velocidad deseada del efector (se reduce sola si una junta llega al límite)
+    cart_accel: 0.30        # [m/s^2]  rampa de arranque/frenado en cada segmento
+    dwell_time: 0.5         # [s]      pausa al llegar a cada punto
+    home_joint_vel: 0.5     # [rad/s]  velocidad del movimiento inicial (junta a junta) hacia el primer punto
+    control_rate_hz: 10.0  # [Hz]     paso de Euler = 1/control_rate_hz
+    kp_task: 3.0            # [1/s]    corrección de lazo cerrado del error cartesiano (0.0 = Euler puro)
+    det_min: 0.00001        # umbral de singularidad |det J|
+    damping: 0.02           # lambda de la inversa amortiguada (solo cerca de singularidades)
+    q_seed: [-0.316, 0.515, -2.809]  # [rad] semilla de la IK del primer punto; define la configuración del brazo
+
+    # ---- Suavizado de velocidades (NUEVO) --------------------------------------
+    max_joint_acc: 2.0      # [rad/s^2] aceleración máxima de CADA junta
+    max_joint_jerk: 10.0    # [rad/s^3] jerk máximo de CADA junta (menor = más suave)
+    smooth_time: 0.80       # [s]       ancho inicial del filtro; se ensancha solo si no cumple acel/jerk
+    smooth_time_max: 2    # [s]       ancho máximo del filtro (luego se alarga el tiempo de la trayectoria)
+    max_path_dev_mm: 5.0    # [mm]      aviso si el efector se aleja de la recta A-B más que esto
+    kp_joint: 2.0           # [1/s]     corrección de posición articular sobre la velocidad (0.0 = lazo abierto)
+
+    # ---- Robot / topics --------------------------------------------------------
+    package_name: "miau"
+    urdf_relative_path: "urdf/Completo.urdf"
+    base_link: "base_link"
+    tip_link: "tcp"
+    joint_names: ["J1", "J2", "J3"]
+    commands_topic: "/velocity_controller/commands"   # CAMBIÓ: ahora son velocidades [rad/s]
+    joint_states_topic: "/joint_states"
+
+    # ---- Exportación de datos --------------------------------------------------
+    # log_dir: "/home/TU_USUARIO/resultados_robot"   # opcional; si no se define, usa la carpeta actual
+    log_prefix: "trayectoria"
+    log_tail_time: 1.0
+    auto_plot: true         # genera las gráficas de cada trayectoria al arrancar

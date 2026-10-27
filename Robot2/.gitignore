@@ -1,0 +1,15 @@
+# Archivos de compilacion de ROS 2
+build/
+install/
+log/
+
+# Archivos temporales de Python y entornos
+__pycache__/
+*.pyc
+.vscode/
+.DS_Store
+
+# Ignorar salidas de compilación de colcon / ROS 2
+build/
+install/
+log/

@@ -1,0 +1,169 @@
+[0.000000] (-) TimerEvent: {}
+[0.000292] (scara_boceto) JobQueued: {'identifier': 'scara_boceto', 'dependencies': OrderedDict()}
+[0.000373] (scara_cajas) JobQueued: {'identifier': 'scara_cajas', 'dependencies': OrderedDict()}
+[0.001313] (scara_boceto) JobStarted: {'identifier': 'scara_boceto'}
+[0.049046] (scara_cajas) JobStarted: {'identifier': 'scara_cajas'}
+[0.099445] (-) TimerEvent: {}
+[0.200238] (-) TimerEvent: {}
+[0.301160] (-) TimerEvent: {}
+[0.402228] (-) TimerEvent: {}
+[0.503330] (-) TimerEvent: {}
+[0.603862] (-) TimerEvent: {}
+[0.704614] (-) TimerEvent: {}
+[0.805333] (-) TimerEvent: {}
+[0.905788] (-) TimerEvent: {}
+[1.006616] (-) TimerEvent: {}
+[1.107482] (-) TimerEvent: {}
+[1.208262] (-) TimerEvent: {}
+[1.308810] (-) TimerEvent: {}
+[1.410464] (-) TimerEvent: {}
+[1.512079] (-) TimerEvent: {}
+[1.612702] (-) TimerEvent: {}
+[1.713576] (-) TimerEvent: {}
+[1.814172] (-) TimerEvent: {}
+[1.914576] (-) TimerEvent: {}
+[2.015094] (-) TimerEvent: {}
+[2.115538] (-) TimerEvent: {}
+[2.215933] (-) TimerEvent: {}
+[2.316326] (-) TimerEvent: {}
+[2.416764] (-) TimerEvent: {}
+[2.517159] (-) TimerEvent: {}
+[2.617547] (-) TimerEvent: {}
+[2.718287] (-) TimerEvent: {}
+[2.819228] (-) TimerEvent: {}
+[2.920030] (-) TimerEvent: {}
+[3.020818] (-) TimerEvent: {}
+[3.121747] (-) TimerEvent: {}
+[3.222791] (-) TimerEvent: {}
+[3.324152] (-) TimerEvent: {}
+[3.426306] (-) TimerEvent: {}
+[3.527209] (-) TimerEvent: {}
+[3.627820] (-) TimerEvent: {}
+[3.728467] (-) TimerEvent: {}
+[3.829107] (-) TimerEvent: {}
+[3.929846] (-) TimerEvent: {}
+[4.030486] (-) TimerEvent: {}
+[4.130937] (-) TimerEvent: {}
+[4.231407] (-) TimerEvent: {}
+[4.331932] (-) TimerEvent: {}
+[4.433124] (-) TimerEvent: {}
+[4.533790] (-) TimerEvent: {}
+[4.634451] (-) TimerEvent: {}
+[4.734891] (-) TimerEvent: {}
+[4.835796] (-) TimerEvent: {}
+[4.936236] (-) TimerEvent: {}
+[5.037074] (-) TimerEvent: {}
+[5.137566] (-) TimerEvent: {}
+[5.238172] (-) TimerEvent: {}
+[5.338885] (-) TimerEvent: {}
+[5.440033] (-) TimerEvent: {}
+[5.540844] (-) TimerEvent: {}
+[5.642144] (-) TimerEvent: {}
+[5.742982] (-) TimerEvent: {}
+[5.843744] (-) TimerEvent: {}
+[5.944410] (-) TimerEvent: {}
+[6.045046] (-) TimerEvent: {}
+[6.145755] (-) TimerEvent: {}
+[6.246284] (-) TimerEvent: {}
+[6.346693] (-) TimerEvent: {}
+[6.447134] (-) TimerEvent: {}
+[6.547535] (-) TimerEvent: {}
+[6.648027] (-) TimerEvent: {}
+[6.748593] (-) TimerEvent: {}
+[6.849438] (-) TimerEvent: {}
+[6.950061] (-) TimerEvent: {}
+[7.050874] (-) TimerEvent: {}
+[7.151352] (-) TimerEvent: {}
+[7.251868] (-) TimerEvent: {}
+[7.352435] (-) TimerEvent: {}
+[7.394609] (scara_cajas) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/scara_cajas', 'build', '--build-base', '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/build/scara_cajas/build', 'install', '--record', '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/build/scara_cajas/install.log', '--install-scripts', '$base/lib/scara_cajas', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/src/scara_cajas', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'LANGUAGE': 'es_ES:en', 'USER': 'david-romero', 'LC_TIME': 'C.UTF-8', 'FONTCONFIG_PATH': '/etc/fonts', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SEAT': 'seat0', 'GIO_MODULE_DIR': '/home/david-romero/snap/code/common/.cache/gio-modules', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/snap/code/268/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GTK_EXE_PREFIX_VSCODE_SNAP_ORIG': '', 'GDK_BACKEND_VSCODE_SNAP_ORIG': '', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/david-romero', 'CHROME_DESKTOP': 'code_code.desktop', 'LOCPATH_VSCODE_SNAP_ORIG': '', 'OLDPWD': '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente', 'TERM_PROGRAM_VERSION': '1.141.0', 'DESKTOP_SESSION': 'xubuntu', 'GTK_PATH': '/snap/code/268/usr/lib/x86_64-linux-gnu/gtk-3.0', 'PANEL_GDK_CORE_DEVICE_EVENTS': '0', 'GTK_IM_MODULE_FILE': '/home/david-romero/snap/code/common/.cache/immodules/immodules.cache', 'ROS_PYTHON_VERSION': '3', 'XDG_SEAT_PATH': '/org/freedesktop/DisplayManager/Seat0', 'GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG': '', 'VSCODE_GIT_ASKPASS_MAIN': '/snap/code/268/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'LC_MONETARY': 'C.UTF-8', 'VSCODE_GIT_ASKPASS_NODE': '/snap/code/268/usr/share/code/code', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/david-romero/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'QT_QPA_PLATFORMTHEME': 'gtk2', 'COLCON_PREFIX_PATH': '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'david-romero', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG': '/etc/xdg/xdg-xubuntu:/etc/xdg', 'XDG_SESSION_CLASS': 'user', 'XDG_DATA_DIRS_VSCODE_SNAP_ORIG': '/usr/share/xubuntu:/usr/share/xfce4:/home/david-romero/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share', 'CLUTTER_BACKEND': 'x11', 'TERM': 'xterm-256color', 'GTK_OVERLAY_SCROLLING': '0', 'XDG_SESSION_ID': 'c2', 'FC_FONTATIONS': '1', 'PATH': '/home/david-romero/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/david-romero/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/david-romero/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/david-romero/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/david-romero/.dotnet/tools:/home/david-romero/.local/bin:/home/david-romero/.local/bin:/home/david-romero/.local/bin:/home/david-romero/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts:/home/david-romero/.local/bin', 'SESSION_MANAGER': 'local/david-romero-HP-240-G7-Notebook-PC:@/tmp/.ICE-unix/2099,unix/david-romero-HP-240-G7-Notebook-PC:/tmp/.ICE-unix/2099', 'GTK_EXE_PREFIX': '/snap/code/268/usr', 'GDM_LANG': 'es_ES', 'PAPERSIZE': 'a4', 'XDG_SESSION_PATH': '/org/freedesktop/DisplayManager/Session0', 'XDG_MENU_PREFIX': 'xfce-', 'LC_ADDRESS': 'C.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0.0', 'LOCPATH': '/snap/code/268/usr/lib/locale', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/david-romero/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-aa91e6afede2c8d1.txt', 'LANG': 'es_ES.UTF-8', 'XDG_CURRENT_DESKTOP': 'XFCE', 'PYTHONSTARTUP': '/home/david-romero/.config/Code/User/workspaceStorage/68926972a3679072ca71bbd8d2ae9138/ms-python.python/pythonrc.py', 'DOTNET_BUNDLE_EXTRACT_BASE_DIR': '/home/david-romero/.cache/dotnet_bundle_extract', 'LC_TELEPHONE': 'C.UTF-8', 'GIO_MODULE_DIR_VSCODE_SNAP_ORIG': '', 'XDG_SESSION_DESKTOP': 'xubuntu', 'XAUTHORITY': '/home/david-romero/.Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-26363e345f.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/david-romero/snap/code/268/.local/share/glib-2.0/schemas', 'XDG_GREETER_DATA_DIR': '/var/lib/lightdm-data/david-romero', 'AMENT_PREFIX_PATH': '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_cajas:/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'C.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'xubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GTK_PATH_VSCODE_SNAP_ORIG': '', 'FONTCONFIG_FILE': '/etc/fonts/fonts.conf', 'GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG': '', 'LC_MEASUREMENT': 'C.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'C.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'XDG_VTNR': '7', 'PWD': '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/build/scara_cajas', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-xubuntu:/etc/xdg', 'COPILOT_DEBUG_NONCE': '0cd39a3ea66512c27c594e4e96ee64f1', 'XDG_DATA_DIRS': '/home/david-romero/snap/code/268/.local/share:/home/david-romero/snap/code/268:/snap/code/268/usr/share:/usr/share/xubuntu:/usr/share/xfce4:/home/david-romero/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share', 'PYTHONPATH': '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/build/scara_cajas/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_cajas/lib/python3.12/site-packages:/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_cajas/lib/python3.12/site-packages:/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'C.UTF-8', 'LC_PAPER': 'C.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[7.412631] (scara_boceto) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/scara_boceto', 'build', '--build-base', '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/build/scara_boceto/build', 'install', '--record', '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/build/scara_boceto/install.log', '--install-scripts', '$base/lib/scara_boceto', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/src/scara_boceto', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'LANGUAGE': 'es_ES:en', 'USER': 'david-romero', 'LC_TIME': 'C.UTF-8', 'FONTCONFIG_PATH': '/etc/fonts', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SEAT': 'seat0', 'GIO_MODULE_DIR': '/home/david-romero/snap/code/common/.cache/gio-modules', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/snap/code/268/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GTK_EXE_PREFIX_VSCODE_SNAP_ORIG': '', 'GDK_BACKEND_VSCODE_SNAP_ORIG': '', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/david-romero', 'CHROME_DESKTOP': 'code_code.desktop', 'LOCPATH_VSCODE_SNAP_ORIG': '', 'OLDPWD': '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente', 'TERM_PROGRAM_VERSION': '1.141.0', 'DESKTOP_SESSION': 'xubuntu', 'GTK_PATH': '/snap/code/268/usr/lib/x86_64-linux-gnu/gtk-3.0', 'PANEL_GDK_CORE_DEVICE_EVENTS': '0', 'GTK_IM_MODULE_FILE': '/home/david-romero/snap/code/common/.cache/immodules/immodules.cache', 'ROS_PYTHON_VERSION': '3', 'XDG_SEAT_PATH': '/org/freedesktop/DisplayManager/Seat0', 'GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG': '', 'VSCODE_GIT_ASKPASS_MAIN': '/snap/code/268/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'LC_MONETARY': 'C.UTF-8', 'VSCODE_GIT_ASKPASS_NODE': '/snap/code/268/usr/share/code/code', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/david-romero/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'QT_QPA_PLATFORMTHEME': 'gtk2', 'COLCON_PREFIX_PATH': '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'david-romero', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG': '/etc/xdg/xdg-xubuntu:/etc/xdg', 'XDG_SESSION_CLASS': 'user', 'XDG_DATA_DIRS_VSCODE_SNAP_ORIG': '/usr/share/xubuntu:/usr/share/xfce4:/home/david-romero/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share', 'CLUTTER_BACKEND': 'x11', 'TERM': 'xterm-256color', 'GTK_OVERLAY_SCROLLING': '0', 'XDG_SESSION_ID': 'c2', 'FC_FONTATIONS': '1', 'PATH': '/home/david-romero/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/david-romero/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/david-romero/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/david-romero/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/david-romero/.dotnet/tools:/home/david-romero/.local/bin:/home/david-romero/.local/bin:/home/david-romero/.local/bin:/home/david-romero/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts:/home/david-romero/.local/bin', 'SESSION_MANAGER': 'local/david-romero-HP-240-G7-Notebook-PC:@/tmp/.ICE-unix/2099,unix/david-romero-HP-240-G7-Notebook-PC:/tmp/.ICE-unix/2099', 'GTK_EXE_PREFIX': '/snap/code/268/usr', 'GDM_LANG': 'es_ES', 'PAPERSIZE': 'a4', 'XDG_SESSION_PATH': '/org/freedesktop/DisplayManager/Session0', 'XDG_MENU_PREFIX': 'xfce-', 'LC_ADDRESS': 'C.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0.0', 'LOCPATH': '/snap/code/268/usr/lib/locale', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/david-romero/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-aa91e6afede2c8d1.txt', 'LANG': 'es_ES.UTF-8', 'XDG_CURRENT_DESKTOP': 'XFCE', 'PYTHONSTARTUP': '/home/david-romero/.config/Code/User/workspaceStorage/68926972a3679072ca71bbd8d2ae9138/ms-python.python/pythonrc.py', 'DOTNET_BUNDLE_EXTRACT_BASE_DIR': '/home/david-romero/.cache/dotnet_bundle_extract', 'LC_TELEPHONE': 'C.UTF-8', 'GIO_MODULE_DIR_VSCODE_SNAP_ORIG': '', 'XDG_SESSION_DESKTOP': 'xubuntu', 'XAUTHORITY': '/home/david-romero/.Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-26363e345f.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/david-romero/snap/code/268/.local/share/glib-2.0/schemas', 'XDG_GREETER_DATA_DIR': '/var/lib/lightdm-data/david-romero', 'AMENT_PREFIX_PATH': '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_cajas:/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'C.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'xubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GTK_PATH_VSCODE_SNAP_ORIG': '', 'FONTCONFIG_FILE': '/etc/fonts/fonts.conf', 'GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG': '', 'LC_MEASUREMENT': 'C.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'C.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'XDG_VTNR': '7', 'PWD': '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/build/scara_boceto', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-xubuntu:/etc/xdg', 'COPILOT_DEBUG_NONCE': '0cd39a3ea66512c27c594e4e96ee64f1', 'XDG_DATA_DIRS': '/home/david-romero/snap/code/268/.local/share:/home/david-romero/snap/code/268:/snap/code/268/usr/share:/usr/share/xubuntu:/usr/share/xfce4:/home/david-romero/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share', 'PYTHONPATH': '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/build/scara_boceto/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/lib/python3.12/site-packages:/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_cajas/lib/python3.12/site-packages:/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'C.UTF-8', 'LC_PAPER': 'C.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[7.452572] (-) TimerEvent: {}
+[7.553157] (-) TimerEvent: {}
+[7.654208] (-) TimerEvent: {}
+[7.754824] (-) TimerEvent: {}
+[7.855613] (-) TimerEvent: {}
+[7.957639] (-) TimerEvent: {}
+[8.058326] (-) TimerEvent: {}
+[8.159504] (-) TimerEvent: {}
+[8.260338] (-) TimerEvent: {}
+[8.361084] (-) TimerEvent: {}
+[8.461548] (-) TimerEvent: {}
+[8.563575] (-) TimerEvent: {}
+[8.664880] (-) TimerEvent: {}
+[8.765489] (-) TimerEvent: {}
+[8.866267] (-) TimerEvent: {}
+[8.967040] (-) TimerEvent: {}
+[9.067755] (-) TimerEvent: {}
+[9.168272] (-) TimerEvent: {}
+[9.268966] (-) TimerEvent: {}
+[9.307669] (scara_cajas) StdoutLine: {'line': b'running egg_info\n'}
+[9.313982] (scara_boceto) StdoutLine: {'line': b'running egg_info\n'}
+[9.371950] (-) TimerEvent: {}
+[9.450493] (scara_cajas) StdoutLine: {'line': b'writing ../../build/scara_cajas/scara_cajas.egg-info/PKG-INFO\n'}
+[9.453212] (scara_cajas) StdoutLine: {'line': b'writing dependency_links to ../../build/scara_cajas/scara_cajas.egg-info/dependency_links.txt\n'}
+[9.454060] (scara_cajas) StdoutLine: {'line': b'writing entry points to ../../build/scara_cajas/scara_cajas.egg-info/entry_points.txt\n'}
+[9.457401] (scara_cajas) StdoutLine: {'line': b'writing requirements to ../../build/scara_cajas/scara_cajas.egg-info/requires.txt\n'}
+[9.457719] (scara_cajas) StdoutLine: {'line': b'writing top-level names to ../../build/scara_cajas/scara_cajas.egg-info/top_level.txt\n'}
+[9.467117] (scara_boceto) StdoutLine: {'line': b'writing ../../build/scara_boceto/scara_boceto.egg-info/PKG-INFO\n'}
+[9.471211] (scara_boceto) StdoutLine: {'line': b'writing dependency_links to ../../build/scara_boceto/scara_boceto.egg-info/dependency_links.txt\n'}
+[9.471517] (scara_boceto) StdoutLine: {'line': b'writing entry points to ../../build/scara_boceto/scara_boceto.egg-info/entry_points.txt\n'}
+[9.471756] (scara_boceto) StdoutLine: {'line': b'writing top-level names to ../../build/scara_boceto/scara_boceto.egg-info/top_level.txt\n'}
+[9.472327] (-) TimerEvent: {}
+[9.572862] (-) TimerEvent: {}
+[9.677359] (-) TimerEvent: {}
+[9.777727] (-) TimerEvent: {}
+[9.808139] (scara_cajas) StdoutLine: {'line': b"reading manifest file '../../build/scara_cajas/scara_cajas.egg-info/SOURCES.txt'\n"}
+[9.814689] (scara_cajas) StdoutLine: {'line': b"writing manifest file '../../build/scara_cajas/scara_cajas.egg-info/SOURCES.txt'\n"}
+[9.816249] (scara_cajas) StdoutLine: {'line': b'running build\n'}
+[9.816547] (scara_cajas) StdoutLine: {'line': b'running build_py\n'}
+[9.818515] (scara_cajas) StdoutLine: {'line': b'running install\n'}
+[9.824161] (scara_boceto) StdoutLine: {'line': b"reading manifest file '../../build/scara_boceto/scara_boceto.egg-info/SOURCES.txt'\n"}
+[9.830415] (scara_boceto) StdoutLine: {'line': b"writing manifest file '../../build/scara_boceto/scara_boceto.egg-info/SOURCES.txt'\n"}
+[9.831293] (scara_boceto) StdoutLine: {'line': b'running build\n'}
+[9.831742] (scara_boceto) StdoutLine: {'line': b'running build_py\n'}
+[9.833687] (scara_boceto) StdoutLine: {'line': b'running install\n'}
+[9.849984] (scara_cajas) StdoutLine: {'line': b'running install_lib\n'}
+[9.865526] (scara_boceto) StdoutLine: {'line': b'running install_lib\n'}
+[9.877980] (-) TimerEvent: {}
+[9.978585] (-) TimerEvent: {}
+[10.027877] (scara_cajas) StdoutLine: {'line': b'running install_data\n'}
+[10.031154] (scara_cajas) StdoutLine: {'line': b'running install_egg_info\n'}
+[10.037340] (scara_boceto) StdoutLine: {'line': b'running install_data\n'}
+[10.042993] (scara_boceto) StdoutLine: {'line': b'copying urdf/scara_boceto.urdf.xacro -> /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/share/scara_boceto/urdf\n'}
+[10.045725] (scara_boceto) StdoutLine: {'line': b'running install_egg_info\n'}
+[10.078751] (-) TimerEvent: {}
+[10.179419] (-) TimerEvent: {}
+[10.212859] (scara_cajas) StdoutLine: {'line': b"removing '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_cajas/lib/python3.12/site-packages/scara_cajas-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[10.215605] (scara_cajas) StdoutLine: {'line': b'Copying ../../build/scara_cajas/scara_cajas.egg-info to /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_cajas/lib/python3.12/site-packages/scara_cajas-0.0.0-py3.12.egg-info\n'}
+[10.218134] (scara_boceto) StdoutLine: {'line': b"removing '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/lib/python3.12/site-packages/scara_boceto-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[10.218827] (scara_cajas) StdoutLine: {'line': b'running install_scripts\n'}
+[10.219204] (scara_boceto) StdoutLine: {'line': b'Copying ../../build/scara_boceto/scara_boceto.egg-info to /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/lib/python3.12/site-packages/scara_boceto-0.0.0-py3.12.egg-info\n'}
+[10.220844] (scara_boceto) StdoutLine: {'line': b'running install_scripts\n'}
+[10.279562] (-) TimerEvent: {}
+[10.380223] (-) TimerEvent: {}
+[10.480945] (-) TimerEvent: {}
+[10.581455] (-) TimerEvent: {}
+[10.681864] (-) TimerEvent: {}
+[10.782438] (-) TimerEvent: {}
+[10.882988] (-) TimerEvent: {}
+[10.983524] (-) TimerEvent: {}
+[11.084195] (-) TimerEvent: {}
+[11.133360] (scara_cajas) StdoutLine: {'line': b'Installing gazebo_mod script to /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_cajas/lib/scara_cajas\n'}
+[11.133854] (scara_boceto) StdoutLine: {'line': b'Installing fk_publisher script to /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/lib/scara_boceto\n'}
+[11.134607] (scara_cajas) StdoutLine: {'line': b'Installing gui_presets script to /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_cajas/lib/scara_cajas\n'}
+[11.135491] (scara_boceto) StdoutLine: {'line': b'Installing gui_sliders script to /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/lib/scara_boceto\n'}
+[11.135826] (scara_cajas) StdoutLine: {'line': b'Installing trajectory_exec script to /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_cajas/lib/scara_cajas\n'}
+[11.136372] (scara_boceto) StdoutLine: {'line': b'Installing trajectory_rviz script to /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/lib/scara_boceto\n'}
+[11.137250] (scara_cajas) StdoutLine: {'line': b'Installing trajectory_gazebo script to /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_cajas/lib/scara_cajas\n'}
+[11.141272] (scara_cajas) StdoutLine: {'line': b'Installing trajectory_rviz script to /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_cajas/lib/scara_cajas\n'}
+[11.145793] (scara_boceto) StdoutLine: {'line': b"writing list of installed files to '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/build/scara_boceto/install.log'\n"}
+[11.146705] (scara_cajas) StdoutLine: {'line': b"writing list of installed files to '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/build/scara_cajas/install.log'\n"}
+[11.184577] (-) TimerEvent: {}
+[11.279836] (scara_cajas) CommandEnded: {'returncode': 0}
+[11.284720] (-) TimerEvent: {}
+[11.353178] (scara_cajas) JobEnded: {'identifier': 'scara_cajas', 'rc': 0}
+[11.358248] (scara_boceto) CommandEnded: {'returncode': 0}
+[11.384821] (-) TimerEvent: {}
+[11.390175] (scara_boceto) JobEnded: {'identifier': 'scara_boceto', 'rc': 0}
+[11.397047] (-) EventReactorShutdown: {}

@@ -1,0 +1,25 @@
+[6.583s] Invoking command in '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/src/scara_boceto': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/build/scara_boceto/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/scara_boceto build --build-base /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/build/scara_boceto/build install --record /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/build/scara_boceto/install.log --install-scripts $base/lib/scara_boceto --single-version-externally-managed install_data
+[8.261s] running egg_info
+[8.421s] writing ../../build/scara_boceto/scara_boceto.egg-info/PKG-INFO
+[8.422s] writing dependency_links to ../../build/scara_boceto/scara_boceto.egg-info/dependency_links.txt
+[8.425s] writing entry points to ../../build/scara_boceto/scara_boceto.egg-info/entry_points.txt
+[8.425s] writing top-level names to ../../build/scara_boceto/scara_boceto.egg-info/top_level.txt
+[8.747s] reading manifest file '../../build/scara_boceto/scara_boceto.egg-info/SOURCES.txt'
+[8.750s] writing manifest file '../../build/scara_boceto/scara_boceto.egg-info/SOURCES.txt'
+[8.752s] running build
+[8.753s] running build_py
+[8.754s] copying scara_boceto/gui_sliders.py -> /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/build/scara_boceto/build/lib/scara_boceto
+[8.757s] running install
+[8.784s] running install_lib
+[8.935s] copying /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/build/scara_boceto/build/lib/scara_boceto/gui_sliders.py -> /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/lib/python3.12/site-packages/scara_boceto
+[8.939s] byte-compiling /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/lib/python3.12/site-packages/scara_boceto/gui_sliders.py to gui_sliders.cpython-312.pyc
+[8.945s] running install_data
+[8.946s] running install_egg_info
+[9.108s] removing '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/lib/python3.12/site-packages/scara_boceto-0.0.0-py3.12.egg-info' (and everything under it)
+[9.109s] Copying ../../build/scara_boceto/scara_boceto.egg-info to /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/lib/python3.12/site-packages/scara_boceto-0.0.0-py3.12.egg-info
+[9.111s] running install_scripts
+[9.961s] Installing fk_publisher script to /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/lib/scara_boceto
+[9.962s] Installing gui_sliders script to /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/lib/scara_boceto
+[9.963s] Installing trajectory_rviz script to /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/lib/scara_boceto
+[9.965s] writing list of installed files to '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/build/scara_boceto/install.log'
+[10.093s] Invoked command in '/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/src/scara_boceto' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/build/scara_boceto/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/install/scara_boceto/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/scara_boceto build --build-base /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/build/scara_boceto/build install --record /home/david-romero/Robotica-Meca/Robot4/Codigo fuente/robotica/build/scara_boceto/install.log --install-scripts $base/lib/scara_boceto --single-version-externally-managed install_data

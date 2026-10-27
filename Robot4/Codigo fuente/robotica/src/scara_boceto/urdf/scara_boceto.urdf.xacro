@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro"
+       name="scara_boceto">
+
+  <!-- Parametros del modelo -->
+  <xacro:property name="robot_name" value="scara_boceto"/>
+  <xacro:property name="mesh_package" value="scara_boceto"/>
+
+  <!-- Link virtual para anclar el robot al mundo de Gazebo y evitar que se caiga -->
+  <link name="world"/>
+
+  <joint name="fixed_to_world" type="fixed">
+    <parent link="world"/>
+    <child link="base_link"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="7.3698831396794E-06 0.00505634398271243 0.0515191581411316"
+        rpy="0 0 0" />
+      <mass
+        value="0.369283968725788" />
+      <inertia
+        ixx="0.00143244737393282"
+        ixy="-9.70614366393655E-08"
+        ixz="-1.42672533433238E-07"
+        iyy="0.00143617210946978"
+        iyz="5.47922504699482E-06"
+        izz="0.000844588909415063" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://${mesh_package}/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.95 0.96 0.15 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://${mesh_package}/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="rot1">
+    <inertial>
+      <origin
+        xyz="0.0652002981897172 2.15184196864643E-06 0.0302808417973492"
+        rpy="0 0 0" />
+      <mass
+        value="0.960224575652195" />
+      <inertia
+        ixx="0.000771578203436998"
+        ixy="-1.1237245765865E-08"
+        ixz="8.88110971334996E-05"
+        iyy="0.00351096266258402"
+        iyz="1.03264234045021E-08"
+        izz="0.00366458339979814" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://${mesh_package}/meshes/rot1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.95 0.96 0.15 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://${mesh_package}/meshes/rot1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rot1_joint"
+    type="continuous">
+    <origin
+      xyz="0 0 0.149999999999999"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rot1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="10"
+      velocity="2.0" />
+    <dynamics
+      damping="0.5"
+      friction="0.1" />
+  </joint>
+  <link
+    name="rot2">
+    <inertial>
+      <origin
+        xyz="0.0545562991886573 0.00420940477256759 0.0442384523201031"
+        rpy="0 0 0" />
+      <mass
+        value="0.827501167062165" />
+      <inertia
+        ixx="0.000723895006460007"
+        ixy="-2.0619565009593E-06"
+        ixz="2.00409100148053E-05"
+        iyy="0.00244181599386376"
+        iyz="-6.47140205432564E-08"
+        izz="0.00249469873379645" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://${mesh_package}/meshes/rot2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.50 0.50 0.51 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://${mesh_package}/meshes/rot2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rot2_joint"
+    type="revolute">
+    <origin
+      xyz="0.130000000000002 0 0.0600000000000009"
+      rpy="0 0 -1.5707963267949" />
+    <parent
+      link="rot1" />
+    <child
+      link="rot2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.62"
+      upper="3.3"
+      effort="10"
+      velocity="2.0" />
+    <dynamics
+      damping="0.5"
+      friction="0.1" />
+  </joint>
+  <link
+    name="prisma">
+    <inertial>
+      <origin
+        xyz="-0.00968954429107238 -8.70297020284794E-05 0.00763925129938392"
+        rpy="0 0 0" />
+      <mass
+        value="0.0482530059600755" />
+      <inertia
+        ixx="3.78986465008096E-05"
+        ixy="1.55038979176541E-10"
+        ixz="-4.10087887988017E-11"
+        iyy="3.08945956859896E-05"
+        iyz="3.63265544654102E-20"
+        izz="9.67997761427531E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://${mesh_package}/meshes/prisma.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://${mesh_package}/meshes/prisma.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="prisma_joint"
+    type="prismatic">
+    <origin
+      xyz="0.13571 0 0.23444"
+      rpy="3.1416 0 0" />
+    <parent
+      link="rot2" />
+    <child
+      link="prisma" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-0.1545"
+      upper="0"
+      effort="10"
+      velocity="1.0" />
+    <dynamics
+      damping="0.5"
+      friction="0.1" />
+  </joint>
+  <link
+    name="efector">
+    <inertial>
+      <origin
+        xyz="2.55351295663786E-15 9.46465128492946E-15 -0.00844361008372019"
+        rpy="0 0 0" />
+      <mass
+        value="0.00140887146453861" />
+      <inertia
+        ixx="1.39235410513575E-07"
+        ixy="4.94416790599824E-24"
+        ixz="1.00449775275084E-23"
+        iyy="1.39235410513575E-07"
+        iyz="-1.57174263494576E-22"
+        izz="2.28692890034035E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://${mesh_package}/meshes/efector.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://${mesh_package}/meshes/efector.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="efector_joint"
+    type="fixed">
+    <origin
+      xyz="0.006 0 0.29082"
+      rpy="0 0 0" />
+    <parent
+      link="prisma" />
+    <child
+      link="efector" />
+  </joint>
+  <link
+    name="caja">
+    <inertial>
+      <origin
+        xyz="0.000235440571373854 0.0545520890162251 0.0730185488077406"
+        rpy="0 0 0" />
+      <mass
+        value="0.403993820975926" />
+      <inertia
+        ixx="0.00054672315998004"
+        ixy="6.01122297772826E-07"
+        ixz="-2.15833642341804E-06"
+        iyy="0.000841358409981584"
+        iyz="-2.83074117806141E-05"
+        izz="0.000414701885458381" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://${mesh_package}/meshes/caja.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.58 0.58 0.57 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://${mesh_package}/meshes/caja.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="caja_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="caja" />
+  </joint>
+
+  <!-- Parametros fisicos para Gazebo (contacto y friccion) -->
+  <gazebo reference="base_link">
+    <material>Gazebo/Yellow</material>
+    <mu1>0.8</mu1>
+    <mu2>0.8</mu2>
+  </gazebo>
+  <gazebo reference="rot1">
+    <mu1>0.8</mu1>
+    <mu2>0.8</mu2>
+  </gazebo>
+  <gazebo reference="rot2">
+    <mu1>0.8</mu1>
+    <mu2>0.8</mu2>
+  </gazebo>
+  <gazebo reference="prisma">
+    <mu1>0.8</mu1>
+    <mu2>0.8</mu2>
+  </gazebo>
+  <gazebo reference="efector">
+    <mu1>0.8</mu1>
+    <mu2>0.8</mu2>
+  </gazebo>
+  <gazebo reference="caja">
+    <mu1>0.8</mu1>
+    <mu2>0.8</mu2>
+  </gazebo>
+
+  <ros2_control name="GazeboSystem" type="system">
+  <hardware>
+    <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+  </hardware>
+
+  <joint name="rot1_joint">
+    <command_interface name="position"/>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+  </joint>
+
+  <joint name="rot2_joint">
+    <command_interface name="position"/>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+  </joint>
+
+  <joint name="prisma_joint">
+    <command_interface name="position"/>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+  </joint>
+</ros2_control>
+  <!-- Plugin de ros2_control para Gazebo -->
+  <gazebo>
+    <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
+      <parameters>$(find scara_boceto)/config/controllers.yaml</parameters>
+    </plugin>
+  </gazebo>
+
+ 
+</robot>
