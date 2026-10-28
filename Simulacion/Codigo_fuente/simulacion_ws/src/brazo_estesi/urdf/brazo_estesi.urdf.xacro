@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="brazo_estesi">
+  <link name="world"/>
+  <link name="base_link"/>
+  <joint name="world_to_base" type="fixed">
+    <parent link="world"/>
+    <child link="base_link"/>
+    <origin xyz="0 0 0.25" rpy="0 0 0"/>
+  </joint>
+  <joint name="base_to_L1" type="fixed">
+    <parent link="base_link"/>
+    <child link="L1"/>
+    <origin xyz="-0.127896009874116 1.16193522887873 0" rpy="0 0 0"/>
+  </joint>
+  <link
+    name="L1">
+    <inertial>
+      <origin
+        xyz="0.128393926190121 -1.16163581395306 -0.168880072557555"
+        rpy="0 0 0" />
+      <mass
+        value="0.604522875056084" />
+      <inertia
+        ixx="0.00271186389837995"
+        ixy="2.85888682080388E-06"
+        ixz="1.16893656112144E-05"
+        iyy="0.00215046210528985"
+        iyz="1.30647520185808E-05"
+        izz="0.00103282320497863" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://brazo_estesi/meshes/L1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://brazo_estesi/meshes/L1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="L2">
+    <inertial>
+      <origin
+        xyz="0.00183376148423409 0.0101548891861228 -0.0200144950699674"
+        rpy="0 0 0" />
+      <mass
+        value="0.0591549138682919" />
+      <inertia
+        ixx="6.07188510735423E-05"
+        ixy="-5.55184240946354E-07"
+        ixz="4.30842989865861E-06"
+        iyy="5.93304030642387E-05"
+        iyz="6.05855615802466E-06"
+        izz="1.4085860142561E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://brazo_estesi/meshes/L2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.501960784313725 0.501960784313725 0.501960784313725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://brazo_estesi/meshes/L2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="M1"
+    type="revolute">
+    <origin
+      xyz="0.127896009874116 -1.16193522887873 0"
+      rpy="1.5707963267949 0 -1.40237906021712" />
+    <parent
+      link="L1" />
+    <child
+      link="L2" />
+    <axis
+      xyz="0 1 0" />
+    <limit lower="-3.1416" upper="3.1416" effort="10.0" velocity="2.0"/>
+  </joint>
+  <link
+    name="L3">
+    <inertial>
+      <origin
+        xyz="0.00219517524266499 0.0186460328175688 -0.0735285750997385"
+        rpy="0 0 0" />
+      <mass
+        value="0.052189018536357" />
+      <inertia
+        ixx="5.76204710171982E-05"
+        ixy="-1.12213856373519E-07"
+        ixz="4.39916909865422E-06"
+        iyy="5.68694740316304E-05"
+        iyz="8.13596930570712E-07"
+        izz="5.21909170068633E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 -0.04"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://brazo_estesi/meshes/L3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.501960784313725 0.501960784313725 0.501960784313725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 -0.04"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://brazo_estesi/meshes/L3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="M2"
+    type="revolute">
+    <origin
+      xyz="0.00770908065274314 -0.0020661 -0.0841505198890151"
+      rpy="0 -0.095041 0" />
+    <parent
+      link="L2" />
+    <child
+      link="L3" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-2.8"
+      upper="2.8"
+      effort="10.0"
+      velocity="2.0" />
+  </joint>
+  <link
+    name="L4">
+    <inertial>
+      <origin
+        xyz="-0.0597576203287019 -0.0236900852046714 0.00486952188404821"
+        rpy="0 0 0" />
+      <mass
+        value="0.017254670325252" />
+      <inertia
+        ixx="6.48042582168925E-06"
+        ixy="1.13075941983099E-08"
+        ixz="9.59783637765118E-09"
+        iyy="1.45055356512112E-06"
+        iyz="2.55485394453776E-07"
+        izz="7.05012379842893E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://brazo_estesi/meshes/L4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://brazo_estesi/meshes/L4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="M3"
+    type="prismatic">
+    <origin
+      xyz="0.0096648 0.0020661 -0.10743"
+      rpy="3.1416 -1.4717 3.1416" />
+    <parent
+      link="L3" />
+    <child
+      link="L4" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0.0"
+      upper="0.05"
+      effort="50.0"
+      velocity="0.05" />
+  </joint>
+  <link
+    name="GRIPPER">
+    <inertial>
+      <origin
+        xyz="0.0097478774562163 -0.0196682697244891 -0.022439892106549"
+        rpy="0 0 0" />
+      <mass
+        value="0.00878399896568983" />
+      <inertia
+        ixx="2.1259658233184E-06"
+        ixy="1.64556904802018E-09"
+        ixz="-4.700249241313E-10"
+        iyy="8.80045470917581E-07"
+        iyz="-5.16590391811154E-07"
+        izz="1.27571294773354E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://brazo_estesi/meshes/GRIPPER.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://brazo_estesi/meshes/GRIPPER.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="M4"
+    type="fixed">
+    <origin
+      xyz="-0.0669879990575907 -0.0501730970086299 0.00628344963273508"
+      rpy="-0.593868335546696 -1.47173801303938 0" />
+    <parent
+      link="L4" />
+    <child
+      link="GRIPPER" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <!-- Punto de trabajo calibrado: centro geométrico visible de la pinza. -->
+  <link name="tcp_gripper"/>
+  <joint name="gripper_to_tcp" type="fixed">
+    <parent link="GRIPPER"/>
+    <child link="tcp_gripper"/>
+    <origin xyz="0.0098620525 -0.0264187241 -0.0253115823" rpy="0 0 0"/>
+  </joint>
+  <ros2_control name="GazeboSimSystem" type="system">
+    <hardware>
+      <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+    </hardware>
+    <joint name="M1">
+      <command_interface name="position"/>
+      <state_interface name="position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="M2">
+      <command_interface name="position"/>
+      <state_interface name="position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="M3">
+      <command_interface name="position"/>
+      <state_interface name="position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="velocity"/>
+    </joint>
+  </ros2_control>
+  <gazebo>
+    <plugin filename="gz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+      <ros>
+        <namespace>brazo_estesi</namespace>
+        <remapping>robot_description:=/brazo_estesi/robot_description</remapping>
+      </ros>
+      <parameters>$(find brazo_estesi)/config/ros2_controllers.yaml</parameters>
+    </plugin>
+  </gazebo>
+</robot>

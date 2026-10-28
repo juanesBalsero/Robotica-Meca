@@ -1,0 +1,9 @@
+# Ignorar carpetas de compilación de ROS 2 en Robot1
+**/build/
+**/install/
+**/log/
+
+# Archivos temporales
+*~
+*.pyc
+.vscode/

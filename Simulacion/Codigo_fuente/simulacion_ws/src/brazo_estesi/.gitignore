@@ -1,0 +1,21 @@
+# ROS 2 / colcon
+build/
+install/
+log/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# IDE y sistema
+.vscode/
+.idea/
+*~
+.DS_Store
+
+# Exportaciones y respaldos locales
+export.log
+*.bak
+*.orig
+*.pre_*
+

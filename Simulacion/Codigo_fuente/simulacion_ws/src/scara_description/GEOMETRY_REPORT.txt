@@ -1,0 +1,8 @@
+Generated mesh bounds (local ROS frame, meters):
+base_link: min=[-0.128, -0.128, 0.0] max=[0.128, 0.128, 0.298]
+link_1: min=[-0.064, -0.07, -0.049] max=[0.2239, 0.07, 0.078]
+link_2: min=[-0.05, -0.08, -0.1681] max=[0.24, 0.05, 0.2558]
+link_3: min=[-0.0031, -0.006, -0.2026] max=[0.0538, 0.006, 0.2213]
+joint_1 origin parent=[0.0, -0.0, 0.303] m
+joint_2 origin parent=[0.15, -0.0, 0.083] m
+joint_3 origin parent=[0.14617000000000002, 0.006, 0.0345] m
