@@ -1,0 +1,12 @@
+# Parámetros de los nodos. Se irán añadiendo los de kinematic_control y
+# trajectory_publisher a medida que construyamos esos nodos.
+
+udp_bridge:
+  ros__parameters:
+    esp32_ip: "172.20.10.14"     # <-- CAMBIAR: IP que imprime la ESP32 al conectarse
+    esp32_port: 5005             # = UDP_PORT en main.py de la ESP32
+    local_port: 5006             # puerto del PC (la ESP32 responde aquí)
+    joint_names: ["joint1", "joint2", "joint3"]
+    tx_rate_hz: 50.0             # frecuencia a la que se reenvía el último comando
+    cmd_timeout_s: 0.1           # sin comando del CC en este tiempo -> manda w = 0
+    link_timeout_s: 1.0          # sin datos de la ESP32 en este tiempo -> aviso
