@@ -1,0 +1,9 @@
+/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_description/CMakeFiles/uninstall.dir
+/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_description/CMakeFiles/scara_description_uninstall.dir
+/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_description/CMakeFiles/test.dir
+/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_description/CMakeFiles/edit_cache.dir
+/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_description/CMakeFiles/rebuild_cache.dir
+/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_description/CMakeFiles/list_install_components.dir
+/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_description/CMakeFiles/install.dir
+/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_description/CMakeFiles/install/local.dir
+/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_description/CMakeFiles/install/strip.dir

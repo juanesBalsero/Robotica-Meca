@@ -1,0 +1,9 @@
+/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/brazo_estesi/CMakeFiles/uninstall.dir
+/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/brazo_estesi/CMakeFiles/brazo_estesi_uninstall.dir
+/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/brazo_estesi/CMakeFiles/test.dir
+/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/brazo_estesi/CMakeFiles/edit_cache.dir
+/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/brazo_estesi/CMakeFiles/rebuild_cache.dir
+/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/brazo_estesi/CMakeFiles/list_install_components.dir
+/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/brazo_estesi/CMakeFiles/install.dir
+/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/brazo_estesi/CMakeFiles/install/local.dir
+/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/brazo_estesi/CMakeFiles/install/strip.dir

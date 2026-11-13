@@ -1,0 +1,1 @@
+/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/src/brazo_estesi/scripts/ejecutar_trayectoria_csv.py

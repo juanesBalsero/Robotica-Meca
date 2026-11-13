@@ -1,0 +1,106 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-98dc85796a025f39dd0e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "miau",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "miau_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-miau_uninstall-423bed50ae6698250c05.json",
+					"name" : "miau_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nodo::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nodo-0667c814dda1ce8789fa.json",
+					"name" : "nodo",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nodo_cinematico::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nodo_cinematico-6684b71e98e318689fb9.json",
+					"name" : "nodo_cinematico",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nodo_jacobiano::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nodo_jacobiano-6ec57c5d50040fa00b02.json",
+					"name" : "nodo_jacobiano",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-d4ea0b8f89512b15599a.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vti2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vti2-1c073d82fff61613ebc0.json",
+					"name" : "vti2",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/miau",
+		"source" : "/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/src/miau"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

@@ -1,0 +1,41 @@
+[3.507s] Invoking command in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_boceto': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_boceto/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_boceto/build --no-deps symlink_data
+[4.349s] running develop
+[4.946s] running egg_info
+[4.946s] creating scara_boceto.egg-info
+[5.006s] writing scara_boceto.egg-info/PKG-INFO
+[5.007s] writing dependency_links to scara_boceto.egg-info/dependency_links.txt
+[5.009s] writing entry points to scara_boceto.egg-info/entry_points.txt
+[5.009s] writing top-level names to scara_boceto.egg-info/top_level.txt
+[5.009s] writing manifest file 'scara_boceto.egg-info/SOURCES.txt'
+[5.127s] reading manifest file 'scara_boceto.egg-info/SOURCES.txt'
+[5.129s] writing manifest file 'scara_boceto.egg-info/SOURCES.txt'
+[5.194s] running build_ext
+[5.195s] Creating /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto/lib/python3.12/site-packages/scara-boceto.egg-link (link to .)
+[5.196s] Installing fk_publisher script to /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto/lib/scara_boceto
+[5.197s] Installing gui_sliders script to /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto/lib/scara_boceto
+[5.197s] Installing trajectory_rviz script to /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto/lib/scara_boceto
+[5.198s] 
+[5.198s] Installed /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_boceto
+[5.198s] running symlink_data
+[5.199s] creating /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto/share/ament_index
+[5.199s] creating /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto/share/ament_index/resource_index
+[5.199s] creating /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto/share/ament_index/resource_index/packages
+[5.200s] symbolically linking /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_boceto/resource/scara_boceto -> /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto/share/ament_index/resource_index/packages
+[5.200s] symbolically linking /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_boceto/package.xml -> /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto/share/scara_boceto
+[5.200s] creating /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto/share/scara_boceto/launch
+[5.201s] symbolically linking /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_boceto/launch/gazebo.launch.py -> /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto/share/scara_boceto/launch
+[5.201s] symbolically linking /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_boceto/launch/display.launch.py -> /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto/share/scara_boceto/launch
+[5.201s] creating /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto/share/scara_boceto/urdf
+[5.202s] symbolically linking /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_boceto/urdf/scara_boceto.urdf.xacro -> /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto/share/scara_boceto/urdf
+[5.202s] symbolically linking /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_boceto/urdf/final.urdf -> /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto/share/scara_boceto/urdf
+[5.203s] creating /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto/share/scara_boceto/meshes
+[5.203s] symbolically linking /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_boceto/meshes/efector.STL -> /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto/share/scara_boceto/meshes
+[5.204s] symbolically linking /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_boceto/meshes/caja.STL -> /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto/share/scara_boceto/meshes
+[5.205s] symbolically linking /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_boceto/meshes/rot1.STL -> /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto/share/scara_boceto/meshes
+[5.206s] symbolically linking /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_boceto/meshes/prisma.STL -> /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto/share/scara_boceto/meshes
+[5.206s] symbolically linking /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_boceto/meshes/rot2.STL -> /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto/share/scara_boceto/meshes
+[5.207s] symbolically linking /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_boceto/meshes/base_link.STL -> /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto/share/scara_boceto/meshes
+[5.208s] creating /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto/share/scara_boceto/rviz
+[5.208s] creating /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto/share/scara_boceto/config
+[5.209s] symbolically linking /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_boceto/config/ros2_controllers.yaml -> /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto/share/scara_boceto/config
+[5.312s] Invoked command in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_boceto' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_boceto/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_boceto/build --no-deps symlink_data

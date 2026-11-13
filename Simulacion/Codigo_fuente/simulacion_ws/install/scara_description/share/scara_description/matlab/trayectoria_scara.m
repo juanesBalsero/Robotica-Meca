@@ -1,0 +1,1 @@
+/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/src/scara_description/matlab/trayectoria_scara.m

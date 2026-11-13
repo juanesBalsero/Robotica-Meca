@@ -1,0 +1,1 @@
+/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/src/scara_description/scripts/log_joint_states.py

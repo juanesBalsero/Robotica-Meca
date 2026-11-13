@@ -1,0 +1,3 @@
+[console_scripts]
+ejecutar_trayectoria = antropomorfico_sim.trayectoria_publisher_node:main
+trapezoidal_node = antropomorfico_sim.trapezoidal_trajectory_node:main

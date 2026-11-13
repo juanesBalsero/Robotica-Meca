@@ -1,0 +1,99 @@
+[0.391s] Invoking command in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/miau': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/src/miau -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau
+[1.345s] -- The C compiler identification is GNU 13.3.0
+[2.286s] -- The CXX compiler identification is GNU 13.3.0
+[2.373s] -- Detecting C compiler ABI info
+[2.674s] -- Detecting C compiler ABI info - done
+[2.689s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.689s] -- Detecting C compile features
+[2.690s] -- Detecting C compile features - done
+[2.705s] -- Detecting CXX compiler ABI info
+[2.848s] -- Detecting CXX compiler ABI info - done
+[2.860s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.861s] -- Detecting CXX compile features
+[2.861s] -- Detecting CXX compile features - done
+[3.142s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[3.787s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[4.034s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[4.609s] -- Found rclcpp: 28.1.22 (/opt/ros/jazzy/share/rclcpp/cmake)
+[5.351s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[5.556s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[5.718s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.842s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.751s] -- Found rmw_implementation_cmake: 7.3.4 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[6.786s] -- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[7.706s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[7.904s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[8.030s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[8.361s] -- Found std_msgs: 5.3.8 (/opt/ros/jazzy/share/std_msgs/cmake)
+[8.424s] -- Found sensor_msgs: 5.3.8 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[8.745s] -- Found kdl_parser: 2.11.0 (/opt/ros/jazzy/share/kdl_parser/cmake)
+[8.904s] -- Found eigen3_cmake_module: 0.3.1 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+[8.911s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[8.911s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[8.973s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[9.368s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[9.368s] -- Configured cppcheck include dirs: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/src/miau/include
+[9.368s] -- Configured cppcheck exclude dirs and/or files: 
+[9.371s] -- Added test 'flake8' to check Python code syntax and style conventions
+[9.371s] -- Configured 'flake8' exclude dirs and/or files: 
+[9.374s] -- Added test 'lint_cmake' to check CMake code style
+[9.376s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[9.381s] -- Added test 'uncrustify' to check C / C++ code style
+[9.381s] -- Configured uncrustify additional arguments: 
+[9.383s] -- Added test 'xmllint' to check XML markup files
+[9.387s] -- Configuring done (8.7s)
+[9.477s] -- Generating done (0.1s)
+[9.499s] -- Build files have been written to: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/miau
+[9.528s] Invoked command in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/miau' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/src/miau -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau
+[9.528s] Invoking command in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/miau': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/miau -- -j4 -l4
+[9.672s] [ 12%] [32mBuilding CXX object CMakeFiles/nodo_jacobiano.dir/src/nodo_jacobiano.cpp.o[0m
+[9.676s] [ 25%] [32mBuilding CXX object CMakeFiles/vti2.dir/src/vti2.cpp.o[0m
+[9.680s] [ 37%] [32mBuilding CXX object CMakeFiles/nodo.dir/src/nodo.cpp.o[0m
+[9.701s] [ 50%] [32mBuilding CXX object CMakeFiles/nodo_cinematico.dir/src/nodo_cinematico.cpp.o[0m
+[29.747s] [ 62%] [32m[1mLinking CXX executable nodo[0m
+[30.047s] [ 75%] [32m[1mLinking CXX executable vti2[0m
+[30.968s] [ 87%] [32m[1mLinking CXX executable nodo_jacobiano[0m
+[31.998s] [ 87%] Built target vti2
+[32.006s] [ 87%] Built target nodo
+[32.036s] [ 87%] Built target nodo_jacobiano
+[34.661s] [100%] [32m[1mLinking CXX executable nodo_cinematico[0m
+[35.347s] [100%] Built target nodo_cinematico
+[35.361s] Invoked command in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/miau' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/miau -- -j4 -l4
+[35.364s] Invoking command in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/miau': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/miau
+[35.374s] -- Install configuration: ""
+[35.374s] -- Execute custom install script
+[35.374s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/lib/miau/nodo
+[35.385s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/lib/miau/vti2
+[35.394s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/lib/miau/nodo_jacobiano
+[35.407s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/lib/miau/nodo_cinematico
+[35.417s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/miau/urdf/Completo.csv
+[35.426s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/miau/urdf/Completo.urdf
+[35.436s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/miau/launch/cinematico.launch.py
+[35.446s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/miau/launch/gazebo.launch.py
+[35.457s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/miau/launch/launch.py
+[35.468s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/miau/launch/trayectoria.launch.py
+[35.479s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/miau/meshes/L1.STL
+[35.489s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/miau/meshes/L2.STL
+[35.501s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/miau/meshes/L3.STL
+[35.510s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/miau/meshes/base_link.STL
+[35.520s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/miau/meshes/textures/cara.png
+[35.530s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/miau/rviz/config.rviz
+[35.540s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/miau/config/cinematico.yaml
+[35.550s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/miau/config/ros2_controllers.yaml
+[35.561s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/miau/config/trayectoria.yaml
+[35.573s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/ament_index/resource_index/package_run_dependencies/miau
+[35.584s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/ament_index/resource_index/parent_prefix_path/miau
+[35.594s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/miau/environment/ament_prefix_path.sh
+[35.606s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/miau/environment/ament_prefix_path.dsv
+[35.616s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/miau/environment/path.sh
+[35.625s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/miau/environment/path.dsv
+[35.635s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/miau/local_setup.bash
+[35.645s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/miau/local_setup.sh
+[35.656s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/miau/local_setup.zsh
+[35.669s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/miau/local_setup.dsv
+[35.679s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/miau/package.dsv
+[35.689s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/ament_index/resource_index/packages/miau
+[35.700s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/miau/cmake/miauConfig.cmake
+[35.710s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/miau/cmake/miauConfig-version.cmake
+[35.720s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/miau/package.xml
+[35.731s] Invoked command in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/miau' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/miau

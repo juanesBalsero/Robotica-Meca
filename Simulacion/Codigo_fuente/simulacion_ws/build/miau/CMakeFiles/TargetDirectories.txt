@@ -1,0 +1,13 @@
+/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/miau/CMakeFiles/uninstall.dir
+/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/miau/CMakeFiles/miau_uninstall.dir
+/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/miau/CMakeFiles/nodo.dir
+/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/miau/CMakeFiles/vti2.dir
+/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/miau/CMakeFiles/nodo_jacobiano.dir
+/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/miau/CMakeFiles/nodo_cinematico.dir
+/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/miau/CMakeFiles/test.dir
+/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/miau/CMakeFiles/edit_cache.dir
+/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/miau/CMakeFiles/rebuild_cache.dir
+/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/miau/CMakeFiles/list_install_components.dir
+/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/miau/CMakeFiles/install.dir
+/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/miau/CMakeFiles/install/local.dir
+/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/miau/CMakeFiles/install/strip.dir
