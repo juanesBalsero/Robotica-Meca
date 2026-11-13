@@ -1,0 +1,47 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Configuring done (4.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/brazo_estesi
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/config/ros2_controllers.yaml
+-- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/launch/gazebo.launch.py
+-- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/meshes/GRIPPER.STL
+-- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/meshes/L1.STL
+-- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/meshes/L2.STL
+-- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/meshes/L3.STL
+-- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/meshes/L4.STL
+-- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/urdf/brazo_estesi.urdf.xacro
+-- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/trajectories/referencias_propuesta.csv
+-- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/trajectories/referencias_propuesta_antes_tcp.csv
+-- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/worlds/empty.sdf
+-- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/lib/brazo_estesi/ejecutar_trayectoria_csv.py
+-- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/ament_index/resource_index/package_run_dependencies/brazo_estesi
+-- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/ament_index/resource_index/parent_prefix_path/brazo_estesi
+-- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/environment/ament_prefix_path.sh
+-- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/environment/ament_prefix_path.dsv
+-- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/environment/path.sh
+-- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/environment/path.dsv
+-- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/local_setup.bash
+-- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/local_setup.sh
+-- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/local_setup.zsh
+-- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/local_setup.dsv
+-- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/package.dsv
+-- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/ament_index/resource_index/packages/brazo_estesi
+-- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/cmake/brazo_estesiConfig.cmake
+-- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/cmake/brazo_estesiConfig-version.cmake
+-- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/package.xml

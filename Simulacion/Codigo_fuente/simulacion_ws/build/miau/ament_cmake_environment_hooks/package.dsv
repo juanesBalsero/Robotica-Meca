@@ -1,0 +1,4 @@
+source;share/miau/local_setup.bash
+source;share/miau/local_setup.dsv
+source;share/miau/local_setup.sh
+source;share/miau/local_setup.zsh

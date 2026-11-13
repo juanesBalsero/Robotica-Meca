@@ -1,0 +1,39 @@
+running develop
+running egg_info
+creating antropomorfico_sim.egg-info
+writing antropomorfico_sim.egg-info/PKG-INFO
+writing dependency_links to antropomorfico_sim.egg-info/dependency_links.txt
+writing entry points to antropomorfico_sim.egg-info/entry_points.txt
+writing requirements to antropomorfico_sim.egg-info/requires.txt
+writing top-level names to antropomorfico_sim.egg-info/top_level.txt
+writing manifest file 'antropomorfico_sim.egg-info/SOURCES.txt'
+reading manifest file 'antropomorfico_sim.egg-info/SOURCES.txt'
+writing manifest file 'antropomorfico_sim.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/antropomorfico_sim/lib/python3.12/site-packages/antropomorfico-sim.egg-link (link to .)
+Installing ejecutar_trayectoria script to /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/antropomorfico_sim/lib/antropomorfico_sim
+Installing trapezoidal_node script to /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/antropomorfico_sim/lib/antropomorfico_sim
+
+Installed /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/antropomorfico_sim
+running symlink_data
+creating /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/antropomorfico_sim/share/ament_index
+creating /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/antropomorfico_sim/share/ament_index/resource_index
+creating /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/antropomorfico_sim/share/ament_index/resource_index/packages
+symbolically linking /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/antropomorfico_sim/resource/antropomorfico_sim -> /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/antropomorfico_sim/share/ament_index/resource_index/packages
+symbolically linking /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/antropomorfico_sim/package.xml -> /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/antropomorfico_sim/share/antropomorfico_sim
+creating /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/antropomorfico_sim/share/antropomorfico_sim/launch
+symbolically linking /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/antropomorfico_sim/launch/sim.launch.py -> /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/antropomorfico_sim/share/antropomorfico_sim/launch
+creating /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/antropomorfico_sim/share/antropomorfico_sim/urdf
+symbolically linking /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/antropomorfico_sim/urdf/antropomorfico.urdf -> /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/antropomorfico_sim/share/antropomorfico_sim/urdf
+creating /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/antropomorfico_sim/share/antropomorfico_sim/config
+symbolically linking /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/antropomorfico_sim/config/ros2_controllers.yaml -> /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/antropomorfico_sim/share/antropomorfico_sim/config
+symbolically linking /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/antropomorfico_sim/config/trayectoria_robot.csv -> /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/antropomorfico_sim/share/antropomorfico_sim/config
+creating /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/antropomorfico_sim/share/antropomorfico_sim/worlds
+creating /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/antropomorfico_sim/share/antropomorfico_sim/meshes
+symbolically linking /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/antropomorfico_sim/meshes/link_2.STL -> /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/antropomorfico_sim/share/antropomorfico_sim/meshes
+symbolically linking /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/antropomorfico_sim/meshes/link_1.STL -> /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/antropomorfico_sim/share/antropomorfico_sim/meshes
+symbolically linking /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/antropomorfico_sim/meshes/dedoder.STL -> /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/antropomorfico_sim/share/antropomorfico_sim/meshes
+symbolically linking /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/antropomorfico_sim/meshes/dedoizq.STL -> /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/antropomorfico_sim/share/antropomorfico_sim/meshes
+symbolically linking /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/antropomorfico_sim/meshes/link_ee.STL -> /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/antropomorfico_sim/share/antropomorfico_sim/meshes
+symbolically linking /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/antropomorfico_sim/meshes/link_3.STL -> /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/antropomorfico_sim/share/antropomorfico_sim/meshes
+symbolically linking /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/antropomorfico_sim/meshes/base_link.STL -> /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/antropomorfico_sim/share/antropomorfico_sim/meshes

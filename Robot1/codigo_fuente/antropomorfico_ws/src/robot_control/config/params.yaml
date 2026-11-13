@@ -1,0 +1,36 @@
+# Parámetros de los tres nodos. Los nombres de los bloques deben coincidir
+# con los nombres de los nodos (los usa el launch).
+
+udp_bridge:
+  ros__parameters:
+    esp32_ip: "10.125.133.118"     # <-- CAMBIAR: IP que imprime la ESP32 al conectarse
+    esp32_port: 5005             # = UDP_PORT en main.py de la ESP32
+    local_port: 5006             # puerto del PC (la ESP32 responde aquí)
+    joint_names: ["joint1", "joint2", "joint3"]
+    tx_rate_hz: 50.0             # frecuencia a la que se reenvía el último comando
+    cmd_timeout_s: 0.1           # sin comando del CC en este tiempo -> manda w = 0
+    link_timeout_s: 1.0          # sin datos de la ESP32 en este tiempo -> aviso
+
+kinematic_control:
+  ros__parameters:
+    joint_names: ["joint1", "joint2", "joint3"]
+    L1: 0.2000                   # [m]
+    L2: 0.1506
+    L3: 0.18464
+    K: [1.0, 1.0, 1.0]           # ganancia por eje x, y, z [1/s]
+    vel_max_rad_s: [0.8, 0.8, 0.8]   # límite de velocidad por articulación
+                                     # (escala_velocidad 1.0 necesita ~1.3: ver notas)
+    sing_eps: 0.02               # σmin [m] bajo el cual se usa DLS
+    lambda_max: 0.02             # amortiguamiento máximo del DLS [m]
+    e_inicio_m: 0.02             # el CC no actúa hasta que ||e|| < este valor
+    e_falla_m: 0.15              # ||e|| mayor => falla y se detiene (~/reset)
+    traj_timeout_s: 0.5          # sin trayectoria en este tiempo -> ẋ_d = 0
+    usar_limites: false          # true cuando pongas los topes reales abajo
+    q_min_deg: [-360.0, -360.0, -360.0]   # <-- CAMBIAR por tus topes mecánicos
+    q_max_deg: [360.0, 360.0, 360.0]
+
+trajectory_publisher:
+  ros__parameters:
+    csv_path: ""                 # "" = usa data/trayectoria_robot.csv del paquete
+    frecuencia_hz: 100.0
+    escala_velocidad: 1.0        # 1.0 = tiempo real; 0.5 = 2 veces más lento

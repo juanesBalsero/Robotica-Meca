@@ -1,0 +1,4 @@
+source;share/brazo_estesi/local_setup.bash
+source;share/brazo_estesi/local_setup.dsv
+source;share/brazo_estesi/local_setup.sh
+source;share/brazo_estesi/local_setup.zsh

@@ -1,0 +1,53 @@
+[0.383s] Invoking command in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/brazo_estesi': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/src/brazo_estesi -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi
+[1.352s] -- The C compiler identification is GNU 13.3.0
+[2.294s] -- The CXX compiler identification is GNU 13.3.0
+[2.383s] -- Detecting C compiler ABI info
+[2.682s] -- Detecting C compiler ABI info - done
+[2.695s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.696s] -- Detecting C compile features
+[2.697s] -- Detecting C compile features - done
+[2.714s] -- Detecting CXX compiler ABI info
+[2.856s] -- Detecting CXX compiler ABI info - done
+[2.868s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.868s] -- Detecting CXX compile features
+[2.869s] -- Detecting CXX compile features - done
+[3.151s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[3.798s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[4.043s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[4.775s] -- Configuring done (4.1s)
+[4.779s] -- Generating done (0.0s)
+[4.781s] -- Build files have been written to: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/brazo_estesi
+[4.788s] Invoked command in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/brazo_estesi' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/src/brazo_estesi -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi
+[4.790s] Invoking command in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/brazo_estesi': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/brazo_estesi -- -j4 -l4
+[4.847s] Invoked command in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/brazo_estesi' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/brazo_estesi -- -j4 -l4
+[4.859s] Invoking command in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/brazo_estesi': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/brazo_estesi
+[4.867s] -- Install configuration: ""
+[4.868s] -- Execute custom install script
+[4.868s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/config/ros2_controllers.yaml
+[4.878s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/launch/gazebo.launch.py
+[4.889s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/meshes/GRIPPER.STL
+[4.899s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/meshes/L1.STL
+[4.910s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/meshes/L2.STL
+[4.921s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/meshes/L3.STL
+[4.931s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/meshes/L4.STL
+[4.943s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/urdf/brazo_estesi.urdf.xacro
+[4.954s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/trajectories/referencias_propuesta.csv
+[4.964s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/trajectories/referencias_propuesta_antes_tcp.csv
+[4.974s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/worlds/empty.sdf
+[4.984s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/lib/brazo_estesi/ejecutar_trayectoria_csv.py
+[4.995s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/ament_index/resource_index/package_run_dependencies/brazo_estesi
+[5.006s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/ament_index/resource_index/parent_prefix_path/brazo_estesi
+[5.016s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/environment/ament_prefix_path.sh
+[5.028s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/environment/ament_prefix_path.dsv
+[5.041s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/environment/path.sh
+[5.051s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/environment/path.dsv
+[5.061s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/local_setup.bash
+[5.071s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/local_setup.sh
+[5.080s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/local_setup.zsh
+[5.091s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/local_setup.dsv
+[5.101s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/package.dsv
+[5.113s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/ament_index/resource_index/packages/brazo_estesi
+[5.123s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/cmake/brazo_estesiConfig.cmake
+[5.133s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/cmake/brazo_estesiConfig-version.cmake
+[5.144s] -- Symlinking: /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/package.xml
+[5.157s] Invoked command in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/brazo_estesi' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/brazo_estesi

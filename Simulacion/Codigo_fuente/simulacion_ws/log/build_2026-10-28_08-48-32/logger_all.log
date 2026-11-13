@@ -1,0 +1,442 @@
+[4.598s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[4.599s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x77e212caf5c0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x77e212caef00>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x77e212caef00>>, mixin_verb=('build',))
+[4.825s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[4.825s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[4.825s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[4.825s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[4.825s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[4.825s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[4.825s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws'
+[4.825s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[4.825s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[4.825s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[4.825s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[4.825s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[4.826s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[4.826s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[4.826s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[4.826s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[4.945s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[4.945s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[4.946s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[4.946s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[4.946s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[4.946s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[4.946s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[4.946s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[4.946s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[4.946s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[4.946s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[4.946s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[4.946s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[4.947s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[4.947s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[4.947s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[4.947s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[4.947s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[4.947s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[4.947s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[4.947s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[4.947s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[4.947s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[4.947s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[4.947s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[4.947s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[4.947s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[4.947s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[4.947s] Level 1:colcon.colcon_core.package_identification:_identify(src/antropomorfico_sim) by extensions ['ignore', 'ignore_ament_install']
+[4.948s] Level 1:colcon.colcon_core.package_identification:_identify(src/antropomorfico_sim) by extension 'ignore'
+[4.948s] Level 1:colcon.colcon_core.package_identification:_identify(src/antropomorfico_sim) by extension 'ignore_ament_install'
+[4.948s] Level 1:colcon.colcon_core.package_identification:_identify(src/antropomorfico_sim) by extensions ['colcon_pkg']
+[4.948s] Level 1:colcon.colcon_core.package_identification:_identify(src/antropomorfico_sim) by extension 'colcon_pkg'
+[4.948s] Level 1:colcon.colcon_core.package_identification:_identify(src/antropomorfico_sim) by extensions ['colcon_meta']
+[4.948s] Level 1:colcon.colcon_core.package_identification:_identify(src/antropomorfico_sim) by extension 'colcon_meta'
+[4.948s] Level 1:colcon.colcon_core.package_identification:_identify(src/antropomorfico_sim) by extensions ['ros']
+[4.948s] Level 1:colcon.colcon_core.package_identification:_identify(src/antropomorfico_sim) by extension 'ros'
+[4.962s] DEBUG:colcon.colcon_core.package_identification:Package 'src/antropomorfico_sim' with type 'ros.ament_python' and name 'antropomorfico_sim'
+[4.962s] Level 1:colcon.colcon_core.package_identification:_identify(src/brazo_estesi) by extensions ['ignore', 'ignore_ament_install']
+[4.963s] Level 1:colcon.colcon_core.package_identification:_identify(src/brazo_estesi) by extension 'ignore'
+[4.963s] Level 1:colcon.colcon_core.package_identification:_identify(src/brazo_estesi) by extension 'ignore_ament_install'
+[4.963s] Level 1:colcon.colcon_core.package_identification:_identify(src/brazo_estesi) by extensions ['colcon_pkg']
+[4.963s] Level 1:colcon.colcon_core.package_identification:_identify(src/brazo_estesi) by extension 'colcon_pkg'
+[4.963s] Level 1:colcon.colcon_core.package_identification:_identify(src/brazo_estesi) by extensions ['colcon_meta']
+[4.963s] Level 1:colcon.colcon_core.package_identification:_identify(src/brazo_estesi) by extension 'colcon_meta'
+[4.963s] Level 1:colcon.colcon_core.package_identification:_identify(src/brazo_estesi) by extensions ['ros']
+[4.963s] Level 1:colcon.colcon_core.package_identification:_identify(src/brazo_estesi) by extension 'ros'
+[4.964s] DEBUG:colcon.colcon_core.package_identification:Package 'src/brazo_estesi' with type 'ros.ament_cmake' and name 'brazo_estesi'
+[4.964s] Level 1:colcon.colcon_core.package_identification:_identify(src/miau) by extensions ['ignore', 'ignore_ament_install']
+[4.964s] Level 1:colcon.colcon_core.package_identification:_identify(src/miau) by extension 'ignore'
+[4.964s] Level 1:colcon.colcon_core.package_identification:_identify(src/miau) by extension 'ignore_ament_install'
+[4.964s] Level 1:colcon.colcon_core.package_identification:_identify(src/miau) by extensions ['colcon_pkg']
+[4.964s] Level 1:colcon.colcon_core.package_identification:_identify(src/miau) by extension 'colcon_pkg'
+[4.964s] Level 1:colcon.colcon_core.package_identification:_identify(src/miau) by extensions ['colcon_meta']
+[4.964s] Level 1:colcon.colcon_core.package_identification:_identify(src/miau) by extension 'colcon_meta'
+[4.964s] Level 1:colcon.colcon_core.package_identification:_identify(src/miau) by extensions ['ros']
+[4.964s] Level 1:colcon.colcon_core.package_identification:_identify(src/miau) by extension 'ros'
+[4.965s] DEBUG:colcon.colcon_core.package_identification:Package 'src/miau' with type 'ros.ament_cmake' and name 'miau'
+[4.965s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extensions ['ignore', 'ignore_ament_install']
+[4.965s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'ignore'
+[4.965s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'ignore_ament_install'
+[4.965s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extensions ['colcon_pkg']
+[4.965s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'colcon_pkg'
+[4.965s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extensions ['colcon_meta']
+[4.965s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'colcon_meta'
+[4.966s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extensions ['ros']
+[4.966s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'ros'
+[4.966s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_bringup' with type 'ros.ament_python' and name 'robot_bringup'
+[4.966s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_boceto) by extensions ['ignore', 'ignore_ament_install']
+[4.966s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_boceto) by extension 'ignore'
+[4.966s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_boceto) by extension 'ignore_ament_install'
+[4.966s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_boceto) by extensions ['colcon_pkg']
+[4.966s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_boceto) by extension 'colcon_pkg'
+[4.967s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_boceto) by extensions ['colcon_meta']
+[4.967s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_boceto) by extension 'colcon_meta'
+[4.967s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_boceto) by extensions ['ros']
+[4.967s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_boceto) by extension 'ros'
+[4.967s] DEBUG:colcon.colcon_core.package_identification:Package 'src/scara_boceto' with type 'ros.ament_python' and name 'scara_boceto'
+[4.967s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_description) by extensions ['ignore', 'ignore_ament_install']
+[4.967s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_description) by extension 'ignore'
+[4.967s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_description) by extension 'ignore_ament_install'
+[4.968s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_description) by extensions ['colcon_pkg']
+[4.968s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_description) by extension 'colcon_pkg'
+[4.968s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_description) by extensions ['colcon_meta']
+[4.968s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_description) by extension 'colcon_meta'
+[4.968s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_description) by extensions ['ros']
+[4.968s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_description) by extension 'ros'
+[4.968s] DEBUG:colcon.colcon_core.package_identification:Package 'src/scara_description' with type 'ros.ament_cmake' and name 'scara_description'
+[4.968s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[4.968s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[4.968s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[4.968s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[4.968s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[5.106s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[5.106s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[5.112s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 380 installed packages in /opt/ros/jazzy
+[5.113s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[5.194s] Level 5:colcon.colcon_core.verb:set package 'antropomorfico_sim' build argument 'cmake_args' from command line to 'None'
+[5.195s] Level 5:colcon.colcon_core.verb:set package 'antropomorfico_sim' build argument 'cmake_target' from command line to 'None'
+[5.195s] Level 5:colcon.colcon_core.verb:set package 'antropomorfico_sim' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[5.195s] Level 5:colcon.colcon_core.verb:set package 'antropomorfico_sim' build argument 'cmake_clean_cache' from command line to 'False'
+[5.195s] Level 5:colcon.colcon_core.verb:set package 'antropomorfico_sim' build argument 'cmake_clean_first' from command line to 'False'
+[5.195s] Level 5:colcon.colcon_core.verb:set package 'antropomorfico_sim' build argument 'cmake_force_configure' from command line to 'False'
+[5.195s] Level 5:colcon.colcon_core.verb:set package 'antropomorfico_sim' build argument 'ament_cmake_args' from command line to 'None'
+[5.195s] Level 5:colcon.colcon_core.verb:set package 'antropomorfico_sim' build argument 'catkin_cmake_args' from command line to 'None'
+[5.195s] Level 5:colcon.colcon_core.verb:set package 'antropomorfico_sim' build argument 'catkin_skip_building_tests' from command line to 'False'
+[5.195s] DEBUG:colcon.colcon_core.verb:Building package 'antropomorfico_sim' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/antropomorfico_sim', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/antropomorfico_sim', 'merge_install': False, 'path': '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/src/antropomorfico_sim', 'symlink_install': True, 'test_result_base': None}
+[5.195s] Level 5:colcon.colcon_core.verb:set package 'brazo_estesi' build argument 'cmake_args' from command line to 'None'
+[5.195s] Level 5:colcon.colcon_core.verb:set package 'brazo_estesi' build argument 'cmake_target' from command line to 'None'
+[5.195s] Level 5:colcon.colcon_core.verb:set package 'brazo_estesi' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[5.195s] Level 5:colcon.colcon_core.verb:set package 'brazo_estesi' build argument 'cmake_clean_cache' from command line to 'False'
+[5.195s] Level 5:colcon.colcon_core.verb:set package 'brazo_estesi' build argument 'cmake_clean_first' from command line to 'False'
+[5.195s] Level 5:colcon.colcon_core.verb:set package 'brazo_estesi' build argument 'cmake_force_configure' from command line to 'False'
+[5.195s] Level 5:colcon.colcon_core.verb:set package 'brazo_estesi' build argument 'ament_cmake_args' from command line to 'None'
+[5.195s] Level 5:colcon.colcon_core.verb:set package 'brazo_estesi' build argument 'catkin_cmake_args' from command line to 'None'
+[5.195s] Level 5:colcon.colcon_core.verb:set package 'brazo_estesi' build argument 'catkin_skip_building_tests' from command line to 'False'
+[5.195s] DEBUG:colcon.colcon_core.verb:Building package 'brazo_estesi' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/brazo_estesi', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi', 'merge_install': False, 'path': '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/src/brazo_estesi', 'symlink_install': True, 'test_result_base': None}
+[5.196s] Level 5:colcon.colcon_core.verb:set package 'miau' build argument 'cmake_args' from command line to 'None'
+[5.196s] Level 5:colcon.colcon_core.verb:set package 'miau' build argument 'cmake_target' from command line to 'None'
+[5.196s] Level 5:colcon.colcon_core.verb:set package 'miau' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[5.196s] Level 5:colcon.colcon_core.verb:set package 'miau' build argument 'cmake_clean_cache' from command line to 'False'
+[5.196s] Level 5:colcon.colcon_core.verb:set package 'miau' build argument 'cmake_clean_first' from command line to 'False'
+[5.196s] Level 5:colcon.colcon_core.verb:set package 'miau' build argument 'cmake_force_configure' from command line to 'False'
+[5.196s] Level 5:colcon.colcon_core.verb:set package 'miau' build argument 'ament_cmake_args' from command line to 'None'
+[5.196s] Level 5:colcon.colcon_core.verb:set package 'miau' build argument 'catkin_cmake_args' from command line to 'None'
+[5.196s] Level 5:colcon.colcon_core.verb:set package 'miau' build argument 'catkin_skip_building_tests' from command line to 'False'
+[5.196s] DEBUG:colcon.colcon_core.verb:Building package 'miau' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/miau', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau', 'merge_install': False, 'path': '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/src/miau', 'symlink_install': True, 'test_result_base': None}
+[5.196s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_args' from command line to 'None'
+[5.196s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_target' from command line to 'None'
+[5.196s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[5.196s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[5.196s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[5.196s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[5.196s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[5.196s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[5.196s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[5.196s] DEBUG:colcon.colcon_core.verb:Building package 'robot_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/robot_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/robot_bringup', 'merge_install': False, 'path': '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/src/robot_bringup', 'symlink_install': True, 'test_result_base': None}
+[5.197s] Level 5:colcon.colcon_core.verb:set package 'scara_boceto' build argument 'cmake_args' from command line to 'None'
+[5.197s] Level 5:colcon.colcon_core.verb:set package 'scara_boceto' build argument 'cmake_target' from command line to 'None'
+[5.197s] Level 5:colcon.colcon_core.verb:set package 'scara_boceto' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[5.197s] Level 5:colcon.colcon_core.verb:set package 'scara_boceto' build argument 'cmake_clean_cache' from command line to 'False'
+[5.197s] Level 5:colcon.colcon_core.verb:set package 'scara_boceto' build argument 'cmake_clean_first' from command line to 'False'
+[5.197s] Level 5:colcon.colcon_core.verb:set package 'scara_boceto' build argument 'cmake_force_configure' from command line to 'False'
+[5.197s] Level 5:colcon.colcon_core.verb:set package 'scara_boceto' build argument 'ament_cmake_args' from command line to 'None'
+[5.197s] Level 5:colcon.colcon_core.verb:set package 'scara_boceto' build argument 'catkin_cmake_args' from command line to 'None'
+[5.197s] Level 5:colcon.colcon_core.verb:set package 'scara_boceto' build argument 'catkin_skip_building_tests' from command line to 'False'
+[5.197s] DEBUG:colcon.colcon_core.verb:Building package 'scara_boceto' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_boceto', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto', 'merge_install': False, 'path': '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/src/scara_boceto', 'symlink_install': True, 'test_result_base': None}
+[5.197s] Level 5:colcon.colcon_core.verb:set package 'scara_description' build argument 'cmake_args' from command line to 'None'
+[5.197s] Level 5:colcon.colcon_core.verb:set package 'scara_description' build argument 'cmake_target' from command line to 'None'
+[5.197s] Level 5:colcon.colcon_core.verb:set package 'scara_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[5.197s] Level 5:colcon.colcon_core.verb:set package 'scara_description' build argument 'cmake_clean_cache' from command line to 'False'
+[5.197s] Level 5:colcon.colcon_core.verb:set package 'scara_description' build argument 'cmake_clean_first' from command line to 'False'
+[5.197s] Level 5:colcon.colcon_core.verb:set package 'scara_description' build argument 'cmake_force_configure' from command line to 'False'
+[5.197s] Level 5:colcon.colcon_core.verb:set package 'scara_description' build argument 'ament_cmake_args' from command line to 'None'
+[5.197s] Level 5:colcon.colcon_core.verb:set package 'scara_description' build argument 'catkin_cmake_args' from command line to 'None'
+[5.197s] Level 5:colcon.colcon_core.verb:set package 'scara_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[5.197s] DEBUG:colcon.colcon_core.verb:Building package 'scara_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_description', 'merge_install': False, 'path': '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/src/scara_description', 'symlink_install': True, 'test_result_base': None}
+[5.197s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[5.198s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[5.199s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/src/antropomorfico_sim' with build type 'ament_python'
+[5.199s] Level 1:colcon.colcon_core.shell:create_environment_hook('antropomorfico_sim', 'ament_prefix_path')
+[5.238s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[5.238s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/antropomorfico_sim/share/antropomorfico_sim/hook/ament_prefix_path.ps1'
+[5.253s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/antropomorfico_sim/share/antropomorfico_sim/hook/ament_prefix_path.dsv'
+[5.264s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/antropomorfico_sim/share/antropomorfico_sim/hook/ament_prefix_path.sh'
+[5.266s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.266s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.274s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/src/brazo_estesi' with build type 'ament_cmake'
+[5.275s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/src/brazo_estesi'
+[5.275s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.275s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.285s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/src/miau' with build type 'ament_cmake'
+[5.285s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/src/miau'
+[5.285s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.286s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.295s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/src/robot_bringup' with build type 'ament_python'
+[5.295s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_bringup', 'ament_prefix_path')
+[5.296s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/robot_bringup/share/robot_bringup/hook/ament_prefix_path.ps1'
+[5.297s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/robot_bringup/share/robot_bringup/hook/ament_prefix_path.dsv'
+[5.298s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/robot_bringup/share/robot_bringup/hook/ament_prefix_path.sh'
+[5.299s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.299s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.652s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/src/antropomorfico_sim'
+[5.652s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.652s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.659s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/brazo_estesi': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/src/brazo_estesi -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi
+[5.676s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/miau': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/src/miau -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau
+[5.982s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/src/robot_bringup'
+[5.982s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.982s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[10.064s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/brazo_estesi' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/src/brazo_estesi -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi
+[10.066s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/brazo_estesi': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/brazo_estesi -- -j4 -l4
+[10.123s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/brazo_estesi' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/brazo_estesi -- -j4 -l4
+[10.135s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/brazo_estesi': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/brazo_estesi
+[10.432s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(brazo_estesi)
+[10.433s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/brazo_estesi' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/brazo_estesi
+[10.726s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi' for CMake module files
+[10.730s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi' for CMake config files
+[10.731s] Level 1:colcon.colcon_core.shell:create_environment_hook('brazo_estesi', 'cmake_prefix_path')
+[10.732s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/hook/cmake_prefix_path.ps1'
+[10.735s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/hook/cmake_prefix_path.dsv'
+[10.736s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/hook/cmake_prefix_path.sh'
+[10.739s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/lib'
+[10.740s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/bin'
+[10.740s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/lib/pkgconfig/brazo_estesi.pc'
+[10.741s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/lib/python3.12/site-packages'
+[10.742s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/bin'
+[10.743s] INFO:colcon.colcon_core.shell:Creating package script '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/package.ps1'
+[10.748s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/package.dsv'
+[10.759s] INFO:colcon.colcon_core.shell:Creating package script '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/package.sh'
+[10.760s] INFO:colcon.colcon_core.shell:Creating package script '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/package.bash'
+[10.762s] INFO:colcon.colcon_core.shell:Creating package script '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/package.zsh'
+[10.768s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/colcon-core/packages/brazo_estesi)
+[10.769s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(brazo_estesi)
+[10.769s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi' for CMake module files
+[10.770s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi' for CMake config files
+[10.770s] Level 1:colcon.colcon_core.shell:create_environment_hook('brazo_estesi', 'cmake_prefix_path')
+[10.770s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/hook/cmake_prefix_path.ps1'
+[10.771s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/hook/cmake_prefix_path.dsv'
+[10.771s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/hook/cmake_prefix_path.sh'
+[10.772s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/lib'
+[10.772s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/bin'
+[10.772s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/lib/pkgconfig/brazo_estesi.pc'
+[10.772s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/lib/python3.12/site-packages'
+[10.773s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/bin'
+[10.773s] INFO:colcon.colcon_core.shell:Creating package script '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/package.ps1'
+[10.774s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/package.dsv'
+[10.777s] INFO:colcon.colcon_core.shell:Creating package script '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/package.sh'
+[10.778s] INFO:colcon.colcon_core.shell:Creating package script '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/package.bash'
+[10.779s] INFO:colcon.colcon_core.shell:Creating package script '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/brazo_estesi/package.zsh'
+[10.780s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/brazo_estesi/share/colcon-core/packages/brazo_estesi)
+[10.781s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/src/scara_boceto' with build type 'ament_python'
+[10.781s] Level 1:colcon.colcon_core.shell:create_environment_hook('scara_boceto', 'ament_prefix_path')
+[10.782s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto/share/scara_boceto/hook/ament_prefix_path.ps1'
+[10.783s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto/share/scara_boceto/hook/ament_prefix_path.dsv'
+[10.783s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto/share/scara_boceto/hook/ament_prefix_path.sh'
+[10.784s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[10.784s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[11.167s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/src/scara_boceto'
+[11.167s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[11.167s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[13.472s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: install, install_data, sdist, bdist_rpm, compile_catalog, isort, upload, setopt, extract_messages, install_headers, init_catalog, build, build_clib, update_catalog, rotate, symlink_data, build_py, alias, build_scripts, easy_install, bdist_egg, build_ext, egg_info, bdist_wheel, editable_wheel, saveopts, install_egg_info, install_lib, check, test, clean, register, upload_docs, bdist, bdist_dumb, install_scripts, dist_info, develop
+[13.474s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: install, install_data, sdist, bdist_rpm, compile_catalog, isort, upload, setopt, extract_messages, install_headers, init_catalog, build, build_clib, update_catalog, rotate, symlink_data, build_py, alias, build_scripts, easy_install, bdist_egg, build_ext, egg_info, bdist_wheel, editable_wheel, saveopts, install_egg_info, install_lib, check, test, clean, register, upload_docs, bdist, bdist_dumb, install_scripts, dist_info, develop
+[13.482s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: install, install_data, sdist, bdist_rpm, compile_catalog, isort, upload, setopt, extract_messages, install_headers, init_catalog, build, build_clib, update_catalog, rotate, symlink_data, build_py, alias, build_scripts, easy_install, bdist_egg, build_ext, egg_info, bdist_wheel, editable_wheel, saveopts, install_egg_info, install_lib, check, test, clean, register, upload_docs, bdist, bdist_dumb, install_scripts, dist_info, develop
+[14.284s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --quiet, --local-snapshots-ok, --always-copy, --no-user-cfg, --editable, --version, --force-installation-into-system-dir, --install-layout, --upgrade, --exclude-scripts, --install-dir, --allow-hosts, --optimize, --verbose, --dry-run, --record, --find-links, --user, --zip-ok, --prefix, --egg-path, --script-dir, --site-dirs, --help, --no-deps, --multi-version, --index-url, --uninstall, --no-find-links, --build-directory, --always-unzip
+[14.287s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --quiet, --local-snapshots-ok, --always-copy, --no-user-cfg, --editable, --version, --force-installation-into-system-dir, --install-layout, --upgrade, --exclude-scripts, --install-dir, --allow-hosts, --optimize, --verbose, --dry-run, --record, --find-links, --user, --zip-ok, --prefix, --egg-path, --script-dir, --site-dirs, --help, --no-deps, --multi-version, --index-url, --uninstall, --no-find-links, --build-directory, --always-unzip
+[14.290s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_boceto': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_boceto/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_boceto/build --no-deps symlink_data
+[14.292s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/antropomorfico_sim': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/antropomorfico_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/antropomorfico_sim/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/antropomorfico_sim/build --no-deps symlink_data
+[14.301s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --quiet, --local-snapshots-ok, --always-copy, --no-user-cfg, --editable, --version, --force-installation-into-system-dir, --install-layout, --upgrade, --exclude-scripts, --install-dir, --allow-hosts, --optimize, --verbose, --dry-run, --record, --find-links, --user, --zip-ok, --prefix, --egg-path, --script-dir, --site-dirs, --help, --no-deps, --multi-version, --index-url, --uninstall, --no-find-links, --build-directory, --always-unzip
+[14.303s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/robot_bringup': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/robot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/robot_bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/robot_bringup/build --no-deps symlink_data
+[14.813s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/miau' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/src/miau -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau
+[14.813s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/miau': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/miau -- -j4 -l4
+[15.874s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_bringup', 'pythonpath_develop')
+[15.874s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/robot_bringup/share/robot_bringup/hook/pythonpath_develop.ps1'
+[15.875s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/robot_bringup/share/robot_bringup/hook/pythonpath_develop.dsv'
+[15.875s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/robot_bringup/share/robot_bringup/hook/pythonpath_develop.sh'
+[15.876s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/robot_bringup' for CMake module files
+[15.876s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/robot_bringup' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/robot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/robot_bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/robot_bringup/build --no-deps symlink_data
+[15.877s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/robot_bringup' for CMake config files
+[15.877s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/robot_bringup/lib'
+[15.877s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/robot_bringup/bin'
+[15.877s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/robot_bringup/lib/pkgconfig/robot_bringup.pc'
+[15.878s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/robot_bringup/lib/python3.12/site-packages'
+[15.878s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_bringup', 'pythonpath')
+[15.878s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/robot_bringup/share/robot_bringup/hook/pythonpath.ps1'
+[15.878s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/robot_bringup/share/robot_bringup/hook/pythonpath.dsv'
+[15.879s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/robot_bringup/share/robot_bringup/hook/pythonpath.sh'
+[15.880s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/robot_bringup/bin'
+[15.880s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_bringup)
+[15.881s] INFO:colcon.colcon_core.shell:Creating package script '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/robot_bringup/share/robot_bringup/package.ps1'
+[15.882s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/robot_bringup/share/robot_bringup/package.dsv'
+[15.882s] INFO:colcon.colcon_core.shell:Creating package script '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/robot_bringup/share/robot_bringup/package.sh'
+[15.883s] INFO:colcon.colcon_core.shell:Creating package script '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/robot_bringup/share/robot_bringup/package.bash'
+[15.884s] INFO:colcon.colcon_core.shell:Creating package script '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/robot_bringup/share/robot_bringup/package.zsh'
+[15.884s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/robot_bringup/share/colcon-core/packages/robot_bringup)
+[15.888s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/src/scara_description' with build type 'ament_cmake'
+[15.889s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/src/scara_description'
+[15.889s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[15.889s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[15.915s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/src/scara_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_description
+[16.093s] Level 1:colcon.colcon_core.shell:create_environment_hook('scara_boceto', 'pythonpath_develop')
+[16.093s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_boceto/share/scara_boceto/hook/pythonpath_develop.ps1'
+[16.094s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_boceto/share/scara_boceto/hook/pythonpath_develop.dsv'
+[16.095s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_boceto' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_boceto/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_boceto/build --no-deps symlink_data
+[16.095s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_boceto/share/scara_boceto/hook/pythonpath_develop.sh'
+[16.096s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto' for CMake module files
+[16.097s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto' for CMake config files
+[16.098s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto/lib'
+[16.099s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto/bin'
+[16.099s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto/lib/pkgconfig/scara_boceto.pc'
+[16.099s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto/lib/python3.12/site-packages'
+[16.099s] Level 1:colcon.colcon_core.shell:create_environment_hook('scara_boceto', 'pythonpath')
+[16.100s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto/share/scara_boceto/hook/pythonpath.ps1'
+[16.100s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto/share/scara_boceto/hook/pythonpath.dsv'
+[16.101s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto/share/scara_boceto/hook/pythonpath.sh'
+[16.102s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto/bin'
+[16.102s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(scara_boceto)
+[16.103s] INFO:colcon.colcon_core.shell:Creating package script '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto/share/scara_boceto/package.ps1'
+[16.104s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto/share/scara_boceto/package.dsv'
+[16.105s] INFO:colcon.colcon_core.shell:Creating package script '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto/share/scara_boceto/package.sh'
+[16.106s] INFO:colcon.colcon_core.shell:Creating package script '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto/share/scara_boceto/package.bash'
+[16.107s] INFO:colcon.colcon_core.shell:Creating package script '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto/share/scara_boceto/package.zsh'
+[16.107s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_boceto/share/colcon-core/packages/scara_boceto)
+[16.111s] Level 1:colcon.colcon_core.shell:create_environment_hook('antropomorfico_sim', 'pythonpath_develop')
+[16.111s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/antropomorfico_sim/share/antropomorfico_sim/hook/pythonpath_develop.ps1'
+[16.111s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/antropomorfico_sim' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/antropomorfico_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/antropomorfico_sim/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/antropomorfico_sim/build --no-deps symlink_data
+[16.112s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/antropomorfico_sim/share/antropomorfico_sim/hook/pythonpath_develop.dsv'
+[16.113s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/antropomorfico_sim/share/antropomorfico_sim/hook/pythonpath_develop.sh'
+[16.115s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/antropomorfico_sim' for CMake module files
+[16.116s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/antropomorfico_sim' for CMake config files
+[16.117s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/antropomorfico_sim/lib'
+[16.117s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/antropomorfico_sim/bin'
+[16.118s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/antropomorfico_sim/lib/pkgconfig/antropomorfico_sim.pc'
+[16.118s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/antropomorfico_sim/lib/python3.12/site-packages'
+[16.118s] Level 1:colcon.colcon_core.shell:create_environment_hook('antropomorfico_sim', 'pythonpath')
+[16.119s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/antropomorfico_sim/share/antropomorfico_sim/hook/pythonpath.ps1'
+[16.120s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/antropomorfico_sim/share/antropomorfico_sim/hook/pythonpath.dsv'
+[16.121s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/antropomorfico_sim/share/antropomorfico_sim/hook/pythonpath.sh'
+[16.123s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/antropomorfico_sim/bin'
+[16.123s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(antropomorfico_sim)
+[16.123s] INFO:colcon.colcon_core.shell:Creating package script '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/antropomorfico_sim/share/antropomorfico_sim/package.ps1'
+[16.125s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/antropomorfico_sim/share/antropomorfico_sim/package.dsv'
+[16.125s] INFO:colcon.colcon_core.shell:Creating package script '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/antropomorfico_sim/share/antropomorfico_sim/package.sh'
+[16.126s] INFO:colcon.colcon_core.shell:Creating package script '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/antropomorfico_sim/share/antropomorfico_sim/package.bash'
+[16.126s] INFO:colcon.colcon_core.shell:Creating package script '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/antropomorfico_sim/share/antropomorfico_sim/package.zsh'
+[16.127s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/antropomorfico_sim/share/colcon-core/packages/antropomorfico_sim)
+[17.148s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/src/scara_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_description
+[17.150s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_description -- -j4 -l4
+[17.210s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_description -- -j4 -l4
+[17.211s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_description
+[17.623s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(scara_description)
+[17.624s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/scara_description
+[17.624s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_description' for CMake module files
+[17.625s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_description' for CMake config files
+[17.626s] Level 1:colcon.colcon_core.shell:create_environment_hook('scara_description', 'cmake_prefix_path')
+[17.627s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_description/share/scara_description/hook/cmake_prefix_path.ps1'
+[17.627s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_description/share/scara_description/hook/cmake_prefix_path.dsv'
+[17.628s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_description/share/scara_description/hook/cmake_prefix_path.sh'
+[17.629s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_description/lib'
+[17.629s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_description/bin'
+[17.629s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_description/lib/pkgconfig/scara_description.pc'
+[17.629s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_description/lib/python3.12/site-packages'
+[17.630s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_description/bin'
+[17.631s] INFO:colcon.colcon_core.shell:Creating package script '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_description/share/scara_description/package.ps1'
+[17.631s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_description/share/scara_description/package.dsv'
+[17.632s] INFO:colcon.colcon_core.shell:Creating package script '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_description/share/scara_description/package.sh'
+[17.633s] INFO:colcon.colcon_core.shell:Creating package script '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_description/share/scara_description/package.bash'
+[17.634s] INFO:colcon.colcon_core.shell:Creating package script '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_description/share/scara_description/package.zsh'
+[17.636s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_description/share/colcon-core/packages/scara_description)
+[17.637s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(scara_description)
+[17.637s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_description' for CMake module files
+[17.638s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_description' for CMake config files
+[17.640s] Level 1:colcon.colcon_core.shell:create_environment_hook('scara_description', 'cmake_prefix_path')
+[17.640s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_description/share/scara_description/hook/cmake_prefix_path.ps1'
+[17.641s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_description/share/scara_description/hook/cmake_prefix_path.dsv'
+[17.642s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_description/share/scara_description/hook/cmake_prefix_path.sh'
+[17.643s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_description/lib'
+[17.643s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_description/bin'
+[17.643s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_description/lib/pkgconfig/scara_description.pc'
+[17.644s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_description/lib/python3.12/site-packages'
+[17.645s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_description/bin'
+[17.645s] INFO:colcon.colcon_core.shell:Creating package script '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_description/share/scara_description/package.ps1'
+[17.646s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_description/share/scara_description/package.dsv'
+[17.647s] INFO:colcon.colcon_core.shell:Creating package script '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_description/share/scara_description/package.sh'
+[17.648s] INFO:colcon.colcon_core.shell:Creating package script '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_description/share/scara_description/package.bash'
+[17.649s] INFO:colcon.colcon_core.shell:Creating package script '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_description/share/scara_description/package.zsh'
+[17.650s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/scara_description/share/colcon-core/packages/scara_description)
+[40.646s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/miau' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/miau -- -j4 -l4
+[40.649s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/miau': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/miau
+[41.015s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(miau)
+[41.016s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau' for CMake module files
+[41.016s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/miau' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/miau
+[41.017s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau' for CMake config files
+[41.017s] Level 1:colcon.colcon_core.shell:create_environment_hook('miau', 'cmake_prefix_path')
+[41.017s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/miau/hook/cmake_prefix_path.ps1'
+[41.018s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/miau/hook/cmake_prefix_path.dsv'
+[41.018s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/miau/hook/cmake_prefix_path.sh'
+[41.018s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/lib'
+[41.018s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/bin'
+[41.019s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/lib/pkgconfig/miau.pc'
+[41.019s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/lib/python3.12/site-packages'
+[41.019s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/bin'
+[41.019s] INFO:colcon.colcon_core.shell:Creating package script '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/miau/package.ps1'
+[41.020s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/miau/package.dsv'
+[41.020s] INFO:colcon.colcon_core.shell:Creating package script '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/miau/package.sh'
+[41.020s] INFO:colcon.colcon_core.shell:Creating package script '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/miau/package.bash'
+[41.021s] INFO:colcon.colcon_core.shell:Creating package script '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/miau/package.zsh'
+[41.021s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/colcon-core/packages/miau)
+[41.022s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(miau)
+[41.022s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau' for CMake module files
+[41.022s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau' for CMake config files
+[41.023s] Level 1:colcon.colcon_core.shell:create_environment_hook('miau', 'cmake_prefix_path')
+[41.023s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/miau/hook/cmake_prefix_path.ps1'
+[41.023s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/miau/hook/cmake_prefix_path.dsv'
+[41.023s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/miau/hook/cmake_prefix_path.sh'
+[41.024s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/lib'
+[41.024s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/bin'
+[41.024s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/lib/pkgconfig/miau.pc'
+[41.024s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/lib/python3.12/site-packages'
+[41.025s] Level 1:colcon.colcon_core.environment:checking '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/bin'
+[41.025s] INFO:colcon.colcon_core.shell:Creating package script '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/miau/package.ps1'
+[41.025s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/miau/package.dsv'
+[41.026s] INFO:colcon.colcon_core.shell:Creating package script '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/miau/package.sh'
+[41.026s] INFO:colcon.colcon_core.shell:Creating package script '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/miau/package.bash'
+[41.027s] INFO:colcon.colcon_core.shell:Creating package script '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/miau/package.zsh'
+[41.027s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/miau/share/colcon-core/packages/miau)
+[41.027s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[41.028s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[41.028s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[41.028s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[41.073s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[41.073s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[41.074s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[41.121s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[41.121s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/local_setup.ps1'
+[41.144s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/_local_setup_util_ps1.py'
+[41.157s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/setup.ps1'
+[41.160s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/local_setup.sh'
+[41.161s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/_local_setup_util_sh.py'
+[41.163s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/setup.sh'
+[41.167s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/local_setup.bash'
+[41.184s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/setup.bash'
+[41.186s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/local_setup.zsh'
+[41.198s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/install/setup.zsh'

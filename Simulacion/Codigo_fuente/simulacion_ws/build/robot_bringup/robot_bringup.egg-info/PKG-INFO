@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: robot-bringup
+Version: 0.0.0
+Summary: Paquete integrador para multi-robot en Gazebo Harmonic
+Maintainer: usuario
+Maintainer-email: est.juan.ebalsero@unimilitar.edu.co
+License: Apache-2.0

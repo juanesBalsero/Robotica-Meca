@@ -1,0 +1,1 @@
+/home/juanes/Robotica-Meca/Simulacion/Codigo_fuente/simulacion_ws/build/miau/ament_cmake_environment_hooks/local_setup.bash
