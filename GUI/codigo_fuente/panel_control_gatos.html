@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Panel de Control · Keyner</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/roslibjs/1.3.0/roslib.min.js"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap');
+
+  :root{
+    --cream-a:#FBF6EC;
+    --cream-b:#F4E9D6;
+    --surface:#FFFDF8;
+    --surface-2:#FFF8ED;
+    --ink:#2E2521;
+    --ink-soft:#6B5B52;
+    --line:rgba(46,37,33,.10);
+
+    --pink:#F3B6C0;
+    --pink-deep:#E58FA0;
+
+    --green:#7CAA80;
+    --green-deep:#5C8F63;
+    --green-bg:#E7F1E4;
+
+    --red:#C1504A;
+    --red-deep:#A23D38;
+    --red-bg:#F7E3E1;
+
+    --tan:#E3B67F;
+    --tan-deep:#C9955B;
+
+    --gray:#D3CDC4;
+    --gray-deep:#A79F97;
+
+    --ginger:#EFAE72;
+    --ginger-deep:#D98F4E;
+    --slate:#8FA6B8;
+    --slate-deep:#6C879C;
+    --plum:#B98BB0;
+    --plum-deep:#96678D;
+
+    --shadow-soft: 0 2px 10px rgba(46,37,33,.08);
+    --shadow-med: 0 6px 20px rgba(46,37,33,.12);
+  }
+
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    font-family:'Nunito Sans', ui-rounded, sans-serif;
+    color:var(--ink);
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cg fill='rgba(201,149,91,0.10)' transform='rotate(-18 60 60) translate(30 26)'%3E%3Ccircle cx='0' cy='16' r='9'/%3E%3Ccircle cx='-13' cy='-2' r='5'/%3E%3Ccircle cx='-4' cy='-13' r='5'/%3E%3Ccircle cx='9' cy='-10' r='5'/%3E%3C/g%3E%3C/svg%3E"),
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Cg fill='rgba(229,143,160,0.08)' transform='rotate(24 60 60) translate(90 100)'%3E%3Ccircle cx='0' cy='16' r='8'/%3E%3Ccircle cx='-12' cy='-2' r='4.5'/%3E%3Ccircle cx='-4' cy='-12' r='4.5'/%3E%3Ccircle cx='8' cy='-9' r='4.5'/%3E%3C/g%3E%3C/svg%3E"),
+      radial-gradient(1200px 600px at 15% -10%, #FFFDF7 0%, transparent 60%),
+      linear-gradient(180deg, var(--cream-a), var(--cream-b));
+    background-repeat:repeat, repeat, no-repeat, no-repeat;
+    background-size:120px 120px, 150px 150px, auto, auto;
+    background-position:0 0, 40px 70px, center, center;
+    min-height:100vh;
+    padding-bottom:60px;
+  }
+  .paw-deco{ position:absolute; opacity:.38; pointer-events:none; }
+  .paw-deco svg{ display:block; }
+  h1,h2,h3,.display{
+    font-family:'Baloo 2', ui-rounded, sans-serif;
+  }
+  button{ font-family:inherit; cursor:pointer; }
+
+  /* ---------- Barra superior de conexión ---------- */
+  .topbar{
+    display:flex; align-items:center; gap:14px; flex-wrap:wrap;
+    max-width:1180px; margin:0 auto; padding:16px 24px 4px;
+  }
+  .brand{
+    display:flex; align-items:center; gap:10px;
+    font-family:'Baloo 2'; font-weight:700; font-size:1.15rem; color:var(--ink);
+    margin-right:auto;
+  }
+  .brand .paw{ font-size:1.3rem; }
+  .conn-group{ display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+  .conn-status{
+    display:flex; align-items:center; gap:7px;
+    font-size:.85rem; font-weight:700; color:var(--ink-soft);
+    background:var(--surface); border:1px solid var(--line);
+    padding:6px 12px; border-radius:20px; box-shadow:var(--shadow-soft);
+  }
+  .dot{ width:9px; height:9px; border-radius:50%; background:var(--gray-deep); transition:background .2s;}
+  .dot.on{ background:var(--green-deep); box-shadow:0 0 0 4px var(--green-bg); }
+  .dot.err{ background:var(--red-deep); box-shadow:0 0 0 4px var(--red-bg); }
+
+  select.mode-select, input.ws-input{
+    font-family:'Nunito Sans'; font-weight:700; font-size:.83rem;
+    border:1px solid var(--line); background:var(--surface);
+    padding:7px 10px; border-radius:20px; color:var(--ink);
+  }
+  input.ws-input{ width:190px; }
+  .btn-connect{
+    font-weight:800; font-size:.83rem; border:none; border-radius:20px;
+    padding:8px 16px; background:var(--ink); color:var(--surface);
+    box-shadow:var(--shadow-soft);
+  }
+  .btn-connect:active{ transform:translateY(1px); }
+
+  /* ---------- Layout general ---------- */
+  .app{
+    max-width:1180px; margin:0 auto; padding:18px 24px 0;
+    display:grid; grid-template-columns:1.65fr 1fr; gap:26px;
+    align-items:start;
+  }
+  @media (max-width:880px){
+    .app{ grid-template-columns:1fr; }
+  }
+  .col-left{ display:flex; flex-direction:column; gap:22px; }
+
+  .section-title{
+    font-size:.98rem; font-weight:700; color:var(--ink-soft);
+    margin:0 0 12px 2px; letter-spacing:.2px;
+  }
+
+  /* ================= CONTROL: gato con INICIAR / DETENER ================= */
+  .card-control{
+    background:var(--surface);
+    border:1px solid var(--line);
+    border-radius:26px 26px 20px 20px;
+    box-shadow:var(--shadow-soft);
+    padding:20px 26px 22px;
+    position:relative;
+  }
+  .control-row{ display:flex; align-items:flex-end; gap:22px; }
+  .cat-holder{ flex:0 0 auto; }
+  .cat-holder svg{ display:block; }
+
+  .hold-buttons{ display:flex; gap:14px; flex:1; padding-bottom:6px; }
+  .hold-btn-wrap{ position:relative; flex:1; }
+  .paw{
+    position:absolute; top:-9px; left:50%; transform:translateX(-50%);
+    width:34px; height:16px;
+  }
+  .btn-toggle{
+    width:100%; border:none; border-radius:16px; padding:16px 10px 12px;
+    font-family:'Baloo 2'; font-weight:700; font-size:1rem; letter-spacing:.5px;
+    background:var(--gray); color:#786F66;
+    box-shadow: inset 0 -3px 0 rgba(0,0,0,.08), var(--shadow-soft);
+    transition:background .18s, color .18s, transform .08s;
+  }
+  .btn-toggle:active{ transform:translateY(1px); }
+  .btn-toggle.iniciar.activo{
+    background:var(--green); color:#fff;
+    box-shadow: inset 0 -3px 0 rgba(0,0,0,.12), 0 0 0 5px var(--green-bg);
+  }
+  .btn-toggle.detener.activo{
+    background:var(--red); color:#fff;
+    box-shadow: inset 0 -3px 0 rgba(0,0,0,.12), 0 0 0 5px var(--red-bg);
+  }
+  .estado-line{
+    margin-top:14px; font-size:.85rem; color:var(--ink-soft); font-weight:700;
+    display:flex; align-items:center; gap:8px;
+  }
+  .estado-pill{
+    font-family:'Baloo 2'; font-size:.78rem; padding:3px 12px; border-radius:20px;
+    background:var(--gray); color:#786F66;
+  }
+  .estado-pill.ejecutando{ background:var(--green-bg); color:var(--green-deep); }
+  .estado-pill.detenido{ background:var(--gray); color:#786F66; }
+  .estado-pill.emergencia{ background:var(--red-bg); color:var(--red-deep); }
+
+  /* ================= EMERGENCIA: gato gordo ================= */
+  .card-emergency{
+    position:relative; overflow:hidden;
+    background: linear-gradient(180deg, #FFF3E0, #FDE7D6);
+    border-radius:26px; box-shadow:var(--shadow-soft);
+    padding:26px; display:flex; justify-content:center;
+  }
+  .fatcat-wrap{ position:relative; }
+  .fatcat-wrap svg{ display:block; }
+  #btnEmergencia{
+    position:absolute; left:50%; top:65%; transform:translate(-50%,-50%);
+    width:118px; height:118px; border-radius:50%; border:5px solid #fff;
+    background:radial-gradient(circle at 35% 30%, #DE6C65, var(--red-deep) 75%);
+    color:#fff; font-family:'Baloo 2'; font-weight:800; font-size:.95rem;
+    letter-spacing:.5px; box-shadow:0 8px 18px rgba(162,61,56,.45), inset 0 -4px 0 rgba(0,0,0,.15);
+    transition:transform .12s;
+  }
+  #btnEmergencia:hover{ transform:translate(-50%,-50%) scale(1.04); }
+  #btnEmergencia:active{ transform:translate(-50%,-50%) scale(.96); }
+
+  .fatcat-wrap.pop .fatcat-group{ animation: catpop .8s ease forwards; }
+  @keyframes catpop{
+    0%{ transform:scale(1) rotate(0deg); opacity:1; }
+    30%{ transform:scale(1.12) rotate(-3deg); opacity:1; }
+    55%{ transform:scale(1.2) rotate(3deg); opacity:1;}
+    100%{ transform:scale(.2) rotate(12deg); opacity:0; }
+  }
+  .poof{
+    position:absolute; border-radius:50%; background:#fff; opacity:0; pointer-events:none;
+  }
+  .poof.show{ animation:poofOut .7s ease forwards; }
+  @keyframes poofOut{
+    0%{ opacity:.95; transform:scale(.3) translate(0,0); }
+    100%{ opacity:0; transform:scale(1.6) translate(var(--dx), var(--dy)); }
+  }
+
+  /* Modal */
+  .modal-backdrop{
+    position:fixed; inset:0; background:rgba(46,37,33,.45);
+    display:none; align-items:center; justify-content:center; z-index:50;
+  }
+  .modal-backdrop.show{ display:flex; }
+  .modal-box{
+    background:var(--surface); border-radius:20px; padding:28px 30px;
+    max-width:340px; text-align:center; box-shadow:var(--shadow-med);
+  }
+  .modal-box h3{ margin:0 0 8px; font-size:1.15rem; color:var(--red-deep); }
+  .modal-box p{ margin:0 0 20px; color:var(--ink-soft); font-size:.92rem; line-height:1.4; }
+  .modal-box button{
+    border:none; border-radius:16px; padding:10px 26px; font-family:'Baloo 2';
+    font-weight:700; background:var(--ink); color:var(--surface);
+  }
+
+  /* ================= GRÁFICA ================= */
+  .card-graph{
+    position:relative; overflow:hidden;
+    background:var(--surface); border:1px solid var(--line); border-radius:16px;
+    box-shadow:var(--shadow-soft); padding:20px 22px;
+  }
+  .graph-head{ display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap; }
+  .graph-head h2{ font-size:1.02rem; margin:0; }
+  .btn-visualizar{
+    border:none; border-radius:14px; padding:9px 16px; font-family:'Baloo 2';
+    font-weight:700; font-size:.85rem; background:var(--ink); color:var(--surface);
+    box-shadow:var(--shadow-soft);
+  }
+  .var-picker{
+    display:none; gap:8px; flex-wrap:wrap; margin-top:14px; padding-top:14px;
+    border-top:1px dashed var(--line);
+  }
+  .var-picker.show{ display:flex; }
+  .var-picker input[type=text]{
+    flex:1; min-width:140px; border:1px solid var(--line); border-radius:12px;
+    padding:8px 12px; font-family:'Nunito Sans'; font-weight:700; font-size:.85rem;
+  }
+  .var-picker button{
+    border:none; border-radius:12px; padding:8px 14px; background:var(--green-deep);
+    color:#fff; font-weight:700; font-size:.85rem; font-family:'Nunito Sans';
+  }
+  .var-chip{
+    display:flex; align-items:center; gap:6px; background:var(--surface-2);
+    border:1px solid var(--line); padding:5px 6px 5px 12px; border-radius:20px;
+    font-size:.8rem; font-weight:700;
+  }
+  .var-chip button{
+    border:none; background:var(--gray); color:var(--ink); width:20px; height:20px;
+    border-radius:50%; font-size:.7rem; line-height:1; padding:0;
+  }
+  .charts-grid{
+    display:grid; grid-template-columns:repeat(auto-fill, minmax(230px,1fr));
+    gap:14px; margin-top:16px;
+  }
+  .chart-win{
+    border:1px solid var(--line); border-radius:16px; overflow:hidden;
+    background:var(--surface-2); box-shadow:var(--shadow-soft);
+    border-top:4px solid var(--chart-color, var(--green-deep));
+  }
+  .chart-win-head{
+    display:flex; align-items:center; gap:8px;
+    padding:9px 12px; background:var(--surface); border-bottom:1px solid var(--line);
+  }
+  .chart-win-head .nombre{
+    font-weight:800; font-size:.8rem; flex:1; display:flex; align-items:center; gap:7px;
+  }
+  .chart-win-head .puntito{
+    width:9px; height:9px; border-radius:50%; background:var(--chart-color, var(--green-deep)); flex:0 0 auto;
+  }
+  .chart-win-head .valor{
+    font-family:'Baloo 2'; font-weight:700; font-size:.86rem; color:var(--chart-color, var(--green-deep));
+  }
+  .chart-win-head button{
+    border:none; background:transparent; color:var(--ink-soft); font-size:.9rem;
+  }
+  .chart-win canvas{ display:block; width:100%; height:120px; }
+  .chart-empty{
+    color:var(--ink-soft); font-size:.85rem; text-align:center; padding:28px 10px;
+  }
+
+  /* ================= MEDICAMENTOS: AA / AB / BB ================= */
+  .card-meds{ padding:6px 2px 0; }
+  .meds-row{ display:flex; gap:16px; justify-content:center; flex-wrap:wrap; }
+  .medcat{ border:none; background:none; text-align:center; }
+  .medcat svg{ display:block; }
+  .medcat .label{
+    font-family:'Baloo 2'; font-weight:700; font-size:1.35rem; fill:var(--ink);
+  }
+  .meds-caption{
+    text-align:center; margin-top:10px; color:var(--ink-soft); font-weight:700; font-size:.9rem;
+  }
+
+  /* ================= SIDEBAR ================= */
+  .sidebar{ display:flex; flex-direction:column; gap:16px; }
+  .sidebar-header{
+    display:flex; align-items:center; gap:10px;
+    padding:4px 4px 6px;
+  }
+  .sidebar-header h1{ margin:0; font-size:1.7rem; color:var(--ink); }
+  .sidebar-header .ears{ font-size:1.4rem; }
+
+  .row-card{
+    display:flex; align-items:center; gap:14px;
+    background:var(--surface); border:1px solid var(--line);
+    border-radius:18px; padding:14px 16px; box-shadow:var(--shadow-soft);
+  }
+  .row-card svg{ flex:0 0 auto; }
+  .row-info{ display:flex; flex-direction:column; }
+  .row-info .lbl{ font-size:.78rem; font-weight:700; color:var(--ink-soft); }
+  .row-info .num{ font-family:'Baloo 2'; font-size:1.9rem; line-height:1.1; }
+  .num.in{ color:var(--green-deep); }
+  .num.out{ color:var(--tan-deep); }
+
+  .btn-download{
+    display:flex; align-items:center; justify-content:center; gap:8px;
+    border:none; border-radius:16px; padding:13px; width:100%;
+    background:var(--ink); color:var(--surface); font-family:'Baloo 2';
+    font-weight:700; font-size:.9rem; box-shadow:var(--shadow-soft);
+  }
+  .btn-download:active{ transform:translateY(1px); }
+
+  .card-avisos{
+    position:relative; overflow:hidden;
+    background:var(--surface); border:1px solid var(--line); border-radius:18px;
+    box-shadow:var(--shadow-soft); padding:14px 16px 8px; display:flex; flex-direction:column;
+  }
+  .avisos-head{ display:flex; align-items:center; justify-content:space-between; margin-bottom:8px; }
+  .avisos-head h3{ margin:0; font-size:1rem; }
+  .avisos-badge{
+    background:var(--red-bg); color:var(--red-deep); font-family:'Baloo 2';
+    font-size:.72rem; font-weight:700; padding:2px 9px; border-radius:12px;
+  }
+  .avisos-list{ list-style:none; margin:0; padding:0; max-height:230px; overflow-y:auto; }
+  .aviso-item{
+    display:flex; gap:9px; align-items:flex-start; padding:9px 2px;
+    border-bottom:1px solid var(--line); font-size:.82rem;
+  }
+  .aviso-item:last-child{ border-bottom:none; }
+  .aviso-dot{ width:8px; height:8px; border-radius:50%; margin-top:5px; flex:0 0 auto; }
+  .aviso-dot.info{ background:#9BB6C9; }
+  .aviso-dot.advertencia{ background:var(--tan-deep); }
+  .aviso-dot.error{ background:var(--red-deep); }
+  .aviso-texto{ flex:1; }
+  .aviso-hora{ display:block; color:var(--ink-soft); font-size:.7rem; margin-top:2px; }
+  .aviso-check{
+    border:none; background:none; font-size:.85rem; color:var(--gray-deep); flex:0 0 auto;
+  }
+  .aviso-check.leido{ color:var(--green-deep); }
+  .avisos-vacio{ color:var(--ink-soft); font-size:.82rem; padding:10px 2px; text-align:center; }
+
+/* ===== v2: animaciones y componentes nuevos ===== */
+.emo{display:block;object-fit:contain}
+.emo-fb{display:block;line-height:1;font-size:4rem;text-align:center}
+.paw-deco{animation:floaty 4s ease-in-out infinite}
+@keyframes floaty{50%{translate:0 -5px}}
+button{transition:transform .2s cubic-bezier(.3,1.7,.5,1),filter .2s,background .2s}
+button:hover{filter:brightness(1.07)}
+.card-control,.card-graph,.row-card,.card-avisos{transition:transform .25s cubic-bezier(.3,1.6,.5,1),box-shadow .25s}
+.card-control:hover,.card-graph:hover,.row-card:hover,.card-avisos:hover{transform:translateY(-3px);box-shadow:var(--shadow-med)}
+.btn-connect:hover,.btn-visualizar:hover,.btn-download:hover{transform:translateY(-2px) rotate(-1.5deg)}
+.btn-mute{border:none;background:var(--surface);border-radius:50%;width:34px;height:34px;box-shadow:var(--shadow-soft)}
+.btn-mute:hover{transform:rotate(-15deg) scale(1.15)}
+.btn-toggle{position:relative;overflow:hidden;transition:background .18s,color .18s,transform .25s cubic-bezier(.3,1.7,.5,1)}
+.btn-toggle:hover{transform:translateY(-3px) scale(1.04)}
+.btn-toggle.boing{animation:boing .5s}
+@keyframes boing{30%{transform:scale(1.12,.86)}55%{transform:scale(.92,1.1)}80%{transform:scale(1.04,.97)}}
+.ripple{position:absolute;border-radius:50%;background:rgba(255,255,255,.6);transform:scale(0);animation:rip .6s ease-out forwards;pointer-events:none}
+@keyframes rip{to{transform:scale(8);opacity:0}}
+.fly{position:fixed;pointer-events:none;font-size:1.4rem;z-index:90;animation:flyUp 1.2s ease-out forwards}
+@keyframes flyUp{to{transform:translate(var(--dx),-130px) rotate(40deg);opacity:0}}
+.toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,40px);background:var(--ink);color:var(--surface);padding:10px 20px;border-radius:30px;font:700 .9rem 'Nunito Sans';opacity:0;pointer-events:none;z-index:80}
+.toast.show{animation:toast 2.4s cubic-bezier(.3,1.5,.5,1)}
+@keyframes toast{0%{opacity:0;transform:translate(-50%,40px)}12%,85%{opacity:1;transform:translate(-50%,0)}100%{opacity:0;transform:translate(-50%,20px)}}
+/* gato de control */
+.cat-holder{width:120px;height:118px;display:flex;align-items:flex-end;justify-content:center;cursor:pointer}
+.cat-holder .emo,.cat-holder .emo-fb{width:112px;height:112px;font-size:6rem;transform-origin:50% 90%}
+.cat-holder.idle .emo,.cat-holder.idle .emo-fb{animation:sway 3s ease-in-out infinite}
+.cat-holder.run .emo,.cat-holder.run .emo-fb{animation:trot .45s ease-in-out infinite}
+.cat-holder.sos .emo,.cat-holder.sos .emo-fb{animation:shake .15s linear infinite}
+.cat-holder.jump .emo,.cat-holder.jump .emo-fb{animation:jump .6s}
+@keyframes sway{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(4deg)}}
+@keyframes trot{50%{transform:translateY(-8px) rotate(-6deg)}}
+@keyframes jump{40%{transform:translateY(-34px) scale(.95,1.1)}70%{transform:translateY(0) scale(1.1,.88)}}
+@keyframes shake{25%{transform:translateX(-3px) rotate(-4deg)}75%{transform:translateX(3px) rotate(4deg)}}
+/* gato gordo */
+.fatcat-wrap{width:300px;height:290px}
+.fatcat-img{position:absolute;left:50%;top:0;width:220px;height:220px;margin-left:-110px;transform-origin:50% 85%;animation:belly 2.4s ease-in-out infinite}
+.fatcat-img .emo,.fatcat-img .emo-fb{width:100%;height:100%;font-size:11rem}
+@keyframes belly{0%,100%{transform:scale(1.4,.95)}50%{transform:scale(1.47,1.02)}}
+.fatcat-wrap:hover .fatcat-img{animation:wobble .7s ease-in-out infinite}
+@keyframes wobble{0%,100%{transform:scale(1.4,.95) rotate(-5deg)}50%{transform:scale(1.5,.9) rotate(5deg)}}
+.fatcat-wrap.pop .fatcat-img{animation:blow 1.1s ease-in forwards}
+@keyframes blow{0%{transform:scale(1.4,.95)}25%{transform:scale(1.9,1.35) rotate(-4deg)}45%{transform:scale(1.95,1.4) rotate(4deg)}60%{transform:scale(1.9,1.35) rotate(-4deg)}100%{transform:translateY(-320px) rotate(720deg) scale(.2);opacity:0}}
+.fatcat-wrap.back .fatcat-img{animation:comeback .9s cubic-bezier(.3,1.6,.5,1)}
+@keyframes comeback{from{transform:scale(0) rotate(-360deg);opacity:0}to{transform:scale(1.4,.95);opacity:1}}
+#btnEmergencia{top:80%;width:96px;height:96px;font-size:.85rem;transition:transform .12s,opacity .3s;animation:sosPulse 1.6s infinite}
+.fatcat-wrap.pop #btnEmergencia{opacity:0;pointer-events:none}
+@keyframes sosPulse{0%{box-shadow:0 8px 18px rgba(162,61,56,.45),0 0 0 0 rgba(193,80,74,.5)}100%{box-shadow:0 8px 18px rgba(162,61,56,.45),0 0 0 22px rgba(193,80,74,0)}}
+.modal-backdrop.show{animation:fade .25s}
+.modal-backdrop.show .modal-box{animation:modalIn .5s cubic-bezier(.3,1.7,.5,1)}
+@keyframes fade{from{opacity:0}}
+@keyframes modalIn{from{transform:scale(.4) rotate(-8deg);opacity:0}}
+/* medicamentos: selección múltiple con orden */
+.medcat{position:relative;padding:8px 12px 6px;border-radius:22px;filter:grayscale(.7);opacity:.75;transition:transform .25s cubic-bezier(.3,1.7,.5,1),background .2s,box-shadow .2s,filter .2s}
+.medcat:hover{transform:translateY(-6px) rotate(-4deg);filter:none;opacity:1}
+.medcat.sel{filter:none;opacity:1;background:var(--green-bg);box-shadow:0 0 0 3px var(--green)}
+.medcat .emo,.medcat .emo-fb{width:84px;height:84px;font-size:3.6rem}
+.medcat.sel .emo,.medcat.sel .emo-fb{animation:happy .7s}
+.medcat .lab{display:block;font:800 1.3rem 'Baloo 2'}
+.medcat .ord{position:absolute;top:-6px;right:-6px;width:26px;height:26px;border-radius:50%;background:var(--green-deep);color:#fff;font:800 .85rem 'Baloo 2';display:grid;place-items:center;transform:scale(0);transition:transform .3s cubic-bezier(.3,2,.5,1)}
+.medcat.sel .ord{transform:scale(1)}
+@keyframes happy{30%{transform:scale(1.2) rotate(-8deg)}60%{transform:scale(.95) rotate(6deg)}}
+/* barra de progreso + desplegable */
+.card-prog{overflow:visible;z-index:5}
+.var-picker input.err{border-color:var(--red);animation:shake .15s 4}
+.prog-head{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.prog-pct{font:800 1.1rem 'Baloo 2';color:var(--green-deep)}
+.dd{position:relative}
+.dd-btn{display:flex;gap:8px;align-items:center;border:1px solid var(--line);background:var(--surface-2);border-radius:14px;padding:8px 14px;font:700 .88rem 'Baloo 2';box-shadow:var(--shadow-soft)}
+.dd-btn .arr{transition:transform .25s}
+.dd.open .arr{transform:rotate(180deg)}
+.dd-menu{position:absolute;right:0;top:calc(100% + 6px);min-width:150px;background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow-med);padding:6px;z-index:20;transform-origin:top right;transform:scale(.7) translateY(-8px);opacity:0;pointer-events:none;transition:transform .22s cubic-bezier(.3,1.6,.5,1),opacity .15s}
+.dd.open .dd-menu{transform:none;opacity:1;pointer-events:auto}
+.dd-menu button{display:block;width:100%;text-align:left;border:none;background:none;padding:8px 12px;border-radius:10px;font:700 .85rem 'Nunito Sans'}
+.dd-menu button:hover{background:var(--green-bg);transform:translateX(4px)}
+.dd-menu button.on{color:var(--green-deep)}
+.prog-track{position:relative;height:22px;border-radius:14px;background:var(--gray);margin:40px 20px 8px}
+.prog-fill{height:100%;width:0;border-radius:14px;background:repeating-linear-gradient(-45deg,var(--green) 0 12px,var(--green-deep) 12px 24px);background-size:34px 34px;animation:stripes 1s linear infinite;transition:width .6s cubic-bezier(.3,1.2,.5,1)}
+.prog-fill.pausado{animation-play-state:paused;filter:grayscale(.6)}
+@keyframes stripes{to{background-position:34px 0}}
+.prog-cat{position:absolute;top:-38px;left:0;width:44px;height:44px;margin-left:-22px;transition:left .6s cubic-bezier(.3,1.2,.5,1)}
+.prog-cat .emo,.prog-cat .emo-fb{width:44px;height:44px;font-size:2.2rem}
+/* cajas, descarga, avisos, gráficas */
+.row-card{position:relative;overflow:hidden}
+.ico{font-size:2.2rem;width:54px;text-align:center;display:block}
+.row-card.agita{animation:agita .5s}
+.row-card.agita .ico{animation:happy .6s}
+@keyframes agita{25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+.num.bump,.avisos-badge.pop{animation:bump .5s}
+@keyframes bump{40%{transform:scale(1.6) rotate(-6deg)}}
+.caja{position:absolute;top:50%;margin-top:-18px;font-size:2rem;pointer-events:none;display:flex;align-items:center;gap:2px}
+.caja .emo,.caja .emo-fb{width:30px;height:30px;font-size:1.6rem}
+.gatocaja{position:relative;height:54px}
+.gatocaja .emo,.gatocaja .emo-fb{position:absolute;left:50%;top:-2px;margin-left:-20px;width:40px;height:40px;font-size:2rem}
+.gatocaja .box{position:absolute;left:0;right:0;bottom:-4px;font-size:2.3rem;line-height:1}
+.row-card.agita .gatocaja .emo,.row-card.agita .gatocaja .emo-fb{animation:peek .6s}
+@keyframes peek{40%{transform:translateY(-12px) rotate(-8deg)}}
+.caja.in{animation:cajaIn .9s ease-in forwards}
+.caja.out{animation:cajaOut .9s ease-in forwards}
+@keyframes cajaIn{from{left:-40px;opacity:0;transform:rotate(-30deg)}40%{opacity:1}to{left:14px;opacity:0;transform:scale(.6)}}
+@keyframes cajaOut{from{left:14px;opacity:1}to{left:105%;opacity:0;transform:rotate(30deg)}}
+.dl-ico{display:inline-block}
+.btn-download.go{animation:boing .6s}
+.btn-download.go .dl-ico{animation:dl 1s}
+@keyframes dl{0%{transform:translateY(-14px);opacity:0}40%{transform:translateY(6px);opacity:1}60%{transform:translateY(-3px)}}
+.aviso-item{animation:avIn .55s cubic-bezier(.3,1.5,.5,1)}
+@keyframes avIn{from{opacity:0;transform:translateX(40px) scale(.9);background:var(--tan)}}
+.aviso-check:hover{transform:scale(1.4) rotate(10deg)}
+.aviso-check.leido{animation:happy .5s}
+.chart-win{animation:winIn .5s cubic-bezier(.3,1.6,.5,1)}
+.chart-win.out{animation:winOut .3s forwards}
+@keyframes winIn{from{opacity:0;transform:scale(.6) rotate(-4deg)}}
+@keyframes winOut{to{opacity:0;transform:scale(.5) rotate(6deg)}}
+.var-picker.show{animation:slide .35s cubic-bezier(.3,1.4,.5,1)}
+@keyframes slide{from{opacity:0;transform:translateY(-10px)}}
+@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;animation-iteration-count:1!important}}
+</style>
+</head>
+<body>
+
+<!-- ============ BARRA DE CONEXIÓN ============ -->
+<div class="topbar">
+  <div class="brand"><span class="paw">🐾</span> Panel de Control</div>
+  <div class="conn-group">
+    <div class="conn-status"><span class="dot" id="dotEstado"></span><span id="txtEstadoConexion">Modo simulado</span></div>
+    <select class="mode-select" id="selModo">
+      <option value="simulado">Modo simulado</option>
+      <option value="real">Conectar a ROS2 (rosbridge)</option>
+    </select>
+    <input class="ws-input" id="inputWsUrl" type="text" value="ws://localhost:9090" placeholder="ws://localhost:9090">
+    <button class="btn-mute" id="btnMute" title="Sonido de gatitos">🔊</button>
+    <button class="btn-connect" id="btnConectar">Conectar</button>
+  </div>
+</div>
+
+<!-- ============ APP ============ -->
+<div class="app">
+
+  <!-- ---------- COLUMNA IZQUIERDA ---------- -->
+  <div class="col-left">
+
+    <!-- CONTROL INICIAR / DETENER -->
+    <div class="card-control">
+      <span class="paw-deco" style="top:14px; right:18px; transform:rotate(-12deg);">
+        <svg viewBox="0 0 64 64" width="24" height="24"><g fill="var(--tan-deep)"><circle cx="32" cy="42" r="14"/><circle cx="14" cy="22" r="7"/><circle cx="30" cy="10" r="7"/><circle cx="50" cy="14" r="7"/><circle cx="58" cy="30" r="6"/></g></svg>
+      </span>
+      <div class="control-row">
+        <div class="cat-holder idle" id="catHolder" title="¡Acarícame!"></div>
+        <div class="hold-buttons">
+          <div class="hold-btn-wrap">
+            <svg class="paw" viewBox="0 0 34 16"><ellipse cx="17" cy="10" rx="14" ry="7" fill="var(--surface-2)" stroke="var(--ink)" stroke-width="1.5"/></svg>
+            <button class="btn-toggle iniciar activo" id="btnIniciar">INICIAR</button>
+          </div>
+          <div class="hold-btn-wrap">
+            <svg class="paw" viewBox="0 0 34 16"><ellipse cx="17" cy="10" rx="14" ry="7" fill="var(--surface-2)" stroke="var(--ink)" stroke-width="1.5"/></svg>
+            <button class="btn-toggle detener" id="btnDetener">DETENER</button>
+          </div>
+        </div>
+      </div>
+      <div class="estado-line">
+        Estado del sistema:
+        <span class="estado-pill ejecutando" id="estadoPill">detenido</span>
+      </div>
+    </div>
+
+    <!-- EMERGENCIA -->
+    <div class="card-emergency">
+      <span class="paw-deco" style="top:16px; left:22px; transform:rotate(10deg);">
+        <svg viewBox="0 0 64 64" width="22" height="22"><g fill="var(--pink-deep)"><circle cx="32" cy="42" r="14"/><circle cx="14" cy="22" r="7"/><circle cx="30" cy="10" r="7"/><circle cx="50" cy="14" r="7"/><circle cx="58" cy="30" r="6"/></g></svg>
+      </span>
+      <span class="paw-deco" style="bottom:14px; right:20px; transform:rotate(-20deg);">
+        <svg viewBox="0 0 64 64" width="26" height="26"><g fill="var(--tan-deep)"><circle cx="32" cy="42" r="14"/><circle cx="14" cy="22" r="7"/><circle cx="30" cy="10" r="7"/><circle cx="50" cy="14" r="7"/><circle cx="58" cy="30" r="6"/></g></svg>
+      </span>
+      <div class="fatcat-wrap" id="fatcatWrap">
+        <div class="fatcat-img" id="fatcatImg"></div>
+        <button id="btnEmergencia">EMERGENCIA</button>
+      </div>
+    </div>
+
+    <!-- GRÁFICA -->
+    <div class="card-graph">
+      <span class="paw-deco" style="bottom:10px; left:16px; transform:rotate(-8deg);">
+        <svg viewBox="0 0 64 64" width="20" height="20"><g fill="var(--slate-deep)"><circle cx="32" cy="42" r="14"/><circle cx="14" cy="22" r="7"/><circle cx="30" cy="10" r="7"/><circle cx="50" cy="14" r="7"/><circle cx="58" cy="30" r="6"/></g></svg>
+      </span>
+      <div class="graph-head">
+        <h2>Comportamiento de variables</h2>
+        <button class="btn-visualizar" id="btnVisualizar">Visualizar variables</button>
+      </div>
+      <div class="var-picker" id="varPicker">
+        <input type="text" id="inputVarName" placeholder="Nombre de variable (ej. temperatura)">
+        <button id="btnAgregarVar">Agregar</button>
+      </div>
+      <div class="charts-grid" id="chartsGrid">
+        <div class="chart-empty" id="chartsVacio">Agrega una variable para empezar a graficarla en el tiempo.</div>
+      </div>
+    </div>
+
+    <!-- PROGRESO -->
+    <div class="card-graph card-prog">
+      <div class="prog-head">
+        <h2 style="margin:0;font-size:1.02rem">Progreso del robot</h2>
+        <div style="display:flex;align-items:center;gap:12px">
+          <span class="prog-pct" id="progPct">0%</span>
+          <div class="dd" id="dd">
+            <button class="dd-btn" id="ddBtn"><span id="ddLabel">robot1</span><span class="arr">▾</span></button>
+            <div class="dd-menu" id="ddMenu"></div>
+          </div>
+        </div>
+      </div>
+      <div class="prog-track"><div class="prog-fill pausado" id="progFill"></div><div class="prog-cat" id="progCat"></div></div>
+    </div>
+
+    <!-- MEDICAMENTOS -->
+    <div class="card-graph card-meds">
+      <span class="paw-deco" style="top:8px; right:16px; transform:rotate(15deg);">
+        <svg viewBox="0 0 64 64" width="20" height="20"><g fill="var(--plum-deep)"><circle cx="32" cy="42" r="14"/><circle cx="14" cy="22" r="7"/><circle cx="30" cy="10" r="7"/><circle cx="50" cy="14" r="7"/><circle cx="58" cy="30" r="6"/></g></svg>
+      </span>
+      <div class="meds-row" id="medsRow">
+        <!-- generado por JS -->
+      </div>
+      <div class="meds-caption" id="medsCaption">Seleccionar orden de los medicamentos</div>
+    </div>
+
+  </div>
+
+  <!-- ---------- COLUMNA DERECHA ---------- -->
+  <div class="col-right">
+    <div class="sidebar">
+      <div class="sidebar-header"><span class="ears">🐈</span><h1>Keyner</h1><span style="margin-left:auto; opacity:.5;">
+        <svg viewBox="0 0 64 64" width="20" height="20"><g fill="var(--pink-deep)"><circle cx="32" cy="42" r="14"/><circle cx="14" cy="22" r="7"/><circle cx="30" cy="10" r="7"/><circle cx="50" cy="14" r="7"/><circle cx="58" cy="30" r="6"/></g></svg>
+      </span></div>
+
+      <div class="row-card">
+        <span class="ico gatocaja" data-cat="1f63a" data-fb="😺"></span>
+        <div class="row-info">
+          <span class="lbl">Cajas que entran</span>
+          <span class="num in" id="numEntran">0</span>
+        </div>
+      </div>
+
+      <div class="row-card">
+        <span class="ico gatocaja" data-cat="1f63c" data-fb="😼"></span>
+        <div class="row-info">
+          <span class="lbl">Cajas que salen</span>
+          <span class="num out" id="numSalen">0</span>
+        </div>
+      </div>
+
+      <button class="btn-download" id="btnDescargar"><span class="dl-ico">⬇</span> Descargar historial de cajas</button>
+
+      <div class="card-avisos">
+        <span class="paw-deco" style="bottom:8px; right:12px; transform:rotate(-14deg);">
+          <svg viewBox="0 0 64 64" width="20" height="20"><g fill="var(--slate-deep)"><circle cx="32" cy="42" r="14"/><circle cx="14" cy="22" r="7"/><circle cx="30" cy="10" r="7"/><circle cx="50" cy="14" r="7"/><circle cx="58" cy="30" r="6"/></g></svg>
+        </span>
+        <div class="avisos-head">
+          <h3>Avisos</h3>
+          <span class="avisos-badge" id="avisosBadge">0</span>
+        </div>
+        <ul class="avisos-list" id="avisosList">
+          <li class="avisos-vacio">Sin avisos por ahora.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="toast" id="toast"></div>
+<!-- ---------- MODAL EMERGENCIA ---------- -->
+<div class="modal-backdrop" id="modalBackdrop">
+  <div class="modal-box">
+    <h3>⚠ Emergencia</h3>
+    <p>Proceso detenido totalmente por emergencia.</p>
+    <button id="btnAceptarModal">Aceptar</button>
+  </div>
+</div>
+
+<script>
+
+const ROS_CONFIG = {
+  websocketUrl: 'ws://localhost:9090',
+  topics:{
+    cmdIniciar:      { name:'/panel_control/cmd/iniciar',        type:'std_msgs/Empty'  },
+    cmdDetener:      { name:'/panel_control/cmd/detener',        type:'std_msgs/Empty'  },
+    cmdEmergencia:   { name:'/panel_control/cmd/emergencia',     type:'std_msgs/Empty'  },
+    estadoSistema:   { name:'/panel_control/estado',             type:'std_msgs/String' }, // 'ejecutando' | 'detenido' | 'emergencia'
+    ordenMedicamento:{ name:'/panel_control/orden_medicamento',  type:'std_msgs/String' }, // 'AA' | 'AB' | 'BB'
+    robotProgreso:   '/panel_control/robot/',                                             // + <robotN>/progreso -> std_msgs/Float32 (0-100)
+    variablePrefix:  '/panel_control/variable/',                                          // + <nombre> -> std_msgs/Float32
+    cajasEntran:     { name:'/panel_control/cajas/entran',       type:'std_msgs/Int32'  },
+    cajasSalen:      { name:'/panel_control/cajas/salen',        type:'std_msgs/Int32'  },
+    avisos:          { name:'/panel_control/avisos',             type:'std_msgs/String' }  // JSON: {nivel, mensaje}
+  }
+};
+
+let modo = 'simulado';      // 'simulado' | 'real'
+let ros = null;
+let rosTopics = {};
+let systemState = 'detenido'; // 'ejecutando' | 'detenido' | 'emergencia'
+
+/* ---------------- SONIDO Y ANIMACIÓN ---------------- */
+let audioCtx=null, silencio=false, ultimoHover=0;
+function sonido(tipo){
+  if(silencio || !(navigator.userActivation && navigator.userActivation.hasBeenActive)) return;
+  if(!audioCtx){ try{ audioCtx=new (window.AudioContext||window.webkitAudioContext)(); }catch(e){ return; } }
+  const c=audioCtx; if(c.state==='suspended') c.resume();
+  const [a,b,d,dur,vib,fm]={happy:[480,820,600,.45,0,1800], sad:[620,420,260,.9,6,1100], angry:[420,700,300,.8,38,1500],
+    chirp:[700,1100,1000,.16,0,2400], long:[450,900,500,1.1,5,1700]}[tipo]||[480,800,500,.4,0,1800];
+  const t=c.currentTime, o=c.createOscillator(), f=c.createBiquadFilter(), g=c.createGain();
+  o.type='sawtooth'; o.frequency.setValueAtTime(a,t);
+  o.frequency.linearRampToValueAtTime(b,t+dur*.35); o.frequency.linearRampToValueAtTime(d,t+dur);
+  f.type='bandpass'; f.Q.value=3; f.frequency.setValueAtTime(fm*.6,t);
+  f.frequency.linearRampToValueAtTime(fm,t+dur*.4); f.frequency.linearRampToValueAtTime(fm*.5,t+dur);
+  g.gain.setValueAtTime(0,t); g.gain.linearRampToValueAtTime(.35,t+.05); g.gain.linearRampToValueAtTime(0,t+dur);
+  if(vib){ const l=c.createOscillator(), lg=c.createGain(); l.frequency.value=vib; lg.gain.value=25; l.connect(lg); lg.connect(o.frequency); l.start(t); l.stop(t+dur); }
+  o.connect(f); f.connect(g); g.connect(c.destination); o.start(t); o.stop(t+dur);
+}
+document.getElementById('btnMute').addEventListener('click',function(){ silencio=!silencio; this.textContent=silencio?'🔇':'🔊'; if(!silencio) sonido('chirp'); });
+document.addEventListener('mouseover',e=>{
+  const el=e.target.closest('.btn-toggle,.medcat,.btn-download,.cat-holder,.fatcat-wrap');
+  if(el && !el.contains(e.relatedTarget) && Date.now()-ultimoHover>350){ ultimoHover=Date.now(); sonido(el.classList.contains('fatcat-wrap')?'long':'chirp'); }
+});
+
+// Gatos animados de Google Noto Emoji (fonts.gstatic.com). Si no hay internet se muestra el emoji normal.
+const CDN='https://fonts.gstatic.com/s/e/notoemoji/latest/';
+function emo(code,fb){ return `<img class="emo" src="${CDN}${code}/512.webp" alt="${fb}" onerror="this.outerHTML='<span class=&quot;emo-fb&quot;>${fb}</span>'">`; }
+function rebotar(el,cls){ el.classList.remove(cls); void el.offsetWidth; el.classList.add(cls); }
+function lluvia(el,chars,n){
+  const r=el.getBoundingClientRect();
+  for(let i=0;i<(n||8);i++){
+    const s=document.createElement('span'); s.className='fly'; s.textContent=chars[i%chars.length];
+    s.style.left=(r.left+r.width/2+Math.random()*40-20)+'px'; s.style.top=(r.top+r.height/2)+'px';
+    s.style.setProperty('--dx',(Math.random()*160-80)+'px'); s.style.animationDelay=(i*40)+'ms';
+    document.body.appendChild(s); setTimeout(()=>s.remove(),1600);
+  }
+}
+function ripple(btn,e){
+  const r=btn.getBoundingClientRect(), d=Math.max(r.width,r.height)/8, s=document.createElement('span'); s.className='ripple';
+  s.style.cssText=`width:${d}px;height:${d}px;left:${e.clientX-r.left-d/2}px;top:${e.clientY-r.top-d/2}px`;
+  btn.appendChild(s); setTimeout(()=>s.remove(),600);
+}
+function toast(t){ const el=document.getElementById('toast'); el.textContent=t; rebotar(el,'show'); }
+
+const catHolder=document.getElementById('catHolder');
+const fatImg=document.getElementById('fatcatImg');
+const CAT_ESTADO={detenido:['1f431','🐱','idle'], ejecutando:['1f63c','😼','run'], emergencia:['1f640','🙀','sos']};
+const progFill=document.getElementById('progFill');
+function reaccionEstado(est){
+  const [c,f,cls]=CAT_ESTADO[est]||CAT_ESTADO.detenido;
+  catHolder.innerHTML=emo(c,f); catHolder.className='cat-holder '+cls;
+  progFill.classList.toggle('pausado',est!=='ejecutando');
+}
+function saltoGato(){ rebotar(catHolder,'jump'); setTimeout(()=>catHolder.classList.remove('jump'),650); }
+fatImg.innerHTML=emo('1f431','🐱');
+document.querySelectorAll('.gatocaja').forEach(g=>{ g.innerHTML=emo(g.dataset.cat,g.dataset.fb)+'<span class="box">📦</span>'; });
+catHolder.addEventListener('click',()=>{ saltoGato(); sonido('happy'); lluvia(catHolder,['💗','🐾'],4); });
+
+/* ---------------- BARRA DE PROGRESO POR ROBOT ---------------- */
+const robots=['robot1','robot2','robot3','robot4','robot5'];
+const progreso={robot1:0,robot2:0,robot3:0,robot4:0,robot5:0};
+let robotSel='robot1';
+const dd=document.getElementById('dd'), ddMenu=document.getElementById('ddMenu'), ddLabel=document.getElementById('ddLabel');
+const progCat=document.getElementById('progCat'), progPct=document.getElementById('progPct');
+progCat.innerHTML=emo('1f431','🐱');
+function pintarProgreso(){
+  const p=Math.max(0,Math.min(100,progreso[robotSel]));
+  progFill.style.width=p+'%'; progCat.style.left=p+'%'; progPct.textContent=Math.round(p)+'%';
+}
+function elegirRobot(r){
+  robotSel=r; ddLabel.textContent=r; dd.classList.remove('open'); sonido('chirp');
+  ddMenu.querySelectorAll('button').forEach(x=>x.classList.toggle('on',x.dataset.r===r));
+  pintarProgreso(); rebotar(progCat,'agita');
+}
+robots.forEach(r=>{
+  const b=document.createElement('button'); b.textContent=r.replace('robot','Robot '); b.dataset.r=r;
+  b.addEventListener('click',()=>elegirRobot(r)); ddMenu.appendChild(b);
+});
+document.getElementById('ddBtn').addEventListener('click',()=>{ dd.classList.toggle('open'); sonido('chirp'); });
+document.addEventListener('click',e=>{ if(!dd.contains(e.target)) dd.classList.remove('open'); });
+ddMenu.querySelector('button').classList.add('on');
+// Simulación: avanza solo mientras el sistema está en ejecución (modo simulado)
+setInterval(()=>{
+  if(modo!=='simulado' || systemState!=='ejecutando') return;
+  robots.forEach(r=>{
+    if(progreso[r]>=100) return;
+    progreso[r]=Math.min(100,progreso[r]+Math.random()*5);
+    if(progreso[r]>=100){
+      if(r===robotSel){ sonido('long'); lluvia(progFill,['🎉','🐟','🐾'],10); toast('🎉 '+r+' terminó'); }
+      setTimeout(()=>{ progreso[r]=0; if(r===robotSel) pintarProgreso(); },2500);
+    }
+  });
+  pintarProgreso();
+},700);
+
+function animarDescarga(){
+  const b=document.getElementById('btnDescargar'); rebotar(b,'go'); sonido('happy');
+  lluvia(b,['🐾','📄','🐟'],8); toast('🐱 Historial descargado');
+}
+function animarCaja(tipo){
+  const num=tipo==='entran'?numEntran:numSalen, card=num.closest('.row-card');
+  rebotar(num,'bump'); rebotar(card,'agita');
+  const c=document.createElement('span'); c.className='caja '+(tipo==='entran'?'in':'out'); c.innerHTML=emo(tipo==='entran'?'1f63a':'1f63c','😺')+'<span>📦</span>';
+  card.appendChild(c); setTimeout(()=>c.remove(),1000); sonido(tipo==='entran'?'chirp':'happy');
+}
+
+/* ---------------- Conexión ---------------- */
+const dotEstado = document.getElementById('dotEstado');
+const txtEstadoConexion = document.getElementById('txtEstadoConexion');
+const selModo = document.getElementById('selModo');
+const inputWsUrl = document.getElementById('inputWsUrl');
+
+document.getElementById('btnConectar').addEventListener('click', () => {
+  modo = selModo.value;
+  if (modo === 'simulado') {
+    if (ros) { try{ ros.close(); }catch(e){} ros = null; }
+    dotEstado.className = 'dot on';
+    txtEstadoConexion.textContent = 'Modo simulado';
+    return;
+  }
+  if (typeof ROSLIB === 'undefined') {
+    dotEstado.className = 'dot err';
+    txtEstadoConexion.textContent = 'roslibjs no cargó, sigue en simulado';
+    modo = 'simulado';
+    return;
+  }
+  ROS_CONFIG.websocketUrl = inputWsUrl.value.trim() || ROS_CONFIG.websocketUrl;
+  ros = new ROSLIB.Ros({ url: ROS_CONFIG.websocketUrl });
+  txtEstadoConexion.textContent = 'Conectando…';
+  dotEstado.className = 'dot';
+
+  ros.on('connection', () => {
+    dotEstado.className = 'dot on';
+    txtEstadoConexion.textContent = 'Conectado a ROS2';
+    inicializarTopicosRos();
+  });
+  ros.on('error', () => {
+    dotEstado.className = 'dot err';
+    txtEstadoConexion.textContent = 'Error de conexión';
+  });
+  ros.on('close', () => {
+    dotEstado.className = 'dot';
+    txtEstadoConexion.textContent = 'Desconectado';
+  });
+});
+
+function inicializarTopicosRos(){
+  const t = ROS_CONFIG.topics;
+  rosTopics.cmdIniciar = new ROSLIB.Topic({ ros, name:t.cmdIniciar.name, messageType:t.cmdIniciar.type });
+  rosTopics.cmdDetener = new ROSLIB.Topic({ ros, name:t.cmdDetener.name, messageType:t.cmdDetener.type });
+  rosTopics.cmdEmergencia = new ROSLIB.Topic({ ros, name:t.cmdEmergencia.name, messageType:t.cmdEmergencia.type });
+  rosTopics.ordenMedicamento = new ROSLIB.Topic({ ros, name:t.ordenMedicamento.name, messageType:t.ordenMedicamento.type });
+
+  const subEstado = new ROSLIB.Topic({ ros, name:t.estadoSistema.name, messageType:t.estadoSistema.type });
+  subEstado.subscribe(msg => aplicarEstadoSistema(msg.data));
+
+  const subEntran = new ROSLIB.Topic({ ros, name:t.cajasEntran.name, messageType:t.cajasEntran.type });
+  subEntran.subscribe(msg => actualizarContador('entran', msg.data));
+
+  const subSalen = new ROSLIB.Topic({ ros, name:t.cajasSalen.name, messageType:t.cajasSalen.type });
+  subSalen.subscribe(msg => actualizarContador('salen', msg.data));
+
+  robots.forEach(r=>{
+    new ROSLIB.Topic({ ros, name:t.robotProgreso+r+'/progreso', messageType:'std_msgs/Float32' })
+      .subscribe(m=>{ progreso[r]=m.data; if(r===robotSel) pintarProgreso(); });
+  });
+
+  const subAvisos = new ROSLIB.Topic({ ros, name:t.avisos.name, messageType:t.avisos.type });
+  subAvisos.subscribe(msg => {
+    try{ const d = JSON.parse(msg.data); agregarAviso(d.nivel || 'info', d.mensaje || msg.data); }
+    catch(e){ agregarAviso('info', msg.data); }
+  });
+}
+
+function publicar(topicKey, dataObj){
+  if (modo === 'real' && rosTopics[topicKey]) {
+    rosTopics[topicKey].publish(new ROSLIB.Message(dataObj || {}));
+  }
+  // en modo simulado no se envía nada; el propio front actualiza su estado.
+}
+
+/* ---------------- INICIAR / DETENER ---------------- */
+const btnIniciar = document.getElementById('btnIniciar');
+const btnDetener = document.getElementById('btnDetener');
+const estadoPill = document.getElementById('estadoPill');
+
+function aplicarEstadoSistema(nuevoEstado){
+  systemState = nuevoEstado;
+  btnIniciar.classList.toggle('activo', nuevoEstado === 'ejecutando');
+  btnDetener.classList.toggle('activo', nuevoEstado === 'detenido' || nuevoEstado === 'emergencia');
+  estadoPill.textContent = nuevoEstado;
+  estadoPill.className = 'estado-pill ' + nuevoEstado;
+  reaccionEstado(nuevoEstado);
+}
+aplicarEstadoSistema('detenido');
+
+btnIniciar.addEventListener('click', e => { ripple(btnIniciar,e); rebotar(btnIniciar,'boing'); aplicarEstadoSistema('ejecutando'); publicar('cmdIniciar'); saltoGato(); sonido('happy'); lluvia(btnIniciar,['🐾','✨','🐟'],6); });
+btnDetener.addEventListener('click', e => { ripple(btnDetener,e); rebotar(btnDetener,'boing'); aplicarEstadoSistema('detenido'); publicar('cmdDetener'); sonido('sad'); lluvia(btnDetener,['💤','😿'],4); });
+
+/* ---------------- EMERGENCIA ---------------- */
+const fatcatWrap = document.getElementById('fatcatWrap');
+const modalBackdrop = document.getElementById('modalBackdrop');
+
+document.getElementById('btnEmergencia').addEventListener('click', () => {
+  fatcatWrap.classList.add('pop');
+  fatImg.innerHTML=emo('1f640','🙀'); sonido('angry'); lluvia(fatcatWrap,['💥','🐾','🍪'],8);
+  lanzarMigas();
+  publicar('cmdEmergencia');
+  aplicarEstadoSistema('emergencia');
+  setTimeout(() => modalBackdrop.classList.add('show'), 700);
+});
+
+document.getElementById('btnAceptarModal').addEventListener('click', () => {
+  modalBackdrop.classList.remove('show');
+  fatcatWrap.classList.remove('pop');
+  fatImg.innerHTML=emo('1f63b','😻'); rebotar(fatcatWrap,'back'); sonido('happy');
+  setTimeout(()=>{ fatcatWrap.classList.remove('back'); fatImg.innerHTML=emo('1f431','🐱'); },1800);
+  aplicarEstadoSistema('detenido');
+});
+
+function lanzarMigas(){
+  for (let i=0; i<10; i++){
+    const p = document.createElement('div');
+    p.className = 'poof';
+    const size = 6 + Math.random()*10;
+    p.style.width = size+'px'; p.style.height = size+'px';
+    p.style.left = (95 + Math.random()*110)+'px';
+    p.style.top = (80 + Math.random()*110)+'px';
+    p.style.background = Math.random() > .5 ? 'var(--tan)' : 'var(--pink)';
+    p.style.setProperty('--dx', (Math.random()*160-80)+'px');
+    p.style.setProperty('--dy', (Math.random()*140-100)+'px');
+    fatcatWrap.appendChild(p);
+    requestAnimationFrame(() => p.classList.add('show'));
+    setTimeout(() => p.remove(), 750);
+  }
+}
+
+/* ---------------- MEDICAMENTOS AA / AB / BB (una sola opción) ---------------- */
+const meds=['AA','AB','BB'];
+const orden=[];
+const medEmo={AA:['1f431','🐱'], AB:['1f638','😸'], BB:['1f63b','😻']};
+const medsRow=document.getElementById('medsRow');
+meds.forEach(m=>{
+  const b=document.createElement('button');
+  b.className='medcat'; b.dataset.med=m;
+  b.innerHTML=`<span class="ord"></span>${emo(medEmo[m][0],medEmo[m][1])}<span class="lab">${m}</span>`;
+  b.addEventListener('click',()=>seleccionarMed(m,b));
+  medsRow.appendChild(b);
+});
+function seleccionarMed(m,b){
+  orden.length=0; orden.push(m);
+  document.querySelectorAll('.medcat').forEach(x=>{
+    const on=x.dataset.med===m;
+    x.classList.toggle('sel',on); x.querySelector('.ord').textContent=on?'✓':'';
+  });
+  document.getElementById('medsCaption').textContent='Medicamento seleccionado: '+m;
+  sonido('happy'); lluvia(b,['💊','🐾'],4);
+  publicar('ordenMedicamento',{ data: m });
+}
+
+/* ---------------- GRÁFICA DE VARIABLES ---------------- */
+const btnVisualizar = document.getElementById('btnVisualizar');
+const varPicker = document.getElementById('varPicker');
+const inputVarName = document.getElementById('inputVarName');
+const chartsGrid = document.getElementById('chartsGrid');
+const chartsVacio = document.getElementById('chartsVacio');
+
+btnVisualizar.addEventListener('click', () => { varPicker.classList.toggle('show'); sonido('chirp'); });
+
+const variablesActivas = {}; // nombre -> { datos:[], canvas, intervalId }
+const paletaGraficas = ['#5C8F63','#C9955B','#E58FA0','#6C879C','#96678D'];
+let indicePaleta = 0;
+
+// Base de datos de variables. Modo simulado: esta lista (reemplázala por la tuya).
+// Modo real: se consulta ROS y la variable debe existir como tópico <variablePrefix><nombre>.
+const VARIABLES_BD = ['temperatura','humedad','presion','velocidad','corriente','voltaje'];
+function existeVariable(nombre){
+  if (modo === 'real' && ros) {
+    return new Promise(res => ros.getTopics(
+      r => res((Array.isArray(r) ? r : r.topics).includes(ROS_CONFIG.topics.variablePrefix + nombre)),
+      () => res(false)));
+  }
+  return Promise.resolve(VARIABLES_BD.includes(nombre));
+}
+document.getElementById('btnAgregarVar').addEventListener('click', async () => {
+  const nombre = inputVarName.value.trim();
+  if (!nombre) return;
+  if (variablesActivas[nombre]) { toast('🐱 «'+nombre+'» ya está graficada'); return; }
+  if (!(await existeVariable(nombre))) {
+    rebotar(inputVarName,'err'); sonido('sad');
+    toast('😿 «'+nombre+'» no existe en la base de datos');
+    return;
+  }
+  agregarVariable(nombre);
+  inputVarName.value = '';
+  sonido('happy'); toast('😺 Graficando «'+nombre+'»');
+});
+inputVarName.addEventListener('keydown', e => { if (e.key === 'Enter') document.getElementById('btnAgregarVar').click(); });
+
+function agregarVariable(nombre){
+  chartsVacio.style.display = 'none';
+  const color = paletaGraficas[indicePaleta % paletaGraficas.length];
+  indicePaleta++;
+
+  const win = document.createElement('div');
+  win.className = 'chart-win';
+  win.style.setProperty('--chart-color', color);
+  win.innerHTML = `
+    <div class="chart-win-head">
+      <span class="nombre"><span class="puntito"></span>${nombre}</span>
+      <span class="valor" id="val-${nombre}">–</span>
+      <button aria-label="cerrar">✕</button>
+    </div>
+    <canvas width="230" height="120"></canvas>`;
+  chartsGrid.appendChild(win);
+  const canvas = win.querySelector('canvas');
+  const valorEl = win.querySelector('.valor');
+  const closeBtn = win.querySelector('button');
+
+  variablesActivas[nombre] = { datos: [], canvas, valorEl, color };
+
+  if (modo === 'real' && ros) {
+    const sub = new ROSLIB.Topic({ ros, name: ROS_CONFIG.topics.variablePrefix + nombre, messageType:'std_msgs/Float32' });
+    sub.subscribe(msg => empujarDatoVariable(nombre, msg.data));
+    variablesActivas[nombre].sub = sub;
+  } else {
+    let valor = 50;
+    const id = setInterval(() => {
+      valor += (Math.random()*10 - 5);
+      empujarDatoVariable(nombre, valor);
+    }, 900);
+    variablesActivas[nombre].intervalId = id;
+  }
+
+  closeBtn.addEventListener('click', () => {
+    const v = variablesActivas[nombre];
+    if (v.intervalId) clearInterval(v.intervalId);
+    if (v.sub) v.sub.unsubscribe();
+    delete variablesActivas[nombre];
+    win.classList.add('out'); setTimeout(() => win.remove(), 280); sonido('chirp');
+    if (Object.keys(variablesActivas).length === 0) chartsVacio.style.display = 'block';
+  });
+}
+
+function empujarDatoVariable(nombre, valor){
+  const v = variablesActivas[nombre];
+  if (!v) return;
+  v.datos.push(valor);
+  if (v.datos.length > 40) v.datos.shift();
+  if (v.valorEl) v.valorEl.textContent = valor.toFixed(1);
+  dibujarSparkline(v.canvas, v.datos, v.color);
+}
+
+function dibujarSparkline(canvas, datos, color){
+  color = color || '#5C8F63';
+  const ctx = canvas.getContext('2d');
+  const w = canvas.width, h = canvas.height;
+  ctx.clearRect(0,0,w,h);
+  if (datos.length < 2) return;
+  const min = Math.min(...datos), max = Math.max(...datos);
+  const rango = (max - min) || 1;
+  const pad = 12;
+  const stepX = (w - pad*2) / (datos.length - 1);
+  const puntos = datos.map((val,i) => ({
+    x: pad + i*stepX,
+    y: h - pad - ((val - min)/rango) * (h - pad*2)
+  }));
+
+  // rejilla suave
+  ctx.strokeStyle = 'rgba(46,37,33,.07)';
+  ctx.lineWidth = 1;
+  for(let i=1;i<=3;i++){
+    const y = pad + (h-pad*2) * (i/4);
+    ctx.beginPath(); ctx.moveTo(pad,y); ctx.lineTo(w-pad,y); ctx.stroke();
+  }
+
+  // curva suavizada (medios puntos de bezier)
+  function trazarCurva(){
+    ctx.beginPath();
+    ctx.moveTo(puntos[0].x, puntos[0].y);
+    for(let i=0;i<puntos.length-1;i++){
+      const p0 = puntos[i], p1 = puntos[i+1];
+      const mx = (p0.x + p1.x)/2, my = (p0.y + p1.y)/2;
+      ctx.quadraticCurveTo(p0.x, p0.y, mx, my);
+    }
+    const last = puntos[puntos.length-1];
+    ctx.lineTo(last.x, last.y);
+  }
+
+  // relleno degradado bajo la curva
+  trazarCurva();
+  ctx.lineTo(puntos[puntos.length-1].x, h - pad);
+  ctx.lineTo(puntos[0].x, h - pad);
+  ctx.closePath();
+  const grad = ctx.createLinearGradient(0,0,0,h);
+  grad.addColorStop(0, color + '55');
+  grad.addColorStop(1, color + '02');
+  ctx.fillStyle = grad;
+  ctx.fill();
+
+  // línea principal
+  trazarCurva();
+  ctx.strokeStyle = color;
+  ctx.lineWidth = 2.4;
+  ctx.lineJoin = 'round';
+  ctx.lineCap = 'round';
+  ctx.stroke();
+
+  // punto final con halo
+  const last = puntos[puntos.length-1];
+  ctx.beginPath(); ctx.arc(last.x,last.y,6,0,Math.PI*2);
+  ctx.fillStyle = color + '30'; ctx.fill();
+  ctx.beginPath(); ctx.arc(last.x,last.y,3.4,0,Math.PI*2);
+  ctx.fillStyle = color; ctx.fill();
+  ctx.lineWidth = 1.5; ctx.strokeStyle = '#fff'; ctx.stroke();
+}
+
+/* ---------------- CONTADORES DE CAJAS ---------------- */
+let contadorEntran = 0, contadorSalen = 0;
+const historialCajas = [];
+const numEntran = document.getElementById('numEntran');
+const numSalen = document.getElementById('numSalen');
+
+function actualizarContador(tipo, valor){
+  animarCaja(tipo);
+  if (tipo === 'entran') { contadorEntran = valor; numEntran.textContent = valor; }
+  else { contadorSalen = valor; numSalen.textContent = valor; }
+  historialCajas.push({ timestamp: new Date().toISOString(), entran: contadorEntran, salen: contadorSalen });
+}
+
+// Simulación: cada tanto entra o sale una caja (solo si modo simulado)
+function programarSimulacionCajas(){
+  const espera = 3500 + Math.random()*5000;
+  setTimeout(() => {
+    if (modo === 'simulado') {
+      if (Math.random() > .45) actualizarContador('entran', contadorEntran + 1);
+      else if (contadorSalen < contadorEntran) actualizarContador('salen', contadorSalen + 1);
+    }
+    programarSimulacionCajas();
+  }, espera);
+}
+programarSimulacionCajas();
+
+document.getElementById('btnDescargar').addEventListener('click', () => {
+  animarDescarga();
+  let csv = 'timestamp,cajas_entran,cajas_salen\n';
+  historialCajas.forEach(r => { csv += `${r.timestamp},${r.entran},${r.salen}\n`; });
+  const blob = new Blob([csv], { type:'text/csv' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = 'historial_cajas.csv';
+  document.body.appendChild(a); a.click(); a.remove();
+  URL.revokeObjectURL(url);
+});
+
+/* ---------------- AVISOS ---------------- */
+const avisosList = document.getElementById('avisosList');
+const avisosBadge = document.getElementById('avisosBadge');
+let avisosSinLeer = 0;
+let avisosVacioMostrado = true;
+
+function agregarAviso(nivel, mensaje){
+  if (avisosVacioMostrado) { avisosList.innerHTML = ''; avisosVacioMostrado = false; }
+  const li = document.createElement('li');
+  li.className = 'aviso-item';
+  const hora = new Date().toLocaleTimeString();
+  li.innerHTML = `
+    <span class="aviso-dot ${nivel}"></span>
+    <span class="aviso-texto">${mensaje}<span class="aviso-hora">${hora}</span></span>
+    <button class="aviso-check" title="marcar como leído">✓</button>`;
+  li.querySelector('.aviso-check').addEventListener('click', function(){
+    this.classList.toggle('leido');
+  });
+  avisosList.prepend(li);
+  avisosSinLeer++;
+  avisosBadge.textContent = avisosSinLeer; rebotar(avisosBadge,'pop');
+  sonido(nivel==='error'?'angry':nivel==='advertencia'?'sad':'chirp');
+}
+
+const ejemplosAvisos = [
+  { nivel:'info', mensaje:'Ciclo de dosificación completado correctamente.' },
+  { nivel:'advertencia', mensaje:'Nivel bajo en el contenedor de medicamento AB.' },
+  { nivel:'error', mensaje:'Sensor de la banda transportadora sin respuesta.' },
+  { nivel:'info', mensaje:'Conteo de cajas sincronizado con la base de datos.' }
+];
+function programarSimulacionAvisos(){
+  const espera = 9000 + Math.random()*14000;
+  setTimeout(() => {
+    if (modo === 'simulado') {
+      const e = ejemplosAvisos[Math.floor(Math.random()*ejemplosAvisos.length)];
+      agregarAviso(e.nivel, e.mensaje);
+    }
+    programarSimulacionAvisos();
+  }, espera);
+}
+programarSimulacionAvisos();
+
+// Aviso de bienvenida
+agregarAviso('info', 'Panel iniciado en modo simulado.');
+</script>
+</body>
+</html>
