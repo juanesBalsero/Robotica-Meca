@@ -34,3 +34,17 @@ trajectory_publisher:
     csv_path: ""                 # "" = usa data/trayectoria_robot.csv del paquete
     frecuencia_hz: 100.0
     escala_velocidad: 1.0        # 1.0 = tiempo real; 0.5 = 2 veces más lento
+    vel_retorno_m_s: 0.05        # velocidad de regreso al inicio tras ~/reset (ABORTAR de la planta)
+
+# Nodo del contrato de la planta (Robot 1). Ajustar según el robot real.
+robot1_node:
+  ros__parameters:
+    e_inicio_m: 0.02             # error máximo para considerar al robot en home / listo (igual al del CC)
+    e_error_m: 0.12              # error de seguimiento que se reporta como error (menor que e_falla_m del CC)
+    t_link_s: 1.0                # sin /joint_states por más de esto = enlace con la ESP32 caído
+    t_traj_s: 3.0                # sin estado de trajectory_publisher por más de esto = nodo caído
+    t_hb_s: 3.0                  # sin /brain/latido por más de esto = parada segura
+    t_arranque_s: 2.0            # tiempo máximo para ver la trayectoria corriendo tras iniciar
+    t_min_finalizo_s: 0.5        # tiempo mínimo publicando "finalizó" antes de pasar a "esperando"
+    t_asentar_s: 15.0            # tiempo máximo para quedar en home al terminar o abortar
+    periodo_estado_s: 1.0        # el estado se repite cada este tiempo (sirve de latido al brain)

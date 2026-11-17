@@ -27,6 +27,7 @@ setup(
             'udp_bridge = robot_control.udp_bridge:main',
             'kinematic_control = robot_control.kinematic_control:main',
             'trajectory_publisher = robot_control.trajectory_publisher:main',
+            'robot1_node = robot_control.robot1_node:main',
         ],
     },
 )

@@ -8,11 +8,17 @@ Estados:
   corriendo -> recorre la trayectoria
   pausa     -> mantiene el punto actual con ẋ_d = 0
   fin       -> mantiene el último punto con ẋ_d = 0
+  volviendo -> (tras ~/reset) regresa en línea recta al primer punto a
+               vel_retorno_m_s y pasa a 'espera'
 
 Servicios (std_srvs/Trigger):
   ~/start : inicia (o reanuda tras ~/stop; si ya terminó, reinicia: el CSV
             termina en el home, igual que empieza)
   ~/stop  : pausa y mantiene la posición
+  ~/reset : (planta) desde 'pausa' o 'fin' vuelve al inicio sin saltos de x_d
+
+Topic (planta): ~/estado (std_msgs/String, confiable + transient local) con el
+estado actual; se publica al cambiar y se repite cada 1 s.
 
 escala_velocidad < 1 reproduce más lento: el tiempo de la trayectoria avanza a
 esa fracción y ẋ_d se multiplica por ella (consistente con x_d(t)).
@@ -25,7 +31,9 @@ import rclpy
 from ament_index_python.packages import get_package_share_directory
 from rclpy.executors import ExternalShutdownException
 from rclpy.node import Node
+from rclpy.qos import DurabilityPolicy, HistoryPolicy, QoSProfile, ReliabilityPolicy
 from robot_interfaces.msg import TrajectoryPoint
+from std_msgs.msg import String
 from std_srvs.srv import Trigger
 
 
@@ -51,6 +59,23 @@ class TrajectoryPublisher(Node):
         self.pub = self.create_publisher(TrajectoryPoint, '/trajectory_point', 10)
         self.create_service(Trigger, '~/start', self._srv_start)
         self.create_service(Trigger, '~/stop', self._srv_stop)
+
+        # --- Añadido para la integración con la planta (robot1_node) ---
+        self.declare_parameter('vel_retorno_m_s', 0.05)
+        self.vel_retorno = float(self.get_parameter('vel_retorno_m_s').value)
+        if self.vel_retorno <= 0.0:
+            raise RuntimeError('vel_retorno_m_s debe ser > 0')
+        self.create_service(Trigger, '~/reset', self._srv_reset)
+        self.pub_estado = self.create_publisher(
+            String, '~/estado',
+            QoSProfile(reliability=ReliabilityPolicy.RELIABLE,
+                       durability=DurabilityPolicy.TRANSIENT_LOCAL,
+                       history=HistoryPolicy.KEEP_LAST, depth=1))
+        self._estado_pub = None
+        self._t_pub_estado = 0.0
+        self._ret_p = np.array(self.pos[0], dtype=float)
+        self._ret_g = False
+        # ---------------------------------------------------------------
 
         self.estado = 'espera'
         self.t_traj = 0.0                    # tiempo de la trayectoria [s]
@@ -97,6 +122,11 @@ class TrajectoryPublisher(Node):
         dt = min(ahora - self._t_prev, 3.0 * self._periodo)   # evita saltos si hubo un tirón
         self._t_prev = ahora
 
+        if self.estado == 'volviendo':          # añadido (planta): retorno tras ~/reset
+            self._tick_retorno(dt)
+            self._publicar_estado_si_cambia()
+            return
+
         moviendo = False
         if self.estado == 'corriendo':
             self.t_traj += self.escala * dt
@@ -122,9 +152,13 @@ class TrajectoryPublisher(Node):
         msg.velocity = v
         msg.gripper = g
         self.pub.publish(msg)
+        self._publicar_estado_si_cambia()       # añadido (planta)
 
     # ======================================================
     def _srv_start(self, request, response):
+        if self.estado == 'volviendo':          # añadido (planta)
+            response.success, response.message = False, 'Está volviendo al inicio'
+            return response
         if self.estado == 'corriendo':
             response.success, response.message = False, 'Ya está corriendo'
             return response
@@ -144,6 +178,56 @@ class TrajectoryPublisher(Node):
         self.get_logger().info('STOP en t = {:.2f} s: se mantiene la posición'.format(self.t_traj))
         response.success, response.message = True, 'Pausado'
         return response
+
+    # ======================================================
+    # Añadido para la integración con la planta (robot1_node)
+    def _srv_reset(self, request, response):
+        if self.estado == 'corriendo':
+            response.success, response.message = False, 'Está corriendo: usa ~/stop antes'
+        elif self.estado == 'volviendo':
+            response.success, response.message = False, 'Ya está volviendo al inicio'
+        elif self.estado == 'espera':
+            response.success, response.message = True, 'Ya está en espera'
+        else:                                    # 'pausa' o 'fin'
+            p, _, g = self._muestra(self.t_traj)
+            self._ret_p = np.array(p, dtype=float)
+            self._ret_g = g                      # la garra no cambia durante el retorno
+            self.estado = 'volviendo'
+            self._t_prev = time.monotonic()
+            self.get_logger().info('RESET desde t = {:.2f} s: vuelvo al inicio a {:.2f} m/s'.format(
+                self.t_traj, self.vel_retorno))
+            response.success, response.message = True, 'Volviendo al inicio'
+        return response
+
+    def _tick_retorno(self, dt):
+        """Vuelve en línea recta al primer punto con ẋ_d consistente (sin saltos de x_d)."""
+        d = self.pos[0] - self._ret_p
+        dist = float(np.linalg.norm(d))
+        paso = self.vel_retorno * dt
+        if dist <= max(paso, 1e-6):
+            self._ret_p = np.array(self.pos[0], dtype=float)
+            v = [0.0, 0.0, 0.0]
+            self.t_traj = 0.0
+            self.estado = 'espera'
+            self.get_logger().info('RESET: de vuelta en el inicio, en espera')
+        else:
+            u = d / dist
+            self._ret_p = self._ret_p + u * paso
+            v = [float(x) for x in u * self.vel_retorno]
+        msg = TrajectoryPoint()
+        msg.header.stamp = self.get_clock().now().to_msg()
+        msg.header.frame_id = 'base_link'
+        msg.position = [float(x) for x in self._ret_p]
+        msg.velocity = v
+        msg.gripper = self._ret_g
+        self.pub.publish(msg)
+
+    def _publicar_estado_si_cambia(self):
+        ahora = time.monotonic()
+        if self.estado != self._estado_pub or ahora - self._t_pub_estado >= 1.0:
+            self._estado_pub = self.estado
+            self._t_pub_estado = ahora
+            self.pub_estado.publish(String(data=self.estado))
 
 
 def main(args=None):
