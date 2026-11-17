@@ -1,0 +1,13 @@
+# Parametros del brain. Para cambiar un tiempo basta editar este archivo
+# (si se compila con --symlink-install no hace falta recompilar; si no, volver a compilar)
+# o pasarlo por consola:  ros2 run brain brain_node --ros-args -p t_tarea:="[30.0,30.0,30.0,30.0,30.0]"
+# IMPORTANTE: usar siempre decimales (30.0, no 30) en los valores de tiempo.
+brain:
+  ros__parameters:
+    t_ack: 2.0            # s que se espera el estado 1 (ejecutando) tras cada intento
+    max_intentos: 3       # intentos de una orden antes de declarar fallo
+    t_tarea: [30.0, 30.0, 30.0, 30.0, 30.0]   # s maximos de la etapa de cada robot (1 a 5)
+    t_offline: 3.0        # s sin estado de un robot para darlo por desconectado
+    periodo_latido: 1.0   # s entre latidos /brain/latido (los robots caen a parada segura con T_hb = 3 s)
+    periodo_estado: 1.0   # s entre publicaciones de /planta/estado
+    periodo_tick: 0.1     # s entre revisiones internas (reintentos, tiempos, despacho)

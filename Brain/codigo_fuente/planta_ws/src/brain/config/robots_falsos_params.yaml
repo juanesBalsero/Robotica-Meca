@@ -1,0 +1,5 @@
+# Robots de prueba (solo para probar sin los grupos reales)
+robots_falsos:
+  ros__parameters:
+    robots: [1, 2, 3, 4, 5]                    # quitar los que si estan conectados de verdad
+    duraciones: [5.0, 5.0, 5.0, 5.0, 5.0]      # s que tarda cada etapa
