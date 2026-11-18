@@ -79,13 +79,13 @@ def generate_launch_description():
             'name': 'antropomorfico',
             'pkg': 'antropomorfico_sim',
             'file': 'urdf/antropomorfico.urdf',
-            'x': '0.38', 'y': '0.385', 'z': '0.0'
+            'x': '0.3', 'y': '0.385', 'z': '0.0'
         },
         {
             'name': 'miau',
             'pkg': 'miau',
             'file': 'urdf/Completo.urdf',
-            'x': '0.35', 'y': '0.86', 'z': '0.0'
+            'x': '0.32', 'y': '1.0', 'z': '0.0'
         },
         {
             'name': 'brazo_estesi',
@@ -97,13 +97,13 @@ def generate_launch_description():
             'name': 'scara_boceto',
             'pkg': 'scara_boceto',
             'file': 'urdf/scara_boceto.urdf.xacro',
-            'x': '0.9', 'y': '0.76', 'z': '0.0'
+            'x': '0.92', 'y': '0.86', 'z': '0.0'
         },
         {
             'name': 'scara_description',
             'pkg': 'scara_description',
             'file': 'urdf/scara.urdf.xacro',
-            'x': '0.85', 'y': '0.46', 'z': '0.0'
+            'x': '1.0', 'y': '0.43', 'z': '0.0'
         }
     ]
 
