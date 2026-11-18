@@ -1,0 +1,6 @@
+# /gui/iniciar_caja
+uint32 caja_id        # unico y mayor que 0
+string medicamento    # AA, AB o BB
+---
+bool aceptada
+string motivo         # vacio si fue aceptada
