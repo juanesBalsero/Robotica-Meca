@@ -1,0 +1,68 @@
+proyecto:
+  nombre: brazo_estesi
+  entorno_simulacion:
+    sistema_operativo: Ubuntu 24.04
+    ros: ROS 2 Jazzy
+    simulador: Gazebo Harmonic
+    control: gz_ros2_control
+
+robot:
+  arquitectura: SCARA R-R-P
+  articulaciones:
+    M1:
+      tipo: revolute
+      unidad: rad
+      limite_posicion: [-3.1416, 3.1416]
+      velocidad_maxima: 2.0
+    M2:
+      tipo: revolute
+      unidad: rad
+      limite_posicion: [-2.8, 2.8]
+      velocidad_maxima: 2.0
+    M3:
+      tipo: prismatic
+      unidad: m
+      limite_modelo: [0.0, 0.05]
+      limite_tarea_simulada: [0.0, 0.02]
+      velocidad_maxima: 0.05
+    M4:
+      tipo: fixed
+      nota: pinza visual rigida
+
+escena_absoluta:
+  unidad: m
+  robot_R3: [0.55, 0.67, 0.0]
+  estacion_E1: [0.30, 0.67, 0.10]
+  estacion_E2: [0.75, 0.67, 0.10]
+  dimensiones_mesa: [0.10, 0.10]
+  objetivos_relativos_robot:
+    E1: [-0.25, 0.0]
+    E2: [0.20, 0.0]
+
+trayectoria:
+  archivo: trayectorias/trayectoria_simulacion_17_3s.csv
+  muestras: 1641
+  duracion_s: 17.3
+  orden_articular: [M1, M2, M3]
+  unidades_posicion: [rad, rad, m]
+  columnas:
+    - t_s
+    - x_m
+    - y_m
+    - z_m
+    - q1_rad
+    - q2_rad
+    - M3_m
+    - q1_rad_s
+    - q2_rad_s
+    - M3_m_s
+    - q1_rad_s2
+    - q2_rad_s2
+    - M3_m_s2
+    - tramo
+    - pinza_cerrada
+
+estado_hardware:
+  lista_para_ejecutar: false
+  motivo: faltan calibracion, interfaz de hardware y validacion de seguridad
+  pinza_funcional: false
