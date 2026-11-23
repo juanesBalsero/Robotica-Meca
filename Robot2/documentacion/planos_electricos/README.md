@@ -1,3 +1,3 @@
-# Documentación: planos_electricos
+# Planos Eléctricos — Robot 2 (`miau`)
 
-Entregables técnicos de **Robot 2 (miau)** correspondientes a `planos_electricos`.
+- `Plano_eléctrico_corregido.pdf`: Esquemático completo de potencia, puentes H, encoders de cuadratura, servomotor de pinza y distribución de las 3 placas ESP32.
