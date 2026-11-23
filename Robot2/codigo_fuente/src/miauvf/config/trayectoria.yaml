@@ -1,0 +1,57 @@
+trajectory_jacobian_node:
+  ros__parameters:
+
+    # ---- Puntos [x, y, z] en metros, marco base_link --------------------------
+    points:
+      PA:    [-0.0016672,   -0.219297,  0.090]
+      PA_UP: [-0.0016672,   -0.219297,  0.155]
+      PB:    [-0.130118,    -0.168036,  0.090]
+      PB_UP: [-0.130118,    -0.168036,  0.155]
+      PH:    [0.1519,       -0.1222,    0.217001]
+      PM:    [-0.035,       -0.240,     0.195]
+      P1:    [0.331844,      0.00137912, 0.230246]
+      P1_UP: [0.331844,      0.00137912, 0.280]
+      P2:    [0.328869,     -0.0443589, 0.230246]
+      P2_UP: [0.328869,     -0.0443589, 0.280]
+
+    sequence: [
+      "PH", "PA_UP", "PA", "PA_UP", "PH",
+      "PH", "PM", "PA_UP", "PM",
+      "PB_UP", "PB", "PB_UP", "PM", "PH",
+      "P1_UP", "P1", "P1_UP", "PH",
+      "P2_UP", "P2", "P2_UP", "PH"
+    ]
+
+    max_joint_vel: 0.32
+    cart_speed: 0.035
+    cart_accel: 0.06
+    dwell_time: 1.5
+    home_joint_vel: 0.22
+    control_rate_hz: 50.0
+    kp_task: 3.0
+    det_min: 0.00001
+    damping: 0.02
+    q_seed: [-0.489, 1.016, -2.453]
+    obstacle_fatal: false
+
+    # ---- Suavizado de velocidades --------------------------------------------
+    max_joint_acc: 0.8
+    max_joint_jerk: 5.0
+    smooth_time: 0.80
+    smooth_time_max: 2
+    max_path_dev_mm: 5.0
+    kp_joint: 1.8
+
+    # ---- Robot / topics ------------------------------------------------------
+    package_name: "miau"
+    urdf_relative_path: "urdf/Completo.urdf"
+    base_link: "base_link"
+    tip_link: "tcp"
+    joint_names: ["J1", "J2", "J3"]
+    commands_topic: "/velocity_controller/commands"
+    joint_states_topic: "/joint_states"
+
+    # ---- Exportación de datos ------------------------------------------------
+    log_prefix: "trayectoria"
+    log_tail_time: 1.0
+    auto_plot: false

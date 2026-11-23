@@ -1,0 +1,40 @@
+joints:
+  J1:
+    counts_per_rev: 1060.0
+    enc_polarity: 1.0
+    esp32_kd: 0.015
+    esp32_ki: 62.0
+    esp32_kp: 10.5
+    esp32_ppr: 1060.0
+    max_cmd_rpm: 13.5
+    min_rpm_neg: 2.6
+    min_rpm_pos: 2.1
+    urdf_dir: -1.0
+  J2:
+    counts_per_rev: 3955.0
+    enc_polarity: 1.0
+    esp32_kd: 0.018
+    esp32_ki: 68.0
+    esp32_kp: 10.2
+    esp32_ppr: 1060.0
+    ff_up: 445.0
+    max_cmd_rpm: 13.5
+    max_dn: 315.0
+    max_up_rpm: 10.5
+    min_rpm_neg: 1.5
+    min_rpm_pos: 1.5
+    start_boost: 20.0
+    urdf_dir: -1.0
+  J3:
+    counts_per_rev: 2765.0
+    enc_polarity: 1.0
+    esp32_kd: 0.012
+    esp32_ki: 68.0
+    esp32_kp: 10.4
+    esp32_ppr: 530.0
+    ff_dn: 265.0
+    ff_up: 318.0
+    max_cmd_rpm: 30.0
+    min_rpm_neg: 1.5
+    min_rpm_pos: 1.5
+    urdf_dir: -1.0
