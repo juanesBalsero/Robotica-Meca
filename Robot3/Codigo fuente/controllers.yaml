@@ -1,0 +1,41 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100
+    use_sim_time: true
+    enforce_command_limits: true
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    brazo_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+brazo_controller:
+  ros__parameters:
+    joints:
+      - M1
+      - M2
+      - M3
+
+    command_interfaces:
+      - position
+
+    state_interfaces:
+      - position
+      - velocity
+
+    allow_partial_joints_goal: false
+    action_monitor_rate: 20.0
+
+    constraints:
+      goal_time: 1.0
+      stopped_velocity_tolerance: 0.05
+      M1:
+        trajectory: 0.50
+        goal: 0.10
+      M2:
+        trajectory: 0.50
+        goal: 0.10
+      M3:
+        trajectory: 0.05
+        goal: 0.01
